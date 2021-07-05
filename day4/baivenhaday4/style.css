@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.contener {
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  border-style: groove;
+}
+.header {
+  background-color: aqua;
+}
+.logo {
+  font-size: 30px;
+  text-align: center;
+  color: blanchedalmond;
+}
+.menu-item {
+  display: inline-block;
+  text-align: center;
+}
+.menu {
+  text-align: center;
+}
+.main {
+  width: 100%;
+  background-color: rgb(255, 248, 248);
+  word-spacing: normal;
+  border-style: 1px 1px groove;
+}
+.content {
+  word-spacing: -1ch;
+}
+.item {
+  display: inline-block;
+  width: calc((100% - 25px) / 4);
+  background-color: rgb(48, 241, 48);
+  border-style: groove;
+  border-radius: 5px;
+}
+.main {
+  word-spacing: -1ch;
+}
+.item {
+  word-spacing: normal;
+  background-image: url(https://tuviso.com/public/media/2020/9/van-dao-hoa-cua-12-con-giap-trong-thang-10.jpg);
+  background-position: center;
+}
+.mr-50 {
+  width: 50%;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  height: 200px;
+  background-image: url(https://file.hstatic.net/200000037626/file/maxresdefault__3__d4698533464d4cea9dcab66c9363c89e_grande.jpg);
+  background-position: center;
+}
+.mr-25 {
+  margin-right: 3px;
+  background-image: url(https://d1j8r0kxyu9tj8.cloudfront.net/images/1513438181leShenIGm0lahpt.jpg);
+  background-position: center;
+}
+.item,
+.mr-25 {
+  height: 200px;
+  height: 200px;
+}
+.item4,
+.item8 {
+  display: inline-block;
+  width: calc((100% - 25px) / 4);
+  vertical-align: top;
+  border-style: groove;
+  border-radius: 5px;
+}
+.item5 {
+  display: inline-block;
+  width: calc((100% - 25px) / 4);
+  vertical-align: top;
+}
+.main-item2 {
+  word-spacing: -1ch;
+}
+.item6 {
+  border-style: groove;
+  word-spacing: normal;
+  border-radius: 5px;
+  height: 100px;
+  background-color: rgb(48, 241, 48);
+  background-image: url(https://upload.wikimedia.org/wikipedia/vi/4/46/Deadpool_poster.jpg);
+  margin-bottom: 2px;
+}
+.item7 {
+  border-style: groove;
+  word-spacing: normal;
+  border-radius: 5px;
+  height: 100px;
+  background-color: rgb(48, 241, 48);
+  background-image: url(https://www.cgv.vn/media/catalog/product/cache/1/image/1800x/71252117777b696995f01934522c402d/m/o/mortal_kombat_-_vn_-_payoff_poster_1_1_.jpg);
+  background-position: center;
+}
+.item4 {
+  margin-left: 2px;
+  margin-right: 2px;
+  background-color: rgb(48, 241, 48);
+  word-spacing: normal;
+  height: 200px;
+  width: 200px;
+  background-image: url(https://brand4u.vn/wp-content/uploads/2020/04/B%C3%A2%CC%A3t-mi%CC%81-5-me%CC%A3o-chu%CC%A3p-a%CC%89nh-gia%CC%80y-de%CC%81p-%C4%91e%CC%A3p_4.jpg);
+  background-position: center;
+}
+.item8 {
+  word-spacing: normal;
+  height: 200px;
+  background-color: rgb(48, 241, 48);
+  margin-bottom: 2px;
+}
+.item4,
+.item5 {
+  width: 25%;
+}
+.item5 {
+  margin-right: 1px;
+}
+.mr-5 {
+  margin-right: 2px;
+}
+.main {
+  margin-bottom: 4px;
+  margin-top: 2px;
+}
+.selection1 {
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+.item4{
+    margin-bottom: 2px;
+}
+div.mr-5.item8{
+    background-image: url(https://meta.vn/Data/image/2021/05/19/hoa-sen-trang-9.jpg);
+    background-position: center;
+}
+div.item8.mr-6{
+    background-image: url(https://kenh14cdn.com/2020/7/19/photo-1-15951447028491980490713.jpeg);
+    background-position: center;
+}

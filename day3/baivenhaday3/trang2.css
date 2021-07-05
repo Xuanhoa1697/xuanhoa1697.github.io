@@ -1,0 +1,29 @@
+.tieudetrang2{
+    text-shadow: 1px 1px 5px rgb(255, 4, 54);
+font-style: italic;
+}
+.fonttrang2{
+    color: cornflowerblue;
+    text-align: left;
+    text-indent: 15px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+h3.tieudetrang2{
+    color: rgb(3, 82, 29);
+    text-indent: 20px;
+    text-shadow: 2px 2px 3px darkorange;
+}
+.tieudephu{
+    text-align: center;
+    word-spacing: 20px;
+    color: rgb(248, 11, 70);
+}
+.linknoithat{
+    color: black;
+    background-color: chartreuse;
+}
+li a {
+    color: rgb(0, 0, 0);
+   
+}
