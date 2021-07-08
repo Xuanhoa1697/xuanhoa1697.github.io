@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contaner{
+    width: 1200px;
+    height: auto;
+    /* background-color: brown; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex-logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-items: center;
+}
+.item{
+    background-image: url(../d6400bc9de4b2a15735a.jpg);
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header-bottom{
+    font-size: 30px;
+    font-style: inherit;
+}
+.header{
+    color: lightseagreen;
+}
+.flex-contaner-selection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+.contaner-selection{
+    width: 1200px;
+    height: auto;
+    /* background-color: brown; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex-selection{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+.item-selection{
+    height: 30px;
+    width: 100px;
+    font-variant: small-caps;
+    justify-content: flex-end;
+}
+.contaner-bottom{
+    width: 1200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom:20px;
+}
+.flex-bottom{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.item1{
+    background-image: url(https://preview.colorlib.com/theme/monarch/images/work-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    flex-basis: calc((100% - 60px) / 4);
+}
+.item2{
+    background-image: url(https://preview.colorlib.com/theme/monarch/images/work-2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    flex-basis: calc((100% - 60px) / 4)
+}
+.item3{
+    background-image: url(https://preview.colorlib.com/theme/monarch/images/work-3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    flex-basis: calc((100% - 60px) / 4)
+}
+.item4{
+    background-image: url(https://preview.colorlib.com/theme/monarch/images/work-4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    flex-basis: calc((100% - 60px) / 4)
+}
+.contaner-bottom2{
+    width: 1200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    
+}
+.item5{
+    background-image: url(https://preview.colorlib.com/theme/monarch/images/work-5.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    flex-basis: calc((100% - 60px) / 4);
+}
+.item6{
+    background-image: url(https://preview.colorlib.com/theme/monarch/images/work-6.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    flex-basis: calc((100% - 60px) / 4)
+}
+.item7{
+    background-image: url(https://preview.colorlib.com/theme/monarch/images/work-7.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    flex-basis: calc((100% - 60px) / 4)
+}
+.item8{
+    background-image: url(https://preview.colorlib.com/theme/monarch/images/work-8.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    flex-basis: calc((100% - 60px) / 4)
+}
+.contaner-bottom3{
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom:50px ;
+}
+.item9{
+    background-image: url(https://preview.colorlib.com/theme/monarch/images/work-9.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    flex-basis: calc((100% - 60px) / 4);
+}
+.item10{
+    background-image: url(https://preview.colorlib.com/theme/monarch/images/work-10.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    flex-basis: calc((100% - 60px) / 4)
+}
+.item11{
+    background-image: url(https://preview.colorlib.com/theme/monarch/images/work-11.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    flex-basis: calc((100% - 60px) / 4)
+}
+.item12{
+    background-image: url(https://preview.colorlib.com/theme/monarch/images/work-12.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    flex-basis: calc((100% - 60px) / 4)
+}
+.status{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex-status{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 100px;
+    /* background-color: brown; */
+}
+.status-size{
+    height: 300px;
+    width: calc((100% - 20px) / 2);
+    justify-content: space-between;
+    /* background-color: chartreuse; */
+}
+
+.flex-status2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav1{
+    height: auto;
+    flex-basis: calc((100% - 20px) / 3);
+}
+.nav2{
+    height: auto;
+    flex-basis: calc((100% - 20px) / 3);
+}
+.nav3{
+    height: auto;
+    flex-basis: calc((100% - 20px) / 3);
+}
+
+

@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contener{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.item{
+    display: inline-block;
+    color: white;
+    margin-left: 5px;
+    
+}
+.nav{
+    text-align: center;
+    background-color:rgb(46, 70, 0) ;
+    margin-left: 60%;
+    border-style: 2px groove;
+    box-shadow: 2px 2px 5px magenta;
+    border-radius: 10px;
+}
+.logo, .search {
+    display: inline-block;
+}
+/* .main{
+    word-spacing: -1ch;
+} */
+.logo{
+    width: 75%;
+    /* background-color: turquoise; */
+    word-spacing: normal;
+}
+.search{
+    width: 25%;
+    background-color: rgb(236, 208, 203);
+    word-spacing: normal;
+    vertical-align: top;
+    margin-top: 35px;
+    border-style: groove;
+    border-radius: 10px;
+}
+.main-2{
+    word-spacing: -1ch;
+}
+.main3{
+    word-spacing: -1ch;
+}
+.selection, .selection2{
+    display: inline-block;
+    word-spacing: normal;
+}
+.selection{
+    width: 15%;
+    background-color: springgreen;
+}
+.selection2{
+    width: 85%;
+}
+
+.item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8{
+    display: inline-block;
+    width: calc((100% - 30px) / 8);
+    background-color: springgreen;
+}
+/* .selection{
+    width: 15%;
+    background-color: springgreen;
+}
+.item1{
+    width: 15%;
+    background-color: lightcoral;
+}
+.item2{
+    width: 10%;
+    background-color: lightslategrey;
+} */
+
