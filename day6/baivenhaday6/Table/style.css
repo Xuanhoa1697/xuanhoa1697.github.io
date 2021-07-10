@@ -11,3 +11,7 @@ thead th{
     width: 140px;
     padding: 2px;
 }
+.table{
+    font-size: 30px;
+    text-align: center;
+}
