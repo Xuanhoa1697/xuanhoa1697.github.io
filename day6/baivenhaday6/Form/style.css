@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contaner{
+    display: block;
+    width: 900px;
+    height: auto;
+    /* background-color: gray; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border: none;
+    box-shadow: 0px 10px 34px -15px black;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form-left{
+    flex-basis: calc((100% - 150px) / 2);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    line-height: 28.8px;
+    border-radius: 10px;
+}
+.form-right{
+    display: flex;
+    background-color:rgb(127,169,152);
+    width: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.font{
+    color: gray;
+}
+.block-form{
+    display: flex;
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0,.1);
+    width: 100%;
+    font-size: 18px;
+    height: 40px;
+}
+.p-center{
+    text-align: center;
+}
+.form-1{
+    width: 100%;
+    height: 60px;
+    background-color:rgb(127,169,152);
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+.form-header{
+    margin-bottom: 20px;
+}
+.mr-20{
+    margin-top: 20px;
+}
+.mr-10{
+    margin-top: 2px;
+}
+.item-app{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.mr-1px{
+    word-spacing: 1px;
+}
+.item-face{
+    background-image: url(./1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+.item-twiter{
+    background-image: url(./2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    height: 50px;
+    width: 50px;
+}
+.font-12{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.3);
+}
+.l-h{
+    line-height: 5px;
+}
+.form-end{
+    text-align: center;
+}
+.item-football{
+    height: 80px;
+    width: 80px;
+    background-image: url(/day6/baivenhaday6/Form/fb1111111.PNG);
+    justify-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    margin-bottom: 10px;
+
+}
+.f-item{
+    justify-content: center;
+    align-items: center;
+}
+.form-p{
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    font-family: "Roboto",Arial,sans-serif;
+}
+.form-p2{
+    color: rgb(255, 255, 255);
+    line-height: 28.8px;
+}
+.btn-sign{
+    width: 74px;
+    font-size: 15px;
+    font-weight: 400px;
+    height: 30px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: none;
+}
+.f-center{
+    text-align: center;
+    margin-top: 20px;
+}
