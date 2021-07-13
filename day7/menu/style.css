@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.form-menu{
+    display: flex;
+    flex-direction: row;
+}
+.item, .{
+    list-style: none;
+}
+.menu-item{
+    
+}

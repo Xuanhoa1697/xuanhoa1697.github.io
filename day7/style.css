@@ -1,11 +1,20 @@
-.box{
-    width: 50px;
-    height: 50px;
-    background-color: blue;
-    transition: all 1s 1s ease-in-out;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.box:hover{
-    background-color: rgb(233, 5, 5);
-    margin-left: 100px;
-    
+.position{
+    position: fixed;
+    display: none;
 }
+.logn{
+    display: flex;
+}
+.name{
+    flex-grow: 1;
+    width: 100%;
+}
+.password{
+    display: block;
+}
+

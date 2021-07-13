@@ -1,0 +1,322 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contaner{
+    position: relative;
+    width: 1300px;
+    height: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: rgb(180, 180, 241); */
+}
+.header-fixed{
+    display: block;
+    position: fixed;
+    background-color: rgb(255, 253, 253);
+    z-index: 3;
+    
+}
+.item-header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(243, 236, 236);
+    height: 25px;
+    width: 1200px;
+    justify-content: flex-end;
+}
+.item {
+    list-style: none;
+    margin-left: 25px;
+}
+.hover{
+    text-decoration: none;
+    color: #0F1568;
+    font-size: 12px;
+    font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif;
+}
+
+.none-1{
+    text-decoration: none;
+}
+
+.hover:hover{
+    color: orange;
+    transition: 0.5s;
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.inp-search{
+    width: 60%;
+    display: flex;
+}
+.input-search{
+    width: 100%;
+    position: relative;
+    border-style: none;
+    background-color: rgb(243, 236, 236);
+    border-radius: 5px;
+    padding: 13px 19px;
+}
+.header-logo{
+    margin-top: 10px;
+}
+.item-lazada{
+    background-image: url(https://photo-cms-sggp.zadn.vn/w580/Uploaded/2021/yfsgf/2019_06_20/lazadamasterlogo_esvv.png);
+    height: 40px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+}
+.img-logo{
+    padding: 40px 70px ;
+}
+.size-icon, .search-in{
+    width: 40px;
+    height: 40px;
+}
+.bi-search{
+    background-color: orange;
+    color: rgb(255, 255, 255);
+}
+
+.bi-cart3{
+    color: rgb(0, 0, 124);
+}
+
+.sale{
+    background-image: url(https://icms-image.slatic.net/images/ims-web/7a2e8c38-26d6-4dcd-b2fe-320818edf22d.jpg);
+    width: 200px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+}
+.size-icon-sale{
+    width: 200px;
+    height: 40px;
+}
+.bi-chevron-right{
+    color: none;
+}
+.form-menu{
+    position: absolute;
+    top: 100px;
+}
+.menu-link, .dropdown-link{
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(255, 254, 254);
+    padding-left: 10px;
+
+    color: #000;
+    font-style: normal;
+}
+.item-menu, .dropdown-item{
+    list-style: none;
+}
+.link-icon{
+    list-style: none;
+}
+.header-menu{
+    position: relative;
+}
+.icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(255, 254, 254);
+}
+.menu-link:hover {
+    color: orangered;
+    background-color: rgb(224, 224, 224);
+    transition: 0.5s;
+}
+.dropdown-link:hover {
+    color: orangered;
+    background-color: rgb(224, 224, 224);
+    transition: 0.5s;
+}
+.item-menu:hover .menu-link {
+    color: orangered;
+    background-color: rgb(224, 224, 224);
+    transition: 0.5s; 
+}
+.item-menu:hover .icon{
+    color: orangered;
+    background-color: rgb(224, 224, 224);
+    transition: 0.5s;
+}
+.item-menu:hover > .dropdown-menu{
+    display: block;
+}
+.dropdown-item:hover .dropdown-menu{
+    display: block;
+}
+
+.item-menu{
+    position: relative;
+}
+.dropdown-menu{
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.dropdown-menu{
+    position: absolute;
+    display: none;
+}
+.menu{
+    position: relative;
+}
+.item-menu{
+    position: static;
+}
+
+
+
+
+
+
+
+.img{
+    position: absolute;
+    top:0px;
+    left: 100%;
+    background-image: url(https://icms-image.slatic.net/images/ims-web/4ab17cfa-bdb7-4f41-8c90-e537a4783c9a.jpg);
+    width: 1100px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.contaner-content{
+    position: absolute;
+    top: 450px;
+    width: 1200px;
+    height: auto;
+    margin-top: 50px;
+}
+.header-sale{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: calc((100% - 10px) / 2);
+}
+.item-sale1{
+    margin-right: 30px;
+    color: #f57224;
+    font-weight: 500px;
+    font-size: 14px;
+    font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif;
+}
+
+.item-sale2{
+    margin-right: 30px;
+    color: #000000;
+    font-weight: 500px;
+    font-size: 14px;
+    font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif;
+}
+.header-content{
+    font-family: "Roboto-Regular";
+    font-size: 22px;
+    color: #424242;
+}
+.store-content{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.sp1, .sp2, .sp3, .sp4, .sp5, .sp6{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+padding:20px;
+}
+.sp1{
+    background-image: url(https://mauthietkecuahang.com/wp-content/uploads/2019/02/mau-thiet-ke-shop-quan-ao-nu-30m2-tai-ha-noi-1-800x600.jpg);
+    background-position: center;
+    background-size: cover;
+    flex-basis: calc((100% - 100px) / 6);
+}
+.sp2{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSryQDFzsNBAVAJlNcLXJXn6RN_nhUr-DtV1D9NOKyzruBJa8MC4uDeTj-wbklkD3LlLq8&usqp=CAU);
+    background-position: center;
+    background-size: cover;
+    /* flex-basis: calc((100% - 100px) / 6); */
+}
+.sp3{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSryQDFzsNBAVAJlNcLXJXn6RN_nhUr-DtV1D9NOKyzruBJa8MC4uDeTj-wbklkD3LlLq8&usqp=CAU);
+    background-position: center;
+    background-size: cover;
+    /* flex-basis: calc((100% - 100px) / 6); */
+}
+.sp4{
+    background-image: url(https://sieuthilamdep.com/images/thumbnails/300/300/detailed/11/kem-duong-da-cao-cap-chong-lao-hoa-toan-dien-maria-galland-1000-creme-mille.jpg.jpg);
+    background-position: center;
+    background-size: cover;
+    /* flex-basis: calc((100% - 100px) / 6); */
+}
+.sp5{
+    background-image: url(https://mauthietkecuahang.com/wp-content/uploads/2019/02/mau-thiet-ke-shop-quan-ao-nu-30m2-tai-ha-noi-1-800x600.jpg);
+    background-position: center;
+    background-size: cover;
+    /* flex-basis: calc((100% - 100px) / 6); */
+}
+.sp6{
+    background-image: url(https://mauthietkecuahang.com/wp-content/uploads/2019/02/mau-thiet-ke-shop-quan-ao-nu-30m2-tai-ha-noi-1-800x600.jpg);
+    background-position: center;
+    background-size: cover;
+    /* flex-basis: calc((100% - 100px) / 6); */
+}
+.active:hover{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 1px 1px 0;
+    transition: 1s 0.2s 0.3s;
+}
+.item1{
+    flex-basis: calc((100% - 120px) / 6);
+}
+.item1 > p{
+    text-align: center;
+}
+.store2{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 200px;
+}
+.size{
+    flex-basis: calc((100% - 80px) / 5);
+    /* background-color: rgb(88, 23, 23); */
+    height: 200px;
+    margin-top: 20px;
+}
+.sp7{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQZOE30U_OzMURg8v9DvbMIb1a8WWUn84VNw&usqp=CAU);
+    background-position: center;
+    background-size: cover;
+}
+.sp8{
+    height: calc((100% - 20px) / 2 );
+    justify-content: space-between;
+}
+.sp9, .sp10{
+    height: 90px;
+    margin-bottom: 20px;
+    background-image: url(https://lh3.googleusercontent.com/proxy/1ZfYoJL5qUQl4X3Wh2DlGpiyEN6a2B1SHbF6T3s3psRU8B0ckCw43wmboUtmX8AconaZ0fxLYxCcJkiag3uR39C1hPONe_q6kIkogkXUZVZoWaICgfhB52ia1kVqgW3zVQV30Gcd5mU);
+    background-size: cover;
+    background-position: center;
+}
