@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>thế giới in ấn</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="data:image/jpeg;base64,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"
+      type="image/x-icon"
+    />
+  </head>
+    <body>
+        <div class="container">
+          <div class="form-header">
+              <ul class="img-logo none-1">
+                  <li class="img-item">
+                    <a href="#" class="img "></a>
+                  </li>
+              </ul>
+              <div class="form-content-logo">
+                    <ul class="form-login none-1">
+                        <li class="login-menu">
+                            <a href="#" class="item-login none padding-item">Kiểm Tra Đơn Hàng</a>
+                        </li>
+                        <li class="login-menu">
+                            <a href="#" class="item-login none padding-item">Bạn Cần Biết</a>
+                        </li>
+                        <li class="login-menu padding-item">
+                            <div class="login-item">
+                                <a href="#" class="item-login  none ">Đăng nhập</a>
+                            </div>
+                            <div class="login">
+                                <a href="#" class="item-login  none">/</a>
+                            </div>
+                            <div class="login">
+                                <a href="#" class="item-login  none">Đăng ký</a>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                    <ul class="header-logo none-1">
+                        <li class="item-logo">
+                            <a href="#" class="logo none"></a>
+                        </li>
+                        <li class="item-input">
+                            <div class="menu-search-input">
+                                <input type="text" class="input" placeholder="Bạn cần in gì?">
+                            </div>
+                            <div class="item-search">
+                                <a href="#" class="search none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                  </svg></a>
+                            </div>
+                        </li>
+                        <li class="item-sale">
+                            <a href="#" class="logo-sale none"></a>
+                        </li>
+                        <li class="item-sale">
+                            <a href="#" class="logo-sale-1 none"></a>
+                        </li>
+                        <li class="item-sale">
+                            <ul class="icon-shop none-1">
+                                <li class="item-icon">
+                                    <ul class="bonus-icon none-1">
+                                        <li class="add-icon">
+                                            <a href="#" class="logo-sale-2 none"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                                                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                                              </svg></a>
+                                        </li>
+                                        <li class="add">
+                                            <a href="#" class="logo-sale-2 none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                              </svg></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="item-icon">
+                                    <a href="#" class="logo-sale-3 none">Giỏ hàng</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+              </div>
+              <div class="content-dropdown">
+                  <ul class="dropdown-menu-1 no-list">
+                      <li class="dropdown-item-1">
+                          <ul class="combo-menu no-list">
+                                <li class="dropdown-link">
+                                    <a href="" class="link no-style font">DANH MỤC ẤN PHẨM</a>
+                                </li>
+                                <li class="dropdown-icon">
+                                    <a href="" class="icon-menu-1 no-style">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                          </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                      <li class="dropdown-hover">
+                          <ul class="hover-item">
+                                <li class="item-link no-list">
+                                    <a href="" class="link-hover no-style color-1">ẤN PHẨM VĂN PHÒNG</a>
+                                </li>
+                                <li class="item-link no-list">
+                                    <a href="" class="link-hover no-style color-2">ẤN PHẨM TIẾP THỊ</a>
+                                </li>
+                                <li class="item-link no-list">
+                                    <a href="" class="link-hover no-style color-3">ẤN PHẨM BAO BÌ</a>
+                                </li>
+                                <li class="item-link no-list">
+                                    <a href="" class="link-hover no-style color-4">ẤN PHẨM KHÁC</a>
+                                </li>
+                          </ul>
+                          <div class="row-1">
+                            <div class="one-column border-one">
+                                    <a href="" class="post-link">
+                                        <div class="post">
+                                            <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/86/The_gioi_in_an_20190809172458475dm_baothu_v2.png" alt="">
+                                        </div>
+                                        <p class="design">Bia đựng hồ sơ</p>
+                                    </a>
+                            </div>
+                            <div class="one-column border-one">
+                                <a href="" class="post-link">
+                                    <div class="post">
+                                        <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/84/The_gioi_in_an_20190809172206473dm_danhthiep_v2.png" alt="">
+                                    </div>
+                                    <p class="design">Danh Thiếp</p>
+                                </a>
+                            </div>
+                            <div class="one-column border-one">
+                                <a href="" class="post-link">
+                                    <div class="post">
+                                        <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/125/The_gioi_in_an_20190910114752241danhmuc_ve.png" alt="">
+                                    </div>
+                                    <p class="design">Vé</p>
+                                </a>
+                            </div>
+                            <div class="one-column border-one">
+                                <a href="" class="post-link">
+                                    <div class="post">
+                                        <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/88/The_gioi_in_an_20190809172438475dm_togap_v2.png" alt="">
+                                    </div>
+                                    <p class="design">Tờ gấp</p>
+                                </a>
+                            </div>
+                            <div class="one-column border-one">
+                                <a href="" class="post-link">
+                                    <div class="post">
+                                        <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/90/The_gioi_in_an_20190809172449475dm_poster_v2.png" alt="">
+                                    </div>
+                                    <p class="design">Poster</p>
+                                </a>
+                            </div>
+                            <div class="one-column border-one">
+                                <a href="" class="post-link">
+                                    <div class="post">
+                                        <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/134/The_gioi_in_an_20190809172348474dm_hopgiay_v2.png" alt="">
+                                    </div>
+                                    <p class="design">Hộp giấy</p>
+                                </a>
+                            </div>
+                            <div class="one-column border-one">
+                                <a href="" class="post-link">
+                                    <div class="post">
+                                        <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/102/The_gioi_in_an_20190809172657477dm_tuigiay_v2.png" alt="">
+                                    </div>
+                                    <p class="design">Túi giấy</p>
+                                </a>
+                            </div>
+                            <div class="one-column border-one">
+                                <a href="" class="post-link">
+                                    <div class="post">
+                                        <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/123/The_gioi_in_an_20190809172624476dm_bieumau_v2.png" alt="">
+                                    </div>
+                                    <p class="design">Biểu mẫu</p>
+                                </a>
+                            </div>
+                            <div class="one-column border-one">
+                                <a href="" class="post-link">
+                                    <div class="post">
+                                        <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/111/The_gioi_in_an_20190809172741477dm_thenhua_v2.png" alt="">
+                                    </div>
+                                    <p class="design">Thẻ nhựa</p>
+                                </a>
+                            </div>
+                            <div class="one-column border-one">
+                                <a href="" class="post-link">
+                                    <div class="post">
+                                        <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/86/The_gioi_in_an_20190809172458475dm_baothu_v2.png" alt="">
+                                    </div>
+                                    <p class="design">Bia đựng hồ sơ</p>
+                                </a>
+                             </div>
+                             <div class="one-column border-one">
+                                <a href="" class="post-link">
+                                    <div class="post">
+                                        <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/127/The_gioi_in_an_20190809172812477dm_menu_v2.png" alt="">
+                                    </div>
+                                    <p class="design">Thực đơn</p>
+                                </a>
+                             </div>
+                             <div class="one-column border-one">
+                                <a href="" class="post-link">
+                                    <div class="post">
+                                        <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/85/The_gioi_in_an_20190809172426475dm_giaytieude_v2.png" alt="">
+                                    </div>
+                                    <p class="design">Giấy tiêu đề</p>
+                                </a>
+                             </div>
+                             <div class="one-column border-one">
+                                <a href="" class="post-link">
+                                    <div class="post">
+                                        <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/86/The_gioi_in_an_20190809172458475dm_baothu_v2.png" alt="">
+                                    </div>
+                                    <p class="design">Thư báo</p>
+                                </a>
+                        </div>
+                        <div class="one-column border-one">
+                            <a href="" class="post-link">
+                                <div class="post">
+                                    <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/89/The_gioi_in_an_20190809172416475dm_toroi_v2.png" alt="">
+                                </div>
+                                <p class="design">Tờ rơi</p>
+                            </a>
+                        </div>
+                        <div class="one-column border-one">
+                            <a href="" class="post-link">
+                                <div class="post">
+                                    <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/116/The_gioi_in_an_20190809172707477dm_catalogue_v2.png" alt="">
+                                </div>
+                                <p class="design">Catalogue</p>
+                            </a>
+                        </div>
+                        <div class="one-column border-one">
+                            <a href="" class="post-link">
+                                <div class="post">
+                                    <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/120/The_gioi_in_an_20190809172646476dm_voucher_v2.png" alt="">
+                                </div>
+                                <p class="design">Phiếu quà tặng</p>
+                            </a>
+                        </div>
+                        <div class="one-column border-one">
+                            <a href="" class="post-link">
+                                <div class="post">
+                                    <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/86/The_gioi_in_an_20190809172458475dm_baothu_v2.png" alt="">
+                                </div>
+                                <p class="design">Bia đựng hồ sơ</p>
+                            </a>
+                        </div>
+                        <div class="one-column border-one">
+                            <a href="" class="post-link">
+                                <div class="post">
+                                    <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/121/The_gioi_in_an_20190809172404475dm_nhan_v2.png" alt="">
+                                </div>
+                                <p class="design">Nhãn dán</p>
+                            </a>
+                        </div>
+                        <div class="one-column border-one">
+                            <a href="" class="post-link">
+                                <div class="post">
+                                    <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/126/The_gioi_in_an_20190809172752477dm_tagsp_v2.png" alt="">
+                                </div>
+                                <p class="design">Máy sản phẩm</p>
+                            </a>
+                        </div>
+                        <div class="one-column border-one">
+                            <a href="" class="post-link">
+                                <div class="post">
+                                    <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/101/The_gioi_in_an_20200318100615171giayghichu4.jpg" alt="">
+                                </div>
+                                <p class="design">Giấy ghi chú</p>
+                            </a>
+                        </div>
+                        <div class="one-column border-one">
+                            <a href="" class="post-link">
+                                <div class="post">
+                                    <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/94/The_gioi_in_an_20190809172554476dm_phieubaohanh_v2.png" alt="">
+                                </div>
+                                <p class="design">Phiếu bảo hành</p>
+                            </a>
+                        </div>
+                        <div class="one-column border-one">
+                            <a href="" class="post-link">
+                                <div class="post">
+                                    <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/86/The_gioi_in_an_20190809172458475dm_baothu_v2.png" alt="">
+                                </div>
+                                <p class="design">Bia đựng hồ sơ</p>
+                            </a>
+                         </div>
+                         <div class="one-column border-one">
+                            <a href="" class="post-link">
+                                <div class="post">
+                                    <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/133/The_gioi_in_an_20200429095112160icon.png" alt="">
+                                </div>
+                                <p class="design">Thiệp mời</p>
+                            </a>
+                         </div>
+                         <div class="one-column border-one">
+                            <a href="" class="post-link">
+                                <div class="post">
+                                    <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/86/The_gioi_in_an_20190809172458475dm_baothu_v2.png" alt="">
+                                </div>
+                                <p class="design">Bia đựng hồ sơ</p>
+                            </a>
+                         </div>
+                        </div>
+                        </ul>
+                          
+                        </li>
+                    </ul>
+                    <ul class="dropdown-menu no-list">
+                        <li class="dropdown-item">
+                            <ul class="combo-menu no-list">
+                                  <li class="dropdown-link">
+                                      <a href="" class="link no-style convert">PHẨM VĂN PHÒNG</a>
+                                  </li>
+                                  <li class="dropdown-icon">
+                                      <a href="" class="icon-menu no-style">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                          </svg>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </li>
+                        <li class="dropdown-hover">
+                            <ul class="hover-item">
+                                  <li class="item-link no-list">
+                                      <a href="" class="link-hover no-style">ẤN PHẨM VĂN PHÒNG</a>
+                                      
+                                  </li>
+                                  <li class="item-link no-list">
+                                      <a href="" class="link-hover no-style">ẤN PHẨM VĂN PHÒNG</a>
+                                  </li>
+                                  <li class="item-link no-list">
+                                      <a href="" class="link-hover no-style">ẤN PHẨM VĂN PHÒNG</a>
+                                  </li>
+                                  <li class="item-link no-list">
+                                      <a href="" class="link-hover no-style">ẤN PHẨM VĂN PHÒNG</a>
+                                  </li>
+                            </ul>
+                            
+                        </li>
+                    </ul>
+                    <ul class="dropdown-menu no-list">
+                        <li class="dropdown-item">
+                            <ul class="combo-menu no-list">
+                                  <li class="dropdown-link">
+                                      <a href="" class="link no-style convert">ÁN PHẨM TIẾP THỊ</a>
+                                  </li>
+                                  <li class="dropdown-icon">
+                                      <a href="" class="icon-menu no-style">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                          </svg>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </li>
+                        <li class="dropdown-hover">
+                            <ul class="hover-item">
+                                  <li class="item-link no-list">
+                                      <a href="" class="link-hover no-style">ẤN PHẨM VĂN PHÒNG</a>
+                                  </li>
+                                  <li class="item-link no-list">
+                                      <a href="" class="link-hover no-style">ẤN PHẨM VĂN PHÒNG</a>
+                                  </li>
+                                  <li class="item-link no-list">
+                                      <a href="" class="link-hover no-style">ẤN PHẨM VĂN PHÒNG</a>
+                                  </li>
+                                  <li class="item-link no-list">
+                                      <a href="" class="link-hover no-style">ẤN PHẨM VĂN PHÒNG</a>
+                                  </li>
+                            </ul>
+                            <ul class="product-menu no-list">
+                                <li class="link-product">
+                                    <a href="" class="item-product no-style">
+                                        <!-- <img src="https://thegioiinan.com/hinhanh/sanpham/danhmuc/91/The_gioi_in_an_20190809172635476dm_biahoso_v2.png" alt=""> -->
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="dropdown-menu no-list">
+                        <li class="dropdown-item">
+                            <ul class="combo-menu no-list">
+                                  <li class="dropdown-link">
+                                      <a href="" class="link no-style convert">ẤN PHẨM BAO BÌ</a>
+                                  </li>
+                                  <li class="dropdown-icon">
+                                      <a href="" class="icon-menu no-style"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                      </svg></a>
+                                  </li>
+                              </ul>
+                          </li>
+                        <li class="dropdown-hover">
+                            <ul class="hover-item">
+                                  <li class="item-link no-list">
+                                      <a href="" class="link-hover no-style">ẤN PHẨM VĂN PHÒNG</a>
+                                  </li>
+                                  <li class="item-link no-list">
+                                      <a href="" class="link-hover no-style">ẤN PHẨM VĂN PHÒNG</a>
+                                  </li>
+                                  <li class="item-link no-list">
+                                      <a href="" class="link-hover no-style">ẤN PHẨM VĂN PHÒNG</a>
+                                  </li>
+                                  <li class="item-link no-list">
+                                      <a href="" class="link-hover no-style">ẤN PHẨM VĂN PHÒNG</a>
+                                  </li>
+                            </ul>
+                            <ul class="product-menu no-list">
+                                <li class="link-product">
+                                    <a href="" class="item-product no-style">1</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="dropdown-menu no-list">
+                        <li class="dropdown-item">
+                            <ul class="combo-menu no-list">
+                                  <li class="dropdown-link">
+                                      <a href="" class="link no-style convert">ẤN PHẨM KHÁC</a>
+                                  </li>
+                                  <li class="dropdown-icon">
+                                      <a href="" class="icon-menu no-style"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                      </svg></a>
+                                  </li>
+                              </ul>
+                          </li>
+                        <li class="dropdown-hover">
+                            <ul class="hover-item">
+                                  <li class="item-link no-list">
+                                      <a href="" class="link-hover no-style">ẤN PHẨM VĂN PHÒNG</a>
+                                  </li>
+                                  <li class="item-link no-list">
+                                      <a href="" class="link-hover no-style">ẤN PHẨM VĂN PHÒNG</a>
+                                  </li>
+                                  <li class="item-link no-list">
+                                      <a href="" class="link-hover no-style">ẤN PHẨM VĂN PHÒNG</a>
+                                  </li>
+                                  <li class="item-link no-list">
+                                      <a href="" class="link-hover no-style">ẤN PHẨM VĂN PHÒNG</a>
+                                  </li>
+                            </ul>
+                            <ul class="product-menu no-list">
+                                <li class="link-product">
+                                    <a href="" class="item-product no-style">1</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                    <ul class="dropdown-menu no-list">
+                        <li class="dropdown-item">
+                            <ul class="combo-menu no-list bcc">
+                                  <li class="dropdown-link">
+                                      <a href="" class="img-header">
+                                          <img src="https://thegioiinan.com/static/images/kehoachin.png" alt="">
+                                      </a>
+                                  </li>
+                              </ul>
+                          </li>
+                </div>
+            </div>
+            <div class="form-content">
+                <div class="row">
+                    <div class="six-column border">
+                       <a href="#" class="add-pic">
+                           <img class="zoom" src="https://thegioiinan.com/images/tgia_20210709183053521_Thong-Bao-Nghi-Ngay-Thu-7.jpg" alt="">
+                       </a>
+                    </div>
+                     <div class="six-column">
+                        <div class="row">
+                            <div class="six-column">
+                                <a href="" class="add-pic">
+                                    <img src="https://thegioiinan.com/images/tgia_20210709183053521_Thong-Bao-Nghi-Ngay-Thu-7.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="six-column">
+                                <a href="" class="add-pic">
+                                    <img src="https://thegioiinan.com/images/tgia_20210709183053521_Thong-Bao-Nghi-Ngay-Thu-7.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="six-column">
+                                <a href="" class="add-pic">
+                                    <img src="https://thegioiinan.com/images/tgia_20210709183053521_Thong-Bao-Nghi-Ngay-Thu-7.jpg" alt="">
+                                </a>
+                            </div>
+                             <div class="six-column">
+                                <a href="" class="add-pic">
+                                    <img src="https://thegioiinan.com/images/tgia_20210709183053521_Thong-Bao-Nghi-Ngay-Thu-7.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="six-column border">
+                        <a href="#" class="add-pic">
+                            <img class="zoom" src="https://thegioiinan.com/images/tgia_20210709183053521_Thong-Bao-Nghi-Ngay-Thu-7.jpg" alt="">
+                        </a>
+                     </div>
+                     <div class="six-column border">
+                        <a href="#" class="add-pic">
+                            <img class="zoom" src="https://thegioiinan.com/images/tgia_20210709183053521_Thong-Bao-Nghi-Ngay-Thu-7.jpg" alt="">
+                        </a>
+                     </div>
+                     <div class="six-column border">
+                        <a href="#" class="add-pic">
+                            <img class="zoom" src="https://thegioiinan.com/images/tgia_20210709183053521_Thong-Bao-Nghi-Ngay-Thu-7.jpg" alt="">
+                        </a>
+                     </div>
+                     <div class="six-column border">
+                        <a href="#" class="add-pic">
+                            <img class="zoom" src="https://thegioiinan.com/images/tgia_20210709183053521_Thong-Bao-Nghi-Ngay-Thu-7.jpg" alt="">
+                        </a>
+                     </div>
+
+                     <div class="six-column border">
+                        <a href="#" class="add-pic">
+                            <img class="zoom" src="https://thegioiinan.com/images/tgia_20210709183053521_Thong-Bao-Nghi-Ngay-Thu-7.jpg" alt="">
+                        </a>
+                     </div>
+                </div>
+            </div>
+        </div>
+  </body>
+</html>
