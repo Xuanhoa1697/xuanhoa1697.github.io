@@ -1,37 +1,25 @@
 
 // BÀi 1 với "r" là bán kính, "d" là đường kính
-function perimeter9(r,d){
-    if(d == 2*r){
-        console.log(" Chu vi hình tròn với bán kính bằng " + r + " đường kính " + d + " có chu vi bằng " + 2*r*3.14);
-    }else{
-        console.log("Đường kính và bán kính không khớp");
-    }
+function perimeter(r){
+    let checking = Math.PI*r*2
+    return checking
 }
-//nhập đường kính và bán kính//
-perimeter9(100,200)
-perimeter9(20,40)
-perimeter9(3,9)
-perimeter9(7,14)
- // Bài 1 cách 2//
-
- function number(r,d){
-     return r*2*3.14 && d*3.14;
- }
- console.log(number(10,20));
-
+console.log(perimeter(2));
 
  // bài 2 tính diện tích hình tròn với "r là bán kính"
  function acreage(r){
-     return r*r*3.14;
+    let checking = Math.PI*r**2
+    return checking
  }
  console.log(acreage(3));
 
 //bài 3 đổi cm sang m
  function convert(cm){
      let m = cm/100;
-     console.log(cm+ "cm " + " bằng " + m+ "m");
+     return m;
+
  }
- convert(10);
+ console.log(convert(30));
 
 
  //bài 4//
@@ -40,30 +28,25 @@ perimeter9(7,14)
      return hour;
     
  }
- console.log(minutes(30));
+ console.log(minutes(15));
 
  //bài 5//
- function equation(a,b,c,x=((c-b)/a)){
-     console.log(x);
- }
- equation(2,2,10)
-
- function equation(a,b,c){
-     if(a==0){
-         console.log("Phương trình vô nghiệm");
+function equation(a,b,c){
+     if(a!= 0){
+         return (c -b)/a
      }else{
-         console.log(((b-c)/a));
+         console.log("Vô số nghiệm");
      }
  }
- equation(0,2,3)
+ console.log(equation(6,-6,2));
 
  //bài 6//
  function degC(deg){
-    let degF= deg+33.8;
+    let degF= deg*1.8+32;
     return degF;
     
  }
- let check =degC(10);
+ let check =degC(1);
  console.log(check);
 
 
@@ -82,7 +65,7 @@ perimeter9(7,14)
 
  //bài cuối
  function number(min,max){
-     return Math.floor(Math.random() * (max-min));
+     return Math.floor(Math.random() * (max-min) + min);
 
  }
  console.log(number(10,100));
