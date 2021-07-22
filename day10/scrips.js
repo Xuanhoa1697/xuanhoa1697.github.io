@@ -35,7 +35,7 @@ function equation(a,b,c){
      if(a!= 0){
          return (c -b)/a
      }else{
-         console.log("Vô số nghiệm");
+         return false;
      }
  }
  console.log(equation(6,-6,2));
