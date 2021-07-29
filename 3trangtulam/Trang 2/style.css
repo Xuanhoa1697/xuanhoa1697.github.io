@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.container{
+    width: 1200px ;
+    margin-left: auto;
+    margin-right: auto ;
+    
+}
+.text{
+    text-decoration: none;
+}
+.style{
+    list-style: none;
+}
+.form-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(90, 89, 89);
+    height: 72px;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+.header-top{
+    flex-basis: calc((100% - 20px) / 2);
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: block;
+    max-width: 100%;
+    max-height: 42px;
+}
+.header-logo{
+    flex-basis: 30%;
+
+}
+.header-menu{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-buton{
+    display: flex;
+    flex-basis: calc((100% - 20px) / 2);
+    justify-content: space-between;
+}
+.font-size{
+    font-size: 18px;
+    line-height: 18px;
+    color: rgb(252, 252, 252);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.font-size-1{
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 16px;
+    color: rgb(83, 81, 81);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.item-input{
+    position: relative;
+}
+.icon-search{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.item-logo{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.menu-item{
+    padding: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.login-font{
+    color: orangered;
+}
+.menu-item:hover{
+    color: orangered;
+    transition: 0.5s;
+}
+.header-buton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 40%;
+    margin-right: 10px;
+}
+.form-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 25%;
+}
+.login{
+    border: 1px orangered solid;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    flex-basis: 90%;
+}
+.form-sign{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 25%;
+}
+.sign{
+    border: 1px orangered solid;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    flex-basis: 90%;
+    background-color:orangered;
+}
+.form-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 10%;
+}
+
+.input-add{
+    height: 40px;
+    width: 100%;
+    border-style: none;
+    border-radius: 20px;
+    color: rgb(105, 105, 105);
+}
+.icon{
+    display: block;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.bi-search{
+    color: white;
+}
+.input-add{
+    background-color: rgb(61, 60, 60);
+}
+.input{
+    border-style: none;
+}
+.item-input{
+    width: 100%;
+}
