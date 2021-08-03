@@ -128,7 +128,7 @@ function daysLeft() {
     let nextYear = new Date(day.getFullYear(), 12,1 );
 
     let daysLeft= nextYear - day;
-    return parseInt(daysLeft /24 / 60 / 60 / 1000);
+    return Math.ceil(daysLeft /24 / 60 / 60 / 1000);
     
 }
 console.log(daysLeft());
