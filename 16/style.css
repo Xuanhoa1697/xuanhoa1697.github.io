@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.time {
+    font-size: 16px;
+}
+
+.date {
+    font-size: 36px;
+    display: block;
+}
+
+.header,
+.todo-list {
+    margin-bottom: 30px;
+}
+
+.list-header {
+    border-bottom: 1px solid rgb(215, 211, 211);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.list {
+    list-style: none;
+}
+
+.list-item input {
+    margin-right: 10px;
+}
+
+.number {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(67, 60, 60);
+    color: #fff;
+}
+
+.new {
+    display: none;
+}
+
+.new.show {
+    display: block;
+}

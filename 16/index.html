@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo App</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="app">
+            <header class="header">
+                <h1 class="time"></h1>
+            </header>
+
+            <div class="todo-list">
+                <div class="list-header">
+                    Chưa hoàn thành <span class="number"></span>
+                </div>
+                <ul class="list"></ul>
+                <form action="" class="new" name="new">
+                    <input
+                        type="text"
+                        name="todo"
+                        placeholder="Bạn muốn làm gì?"
+                    />
+                </form>
+                <button class="btn">Thêm công việc mới</button>
+            </div>
+
+            <div class="completed-list">
+                <div class="list-header">
+                    Đã hoàn thành <span class="number"></span>
+                </div>
+                <ul class="list">
+                    <li class="list-item"></li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
