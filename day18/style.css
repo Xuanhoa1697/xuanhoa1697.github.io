@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* / Style cho màn hình nhỏ hơn 768px / */
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -30px;
+}
+
+[class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+}
+
+.col-1 {
+    flex-basis: 8.33333%;
+}
+
+.col-2 {
+    flex-basis: 16.66667%;
+}
+
+.col-3 {
+    flex-basis: 25%;
+    display: none;
+}
+
+.col-4 {
+    flex-basis: 33.3333%;
+}
+
+.col-5 {
+    flex-basis: 41.66667%;
+}
+
+.col-6 {
+    flex-basis: 50%;
+}
+
+.col-7 {
+    flex-basis: 58.33333%;
+}
+
+.col-8 {
+    flex-basis: 66.66667%;
+}
+
+.col-9 {
+    flex-basis: 75%;
+}
+
+.col-10 {
+    flex-basis: 83.3333%;
+}
+
+.col-11 {
+    flex-basis: 91.66667%;
+}
+
+.col-12 {
+    flex-basis: 100%;
+}
+img{
+    max-width: 100%;
+}
+
+/* / Style cho màn hình lớn hơn 768px - md - medium / */
+@media (min-width: 768px) {
+    .container {
+        max-width: 740px;
+    }
+
+    .col-md-1 {
+        flex-basis: 8.33333%;
+    }
+
+    .col-md-2 {
+        flex-basis: 16.66667%;
+    }
+
+    .col-md-3 {
+        flex-basis: 25%;
+        display: block;
+       
+    }
+
+    .col-md-4 {
+        flex-basis: 33.3333%;
+    }
+
+    .col-md-5 {
+        flex-basis: 41.66667%;
+    }
+
+    .col-md-6 {
+        flex-basis: 50%;
+    }
+
+    .col-md-7 {
+        flex-basis: 58.33333%;
+    }
+
+    .col-md-8 {
+        flex-basis: 66.66667%;
+    }
+
+    .col-md-9 {
+        flex-basis: 75%;
+    }
+
+    .col-md-10 {
+        flex-basis: 83.3333%;
+    }
+
+    .col-md-11 {
+        flex-basis: 91.66667%;
+    }
+
+    .col-md-12 {
+        flex-basis: 100%;
+    }
+    img{
+        max-width: 100%;
+    }
+}
+
+/* / Style cho màn hình lớn hơn 1200px - lg - large / */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .col-lg-1 {
+        flex-basis: 8.33333%;
+    }
+
+    .col-lg-2 {
+        flex-basis: 16.66667%;
+    }
+
+    .col-lg-3 {
+        flex-basis: 25%;
+    }
+
+    .col-lg-4 {
+        flex-basis: 33.3333%;
+    }
+
+    .col-lg-5 {
+        flex-basis: 41.66667%;
+    }
+
+    .col-lg-6 {
+        flex-basis: 50%;
+    }
+
+    .col-lg-7 {
+        flex-basis: 58.33333%;
+    }
+
+    .col-lg-8 {
+        flex-basis: 66.66667%;
+    }
+
+    .col-lg-9 {
+        flex-basis: 75%;
+    }
+
+    .col-lg-10 {
+        flex-basis: 83.3333%;
+    }
+
+    .col-lg-11 {
+        flex-basis: 91.66667%;
+    }
+
+    .col-lg-12 {
+        flex-basis: 100%;
+    }
+    img{
+        max-width: 100%;
+    }
+}
+

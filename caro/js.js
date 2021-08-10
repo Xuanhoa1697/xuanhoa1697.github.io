@@ -25,7 +25,8 @@ function creatTd(){
         
         if(isPlaying){
             td.textContent = player
-            
+            board.push()
+            console.log(board);
             
         }
         player = player==="X" ? "O" :"X"
@@ -46,8 +47,8 @@ function creatTr(){
     tr.className = "tr";
     for(let i =0;i<3;i++){
         tr.append(creatTd())
-        board[this.cellIndex]
-        console.log(this.cellIndex);
+        
+        
     }
 
     return tr
