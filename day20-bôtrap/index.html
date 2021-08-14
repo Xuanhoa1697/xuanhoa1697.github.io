@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary log"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Launch demo modal
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog mt-5">
+              <div class="modal-content w-75">
+                <div class="modal-body p-0 over">
+                  <ul class="nav nav-tabs w-100" id="myTab" role="tablist">
+                    <li class="nav-item w-50" role="presentation">
+                      <button
+                        class="nav-link active w-100 height fs-6 text-black login"
+                        id="home-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#home"
+                        type="button"
+                        role="tab"
+                        aria-controls="home"
+                        aria-selected="true"
+                      >
+                        Đăng nhập
+                      </button>
+                    </li>
+                    <li class="nav-item w-50" role="presentation">
+                      <button
+                        class="nav-link w-100 height fs-6 text-black regis"
+                        id="profile-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#profile"
+                        type="button"
+                        role="tab"
+                        aria-controls="profile"
+                        aria-selected="false"
+                      >
+                        Đăng ký
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="home"
+                      role="tabpanel"
+                      aria-labelledby="home-tab"
+                    >
+                      <div class="container">
+                        <div
+                          class="row justify-content-center margin border-top-0"
+                        >
+                          <div class="position-absolute edit">
+                            <i class="bi bi-check-all text-inner"></i></p>
+                          </div>
+                          <div class="col-11">
+                            <form novalidate class="input-form" name="loginInput">
+                              <div class="mb-3">
+                                <div id="emailHelp" class="form-text">
+                                 
+                                </div>
+                                <abbr class="text-decoration-none" title="Vui lòng điền vào trường này @@">
+                                  <input
+                                  type="email"
+                                  class="
+                                    form-control
+                                    text-black-50
+                                    border-top-0 border-end-0 border-start-0
+                                    rounded-0
+                                    outline
+                                    p-0
+                                    mb-5
+                                    email
+                                  "
+                                  id="exampleIEmail"
+                                  aria-describedby="emailHelp"
+                                  placeholder="Email"
+                                /></abbr>
+                                <p class="form-label position-absolute edit1 email-help"></p>
+                                
+                                
+                              </div>
+                              <div class="mb-3">
+                                <div id="emailHelp" class="form-text">
+                                  
+                                </div>
+                                <abbr class="text-decoration-none" title="Vui lòng điền vào trường này @@">
+                                  <input
+                                  type="password"
+                                  class="
+                                    form-control
+                                    text-black-50
+                                    border-top-0 border-end-0 border-start-0
+                                    rounded-0
+                                    p-0
+                                    mb-5
+                                    password
+                                  "
+                                  id="examplePass"
+                                  placeholder="Password"
+                                />
+                                </abbr>
+                                <p class="form-label position-absolute edit2 pass-help"></p>
+                                
+                              </div>
+                              <a
+                              href=""
+                              class="
+                                re-pass
+                                d-flex
+                                text-decoration-none text-black
+                                mt-3
+                                
+                              "
+                            >
+                              <i class="bi bi-question-circle-fill me-1"></i>
+                              <p class="mb-2">Quên mật khẩu</p>
+                            </a>
+                            <button type="submit" class="mb-4 w-100 height height-button border-0 rounded-1 shadow text-white">ĐĂNG NHẬP</button>
+                            <p class="text-center">Hoặc đăng nhập bằng</p>
+                            <div class="icon d-flex justify-content-center mb-5">
+                              <a  href="">
+                                <img class="MXH1"
+                                src="https://techmaster.vn/resources/image/google.png"
+                                alt=""
+                              />
+                              </a>
+                              <a href="">
+                                <img class="ms-3 me-3 MXH2"
+                                src="https://techmaster.vn/resources/image/facebook.png"
+                                alt=""
+                              />
+                              </a>
+                             <a href="">
+                              <img class="MXH3"
+                              src="https://techmaster.vn/resources/image/github-sign.svg"
+                              alt=""
+                            />
+                             </a>
+                            </div>
+                            </form>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                    <div
+                      class="tab-pane fade"
+                      id="profile"
+                      role="tabpanel"
+                      aria-labelledby="profile-tab"
+                    >
+                    <div class="container">
+                      <div
+                        class="row justify-content-center margin border-top-0"
+                      >
+                        <div class="col-11">
+                          <form name="regisForm" novalidate>
+                            <div class="mb-3">
+                              <input
+                                type="text"
+                                class="
+                                  form-control
+                                  text-black-50
+                                  border-top-0 border-end-0 border-start-0
+                                  rounded-0
+                                  outline
+                                  p-0
+                                  mb-5
+                                "
+                                id="name-value"
+                                aria-describedby="emailHelp"
+                                placeholder="Họ tên"
+                              />
+                              <p class="form-label position-absolute edit3 name-help"></p>
+                              <input
+                                type="email"
+                                class="
+                                  form-control
+                                  text-black-50
+                                  border-top-0 border-end-0 border-start-0
+                                  rounded-0
+                                  outline
+                                  p-0
+                                  mb-5
+                                "
+                                id="emailValue"
+                                aria-describedby="emailHelp"
+                                placeholder="Email"
+                              />
+                              <p class="form-label position-absolute edit4 email-gis-help"></p>
+                              <input
+                                type="email"
+                                class="
+                                  form-control
+                                  text-black-50
+                                  border-top-0 border-end-0 border-start-0
+                                  rounded-0
+                                  outline
+                                  p-0
+                                  mb-5
+                                "
+                                id="phone-value"
+                                aria-describedby="emailHelp"
+                                placeholder="Điện thoại"
+                              />
+                              <p class="form-label position-absolute edit5 phone-help"></p>
+                              <input
+                                type="password"
+                                class="
+                                  form-control
+                                  text-black-50
+                                  border-top-0 border-end-0 border-start-0
+                                  rounded-0
+                                  outline
+                                  p-0
+                                  mb-5
+                                "
+                                id="passGitValue"
+                                aria-describedby="emailHelp"
+                                placeholder="Mật khẩu"
+                              />
+                              <p class="form-label position-absolute edit6 pass-gis-help"></p>
+                              <input
+                                type="password"
+                                class="
+                                  form-control
+                                  text-black-50
+                                  border-top-0 border-end-0 border-start-0
+                                  rounded-0
+                                  outline
+                                  p-0
+                                  mb-5
+                                "
+                                id="passConfirm"
+                                aria-describedby="emailHelp"
+                                placeholder="Nhập lại mật khẩu"
+                              />
+                              <p class="form-label position-absolute edit7 pass-confirm-help"></p>
+                            </div>
+                            <button class="mb-4 w-100 height height-button border-0 rounded-1 shadow text-white">ĐĂNG KÝ</button>
+                          </form> 
+                          
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js.js"></script>
+    <script src="js2.js"></script>
+  </body>
+</html>
