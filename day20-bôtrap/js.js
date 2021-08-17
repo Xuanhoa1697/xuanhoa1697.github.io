@@ -1,22 +1,26 @@
 let login = document.querySelector(".login");
 let regis = document.querySelector(".regis");
 let log = document.querySelector(".log");
+let body = document.body
 
 log.addEventListener("click", function () {
   regis.style.backgroundColor = "rgb(238, 238, 238)";
 });
 
-regis.addEventListener("submit", function () {
+
+
+regis.addEventListener("click", function () {
   login.style.backgroundColor = "rgb(238, 238, 238)";
-  regis.style.backgroundColor = "white";
+  regis.style.backgroundColor = "white"
+  
 });
 
 login.addEventListener("click", function () {
   login.style.backgroundColor = "white";
-  regis.style.backgroundColor = "rgb(238, 238, 238)";
+  regis.style.backgroundColor = "rgb(238, 238, 238)"
 });
 
-//valid
+
 
 let MXH1 = document.querySelector(".MXH1");
 let MXH2 = document.querySelector(".MXH2");

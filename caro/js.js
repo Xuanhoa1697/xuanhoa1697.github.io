@@ -11,6 +11,7 @@ let winner = [
 
 let board = []
 
+
 let player = "X"
 let isPlaying = true
 
@@ -25,7 +26,7 @@ function creatTd(){
         
         if(isPlaying){
             td.textContent = player
-            board.push()
+            boardX.push()
             console.log(board);
             
         }

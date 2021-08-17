@@ -1,0 +1,376 @@
+
+
+.font-logo{
+    font-size: 30px;
+    font-family: "Inconsolata";
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    line-height: 0.8;
+    text-align: center;
+    margin-right: 370px;
+    
+}
+.top-bar{
+    padding-bottom: 74px;
+}
+
+
+.menu-link1, .menu-link2, .menu-link3, .menu-link4 {
+    font-size: 14px;
+    font-family: "Playfair Display";
+    color: rgb(98, 98, 98);
+    text-transform: uppercase;
+    line-height: 1.714;
+    text-align: center;
+  }
+
+.menu-link2{
+    margin-left: 125px;
+}
+.menu-link3{
+    margin-left: 110px;
+}
+.menu-link4{
+    margin-left: 110px;
+}
+
+.content1-left{
+    width: 660px;
+    margin-left: 82px;
+}
+.content{
+    padding-bottom: 100px;
+}
+
+.header-link{
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    line-height: 1.2;
+    
+  }
+.header{
+    padding-bottom: 28px;
+}
+
+  .link-content-header{
+    font-size: 30px;
+    font-family: "Playfair Display";
+    color: rgb(98, 98, 98);
+    line-height: 1.2;
+  }
+  .header-content{
+      padding-bottom: 35px;
+  }
+
+  .text {
+    font-size: 14px;
+    font-family: "Playfair Display";
+    color: rgb(98, 98, 98);
+    line-height: 1.714;
+    text-align: left;
+    
+  }
+  .img1-right{
+      display: flex;
+      justify-content: flex-end;
+      padding-bottom: 28px;
+  }
+  .content1-right{
+      width: 280px;
+  }
+.header1-right{
+    padding-bottom: 21px;
+}
+
+
+.text2 {
+    font-size: 12px;
+    font-family: "Playfair Display";
+    color: rgb(98, 98, 98);
+    line-height: 1.667;
+    padding-bottom: 20px;
+  }
+  
+.icon-item{
+    margin-right: 17px;
+}
+.content-right{
+    padding-bottom: 65px;
+}
+
+.content2-left{
+    margin-left: 82px;
+    width: 660px;
+    margin-right: 41px;
+}
+.header-3{
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.select-link{
+    font-size: 16px;
+    font-family: "Playfair Display";
+    color: rgb(98, 98, 98);
+    line-height: 1.2;
+    margin-left: 22px;
+    
+}
+.font-select{
+    margin-bottom: 8px;
+}
+
+.spam-link{
+    font-size: 12px;
+    font-family: "Ubuntu";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-left: 22px;
+    
+}
+.select{
+    padding-bottom: 20px;
+}
+.select1{
+    padding-bottom: 45px;
+}
+  
+.slogan{
+    font-size: 48px;
+    font-family: "Ubuntu";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+
+}
+
+
+.slogan-down{
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+.img4-right{
+    position: relative;
+}
+.slogan-img{
+    position: absolute;
+    right: 28px;
+    top: 98px;
+}
+
+.img3-left{
+    padding-left: 82px;
+    padding-bottom: 58px;
+}
+
+.font4 {
+    width: 639px;
+    font-size: 14px;
+    font-family: "Playfair Display";
+    color: rgb(98, 98, 98);
+    font-style: italic;
+    line-height: 1.714;
+    text-align: left;
+    margin-left: 21px;
+}
+.font-text-4{
+    margin-left: 82px;
+    padding-bottom: 33px;
+}
+.text-content4{
+    margin-left: 82px;
+    width: 660px;
+    padding-bottom: 74px;
+}
+.combo-icon{
+    margin-left: 543px;
+    padding-bottom: 117px;
+}
+
+.icon-link{
+    font-size: 13px;
+    font-family: "Ubuntu";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    line-height: 1.846;
+}
+.icon-text{
+    margin-right: 17px;
+}
+
+.down-content{
+    background-color: rgb(242, 242, 242);
+    opacity: 0.8;
+    width: calc(982px + 82px);
+}
+
+.slogan-down-content{
+    padding-top: 68px;
+    padding-left: 82px;
+    padding-bottom: 40px;
+}
+.combo-img-6{
+    padding-left: 82px;
+    padding-bottom: 90px;
+}
+.img5{
+    margin-right: 40px;
+}
+
+.slogan-link-img5{
+    font-size: 20px;
+    font-family: "Playfair Display";
+    color: rgb(98, 98, 98);
+    line-height: 1.2;
+    
+  }
+
+.slogan-img5{
+    padding-top: 24px;
+}
+
+.comment-link {
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+  .list-comment{
+      padding-top: 65px;
+      margin-left: 82px;
+      padding-bottom: 44px;
+  }
+.rep-comment{
+      margin-left: 82px;
+}
+  
+
+.name{
+    font-size: 14px;
+    font-family: "Playfair Display";
+    color: rgb(98, 98, 98);
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+
+.sub-comment{
+    font-size: 14px;
+    font-family: "Playfair Display";
+    color: rgb(98, 98, 98);
+    line-height: 1.714;
+    padding-left: 35px;
+}
+
+.user-name{
+    padding-bottom: 5px;
+}
+
+.user-comment{
+    padding-bottom: 28px;
+}
+
+.reply {
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    line-height: 1.2;
+
+}
+.reply-comment{
+    padding-bottom: 58px;
+}
+
+.input-comment{
+    border-width: 1px;
+    border-color: rgb(200, 200, 200);
+    border-style: solid;
+    border-radius: 5px;
+    margin-left: 35px;
+    width: 100%;
+    height: 70px;
+    margin-right: 82px;
+}
+
+.icon-with{
+    margin-right: 82px;
+}
+
+
+.text-input{
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgb(200, 200, 200);
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding: 25px 30px;
+
+}
+
+
+.conect{
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.icon-tw{
+    margin-left: 17px;
+}
+
+.icon-commect{
+    margin-left: 39px;
+}
+
+
+.end-content{
+    margin-top: 550px;
+    background-color: #f0f0f0;
+    width: 1064px;
+    height: 100px;
+}
+.text-end{
+    margin-left: 82px;
+    padding-top:40px;
+}
+
+.end-link {
+    font-size: 14px;
+    font-family: "Playfair Display";
+    color: rgb(0, 0, 0);
+    line-height: 1.714;
+    margin-right: 17px;
+}
+  
+.text-right{
+    font-size: 14px;
+    font-family: "Playfair Display";
+    color: rgb(0, 0, 0);
+    line-height: 1.714;
+  }
+
+.icon-end-fb{
+    margin-left: 17px;
+}
+
+.icon-end-fb1{
+    margin-left: 20px;
+}
+.end-right{
+    padding-top: 40px;
+}
+  
+  
+  
