@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "Sofia Pro";
+    src: url("../fonts/SofiaPro-Medium.woff2") format("woff2"),
+        url("../fonts/SofiaPro-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Sofia Pro";
+    src: url("../fonts/SofiaPro-Bold.woff2") format("woff2"),
+        url("../fonts/SofiaPro-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Circular Std";
+    src: url("../fonts/CircularStd-Medium.woff2") format("woff2"),
+        url("../fonts/CircularStd-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Sofia Pro", sans-serif;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+}
+
+.sidebar {
+    padding-right: 44px;
+    margin-right: 38px;
+}
+
+.logo {
+    max-width: 100px;
+    margin-top: 54px;
+    margin-bottom: 59px;
+}
+
+h2 {
+    font-size: 31px;
+    line-height: 1.6;
+    margin-bottom: 46px;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.category-link {
+    color: #000000;
+    font-family: "Sofia Pro";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.category-link img {
+    width: 22px;
+    height: 22px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.main {
+    flex: 1 0 0;
+}
+
+.navbar,
+.menu,
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    margin-top: 51px;
+    margin-bottom: 73px;
+}
+
+.menu {
+    margin-left: auto;
+    position: relative;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group img {
+    position: absolute;
+    width: 24px;
+    margin-top: 2px;
+}
+
+.input-group input {
+    height: 26px;
+    font-family: "Circular Std";
+    padding-left: 40px;
+    border: 0;
+}
+
+.input-group input::placeholder {
+    color: rgba(0, 0, 0, 0.2);
+    font-family: "Circular Std";
+    font-weight: 500;
+    font-style: normal;
+}
+
+.menu-link {
+    font-family: "Circular Std";
+    font-weight: 500;
+    font-style: normal;
+    color: #000000;
+}
+
+.menu-item {
+    margin-left: 43px;
+}
+
+.actions img {
+    width: 24px;
+    margin-left: 26px;
+}
+
+.actions {
+    margin-left: 23px;
+}
+.line-item{
+position: absolute;
+width: 75.42px;
+height: 2.09px;
+left: 38px;
+top: 30.38px;
+background: #000000;
+transition: all 0.5s ease-out;
+
+
+}
+.body-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1147px;
+}
+.body-content2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1147px;
+    margin-top: 22px;
+}
+
+.left-body{
+    flex-basis: calc((100% - 22px) / 2);
+}
+.right-body{
+    flex-basis: calc((100% - 22px) / 2); 
+    display: flex;
+    justify-content: space-between;
+}
+.img-right1, .img-right2{
+    flex-basis: calc((100% - 22px) / 2);
+}
+.img3, .img4{
+    height: 398.4px;
+    width: 271px;
+}
+.img1, .img2{
+    width: 564.59;
+    height: 188.55px;
+}
+.img1{
+    margin-bottom: 22px;
+}
