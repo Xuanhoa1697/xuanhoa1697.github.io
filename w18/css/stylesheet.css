@@ -169,17 +169,17 @@ transition: all 0.5s ease-out;
 
 
 }
-.body-content{
+/* .body-content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1147px;
+    width: 1151px;
 }
 .body-content2{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1147px;
+    width: 1151px;
     margin-top: 22px;
 }
 
@@ -199,9 +199,68 @@ transition: all 0.5s ease-out;
     width: 271px;
 }
 .img1, .img2{
-    width: 564.59;
+    width: 564.59px;
     height: 188.55px;
 }
 .img1{
     margin-bottom: 22px;
+} */
+
+.content-body, .content-body1{
+    display: flex;
+    justify-content: space-between;
+
+}
+.content-body1{
+    margin-top: 20px;
+}
+.left-content{
+    flex-basis: calc((100% - 22px) / 2);
+}
+.img-1{
+    width: 100%;
+}
+.right-content{
+    display:flex;
+    flex-basis: calc((100% - 22px) / 2);
+    justify-content: space-between;
+}
+
+.right-img{
+    flex-basis: calc((100% - 22px) / 2);
+}
+.left-img{
+    margin-bottom: 22px;
+    position: relative;
+}
+.font1{
+    font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 31.4242px;
+    line-height: 49px;
+    color: #000000;
+    position: absolute;
+    left: 139.31px;
+    top: 75.42px;
+}
+.mesenger-app{
+    display: flex;
+    margin-top: 340px;
+    margin-left: 10px;
+
+}
+.between{
+    display: flex;
+    align-items: center;
+}
+
+.font2{
+    font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16.4557px;
+    line-height: 26px;
+    color: #000000;
+    margin-left: 50px;
 }
