@@ -1,5 +1,4 @@
 let number = document.querySelectorAll(".number");
-
 let arrNumber = Array.from(number);
 let numberMath = document.querySelector(".number-math");
 let checkingResult = document.querySelector(".checking");
@@ -23,18 +22,17 @@ del.addEventListener("click", function () {
 checkingResult.addEventListener("click", function () {
   let newArr = numberMath.id.split("");
   console.log(newArr);
-  for (let i = 0; i < newArr.length; i++) {
-    if (
-      newArr[newArr.length - 1] === "+" ||
-      newArr[newArr.length - 1] === "-" ||
-      newArr[newArr.length - 1] === "*" ||
-      newArr[newArr.length - 1] === "/" ||
-      newArr[0] === "*"||
-      newArr[0] === "/"
-    ) {
-      fontTotal.textContent = 0;
-    }else{
-        fontTotal.textContent = (eval(numberMath.id)).toFixed(7)
-    }
+  if (
+    newArr[newArr.length - 1] === "+" ||
+    newArr[newArr.length - 1] === "-" ||
+    newArr[newArr.length - 1] === "*" ||
+    newArr[newArr.length - 1] === "/" ||
+    newArr[0] === "*"||
+    newArr[0] === "/"
+  ) {
+    fontTotal.textContent = 0;
+  }
+  else{
+      fontTotal.textContent = (eval(numberMath.id))   
   }
 });

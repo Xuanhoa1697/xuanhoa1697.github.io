@@ -143,6 +143,10 @@ text-align: center;
     height: 50px;
 }
 
+.btn-renext:hover , .btn-next:hover{
+    transform: scale(1.1);
+
+}
 
 
 

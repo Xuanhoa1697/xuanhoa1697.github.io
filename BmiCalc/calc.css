@@ -20,6 +20,7 @@
 .total{
     
     width: calc(100% - (282px / 4));
+    overflow: hidden;
     
 }
 .font-total{
@@ -47,8 +48,8 @@ button{
     line-height: 41px;color: #FFFFFF;
 }
 
-.number:hover , .math:hover {
-    color: rgb(172, 170, 170);
+.number:hover , .math:hover , .checking:hover {
+    color: rgb(56, 134, 197);
 }
 .check-total{
     border: 0.5px solid black;
