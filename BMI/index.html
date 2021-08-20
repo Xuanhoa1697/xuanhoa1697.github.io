@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="calc.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="BMI">
+      <div class="container">
+        <div class="heading-BMI">
+          <h1 class="text-heading">Body Mass Index</h1>
+        </div>
+        <form action="" class="form" novalidate>
+          <input type="text" class="input-weight" placeholder="Weight" />
+          <input
+            type="text"
+            class="input-height"
+            placeholder="Height (example: 1.8)"
+          />
+          <p class="result">Your BMI: <span class="BMI-report">...</span></p>
+          <p class="note">Status: <span class="node-inner">...</span></p>
+
+          <button type="submit" class="btn">Calculate</button>
+        </form>
+      </div>
+      <div class="calc">
+        <div class="btn-calc1 check-total">
+          <div class="cobom">
+            <div class="check-math">
+              <p class="number-math"></p>
+            </div>
+            <div class="total">
+              <p class="font-total">0</p>
+            </div>
+          </div>
+          <button class="number math" id="*">*</button>
+        </div>
+        <div class="btn-calc1">
+          <button class="number number1" id="1">1</button>
+          <button class="number number2" id="2">2</button>
+          <button class="number number3" id="3">3</button>
+          <button class="number math" id="/">/</button>
+        </div>
+        <div class="btn-calc1">
+          <button class="number number4" id="4">4</button>
+          <button class="number number5" id="5">5</button>
+          <button class="number number6" id="6">6</button>
+          <button class="number math" id="+">+</button>
+        </div>
+        <div class="btn-calc1">
+          <button class="number number7" id="7">7</button>
+          <button class="number number8" id="8">8</button>
+          <button class="number number9" id="9">9</button>
+          <button class="number math" id="-">-</button>
+        </div>
+        <div class="btn-calc1">
+          <button class="del">C</button>
+          <button class="number" id="0">0</button>
+          <button class="number math" id=".">.</button>
+          <button class="checking">=</button>
+        </div>
+      </div>
+    </div>
+    <div class="select-btn">
+      <button type="button" class="btn-renext">
+        <i class="bi bi-skip-backward"></i>
+      </button>
+      <button type="button" class="btn-next">
+        <i class="bi bi-skip-forward"></i>
+      </button>
+    </div>
+
+    <script src="scrips.js"></script>
+    <script src="js.js"></script>
+    <script src="jscalc.js"></script>
+  </body>
+</html>

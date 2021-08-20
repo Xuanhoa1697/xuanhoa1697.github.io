@@ -1,0 +1,95 @@
+
+.calc{
+    width: 283px;
+    height: 341px;
+    position: absolute;
+    top: 0;
+    right: -300px;
+    /* 110px */
+    border: 0.5px solid black;
+    border-top: none;
+    transition: all 0.8s ease-out;
+    
+}
+.btn-calc1{
+    width: 282px;
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+}
+.total{
+    
+    width: calc(100% - (282px / 4));
+    
+}
+.font-total{
+
+    height: 100%;
+}
+button{
+    width: calc(282px / 4);
+    height: 68px;
+}
+.number{
+    background-color: #425062;
+    font-family: cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;color: #FFFFFF;
+}
+.math , .del, .checking{
+    background-color: #394655;
+    font-family: cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;color: #FFFFFF;
+}
+
+.number:hover , .math:hover {
+    color: rgb(172, 170, 170);
+}
+.check-total{
+    border: 0.5px solid black;
+    background-color: #394655;
+}
+
+.check-math{
+    width: 100%;
+    text-align: end;
+    height: 30%;
+    
+}
+.total{
+    width: 100%;
+    text-align: end;
+    height: 70%;
+    
+
+}
+.font-total{
+    margin-top: 5px;
+    margin-right: 12px;
+    font-family:cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+.number-math{
+    margin-top: 5px;
+    margin-right: 12px;
+    font-family: cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #D8D0D0;
+}
+.cobom{
+    flex-basis:calc(100% - (282px / 4));
+    display: flex;
+    flex-direction: column;
+}
