@@ -13,6 +13,7 @@ let result = document.querySelectorAll(".result");
 let arrResult = Array.from(result);
 let pointTrue = document.querySelector(".point-true");
 let pointFalse = document.querySelector(".point-false");
+let displayPoint = document.querySelector(".point")
 function randomNumber(operator1) {
   let num1 = Math.floor(Math.random() * 50 - 25);
   let num2 = Math.floor(Math.random() * 50 - 25);
@@ -57,6 +58,7 @@ for (let displayOperator of arrOperator) {
     color6.style.background = "#F8EEEE";
     color7.style.background = "#F8EEEE";
     color8.style.background = "#F8EEEE";
+    displayPoint.style.top = "90px"
     event.preventDefault();
   });
 }
@@ -72,5 +74,6 @@ for (let check of newArrResult) {
       this.style.backgroundColor = "red";
       pointFalse.textContent += "❌";
     }
+    event.preventDefault()
   });
 }

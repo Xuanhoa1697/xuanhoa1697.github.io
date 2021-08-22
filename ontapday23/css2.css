@@ -66,7 +66,7 @@ img{
 }
 .math{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,7 +196,12 @@ img{
     color: #4FB300;
 }
 .point{
-    margin-left: 30px;
+    margin-left: 10px;
+    /* display: none; */
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    transition: 1s all ease-out;
 }
 .text-heading{
     font-family: Luckiest Guy;
