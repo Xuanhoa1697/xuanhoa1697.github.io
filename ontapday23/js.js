@@ -1,6 +1,7 @@
 let btn = document.querySelector(".btn")
 let fontColor = document.querySelector(".font-color")
 let body = document.body
+let text2 =document.querySelector(".text2")
 btn.addEventListener("click",function(){
     let hegex = "0123456789ABCDEF"
     let color = "#"
@@ -12,7 +13,7 @@ btn.addEventListener("click",function(){
     }
     console.log(color);
     body.style.background = `linear-gradient(to right, ${color},${color2})`
-    fontColor.textContent = `Background Image: (to right, ${color},${color2})`
+    text2.textContent = `(to right, ${color},${color2})`
+    text2.style.color = color
 })
 
-// e quên =))
