@@ -64,7 +64,7 @@
 .six-img{
     margin-top: 70px;
     position: relative;
-    /* overflow: hidden; */
+
     width: 384px;
     height: 491px;
     display: flex;
@@ -113,7 +113,7 @@
   background-position: center;
   background-size: cover;
   width: 384px;
-  border-radius: 10px;
+  border-radius: 15px;
   transition: all 1s;
 }
 
