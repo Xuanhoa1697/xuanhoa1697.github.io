@@ -1,0 +1,45 @@
+.three-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.icon4,
+.icon5 {
+  position: absolute;
+}
+
+.icon4{
+    left: 650px;
+}
+.icon5{
+    bottom: 600px;
+    right: 230px;
+}
+.three-heading {
+  margin-top: 100px;
+  width: 481px;
+  margin-left: 100px;
+}
+.three-text {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 50px;
+}
+.three-text1 {
+  font-family: Mulish;
+  width: 450px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 30px;
+  /* or 176% */
+
+  color: #7d7987;
+
+  mix-blend-mode: normal;
+  margin-bottom: 33px;
+}
