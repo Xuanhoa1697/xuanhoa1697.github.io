@@ -1,0 +1,119 @@
+.seven-content {
+  margin-left: 190px;
+}
+.seven-img-content {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.pos-slogan {
+  margin-left: 50px;
+}
+.text-slogan {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 30px;
+  /* or 158% */
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+  margin-bottom: 13px;
+}
+.font-slogan {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 26px;
+  /* or 173% */
+
+  color: #7d7987;
+
+  mix-blend-mode: normal;
+  margin-bottom: 20px;
+}
+.read-more {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 28px;
+  /* identical to box height, or 187% */
+
+  color: #fb8f1d;
+
+  mix-blend-mode: normal;
+}
+.slogan-img1 {
+  margin-right: 35px;
+}
+.end-body{
+  margin-left: 50px;
+  padding-top: 50px
+}
+
+.end-content {
+  margin-top: 150px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 50px;
+  background-color: #f9f9fb;
+  border-bottom: 1px solid #C4C4C4;
+  padding-bottom: 20px;
+}
+.end-text {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  color: #848484;
+
+  mix-blend-mode: normal;
+  margin-top: 25px;
+  margin-bottom: 55px;
+}
+.text-end-info1 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 60px;
+  /* identical to box height, or 316% */
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+}
+.text-end-inf{
+    font-family: Mulish;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  color: #848484;
+
+  mix-blend-mode: normal;
+  margin-top: 8px;
+}
+.social{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.icon-four-content{
+    position: relative;
+}
+.end-info{
+  padding-top: 50px;
+}

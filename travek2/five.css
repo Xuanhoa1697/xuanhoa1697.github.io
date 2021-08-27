@@ -1,0 +1,39 @@
+.five-content{
+    margin-left: 90px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.icon8, .icon9, .icon10{
+    position: absolute;
+}
+.icon8{
+    top: 2050px;
+    left: 480px;
+}
+.icon9{
+    top: 1780px;
+    left:150px;
+}
+.icon10{
+    top: 1750px;
+    right: 0;
+}
+.three-heading{
+    margin-left: 50px;
+}
+.five-text1{
+width: 90%;
+font-family: Mulish;
+font-style: normal;
+font-weight: 300;
+font-size: 17px;
+line-height: 30px;
+/* or 176% */
+
+
+color: #7D7987;
+
+mix-blend-mode: normal;
+}

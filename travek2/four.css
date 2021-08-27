@@ -1,0 +1,46 @@
+.icon6,
+.icon7 {
+  position: absolute;
+}
+.icon7{
+    top: 0;
+    right: 160px;
+}
+.icon6{
+    bottom: 0;
+    left: 500px;
+
+}
+.four-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+}
+.text-four {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 50px;
+  margin-bottom: 56px;
+}
+.four-content {
+  margin-left: 190px;
+}
+.img-content {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.img1{
+  flex-basis: calc((100% - 60px) / 4);
+}
+.four-content{
+    margin-top: 50px;
+    position: relative;
+    padding-bottom: 50px;
+}
+.seven-img{
+  margin-left: 50px;
+}

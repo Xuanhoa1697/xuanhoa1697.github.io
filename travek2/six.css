@@ -1,0 +1,140 @@
+
+.icon11, .icon12 {
+  position: absolute;
+}
+.icon11{
+  right: 100px;
+ top: 60px;
+ z-index: -3;
+}
+.icon12{
+  right:480px;
+  bottom: -5px;
+}
+.frame {
+  margin-top: 154px;
+  margin-bottom: 5px;
+  margin-left: 50px;
+}
+.text-six {
+  width: 65%;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  margin-left: 50px;
+  /* or 150% */
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+  margin-bottom: 40px;
+}
+.six-name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  margin-left: 50px;
+  font-size: 22px;
+  line-height: 48px;
+  /* identical to box height, or 218% */
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+}
+.for-name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 48px;
+  margin-left: 50px;
+  /* identical to box height, or 267% */
+
+  color: rgba(0, 0, 0, 0.85);
+
+  mix-blend-mode: normal;
+}
+.info-content{
+    margin-right: 210px;
+}
+.six-img{
+    margin-top: 70px;
+    position: relative;
+    width: 50%;
+    height: 481px;
+    display: flex;
+}
+
+.next-prev{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.next-prev{
+    width: 132px;
+    height: 60px;
+    background: #FFFF;
+    border-radius: 16px 0px 0px 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+}
+
+.next{
+    margin-left: 15px;
+}
+.six-img1{
+    border-radius: 8px;
+    position: absolute;
+    left:0;
+    transition: all 1s ease-out;
+}
+
+.six-img2{
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+
+    transition: all 1s ease-out;
+
+}
+.six-img3{
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+
+    transition: all 1s ease-out;
+}
+.six-img-display{
+  background-position: center;
+  background-size: cover;
+  width: 384px;
+  border-radius: 15px;
+  transition: all 1s;
+}
+.editsix-text {
+font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 50px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+margin-left: 50px;
+}
+.five-text{
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 50px;
+  
+  color: #000000;
+  
+  mix-blend-mode: normal;
+}
