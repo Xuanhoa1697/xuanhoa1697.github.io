@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    transition: all 0.5s ease-out;
 }
 
 .container{
@@ -10,6 +11,24 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
+}
+.firt-content{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+.firt-content1{
+    width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    background-color: #fff;
+    padding-top: 10px;
+    top: -70px;
+    left: 0;
+    right: 0;
+    transition: ease-out 0.7s all;
+    z-index: 8;
 }
 .nav-menu{
     width: 1200px;
@@ -35,7 +54,8 @@
 .logo{
     margin-right: 515px;
 }
-.menu-link1,.menu-link2,.menu-link3,.menu-link4{
+.menu-link1,.menu-link2,.menu-link3,.menu-link4,
+.menu-link1a ,.menu-link2a ,.menu-link3a , .menu-link4a{
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -44,7 +64,17 @@
     color: #B8BECD;
     margin-right: 34px;
 }
-.menu-link1:hover , .menu-link2:hover , .menu-link3:hover, .menu-link4:hover{
+.menu-link4b{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #B8BECD;
+}
+.menu-link1:hover , .menu-link2:hover , .menu-link3:hover, .menu-link4:hover
+.menu-link1a:hover , .menu-link2a:hover , .menu-link3a:hover, .menu-link4a:hover
+{
     color: teal;
 }
 
@@ -60,7 +90,7 @@
     border-radius: 8px;
     position: relative;
 }
-.login-link{
+.login-link, .login-link1{
     height: 100%;
     display: flex;
     justify-content: center;
@@ -82,7 +112,7 @@
     margin-left: 18px;
     position: relative;
 }
-.register-link{
+.register-link, .register-link1{
     height: 100%;
     font-family: Inter;
     font-style: normal;
@@ -95,4 +125,257 @@
     color: #FFFFFF;
     mix-blend-mode: normal;
 }
+.phone{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+}
+.call{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background-color: #008f4c;
+    border-radius: 50%;
+    bottom: 60px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    animation: wave-phone 1s infinite linear;
+}
+@keyframes wave-phone{
+    0%{
+        transform: scale(0.7);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.7);
+    }
+    
+}
+.bi-arrow-up-square-fill{
+    position: fixed;
+    bottom: 20px;
+    right: -50px;
+    color: #008f4c;
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+.ponsive{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 20px;
+    right: 10px;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    background-color: #008f4c;
+}
+.bi-telephone{
+    margin-top: 12px;
+    color: #ffffff;
+    width: 20px;
+    height:20px;
+    animation: wave 4s infinite linear ;
+}
+.ponsive1{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 70px;
+    right: 10px;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    background-color: #008f4c;
+}
+.bi-chat-fill{
+    margin-top: 12px;
+    color: #ffffff;
+    width: 20px;
+    height:20px;
+    animation: wave 4s infinite linear ;
+}
+@keyframes wave{
+    0%{
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    60%{
+        transform: rotate(-15deg);
+    }
+    70%{
+        transform: rotate(15deg);
+    }
+    80%{
+        transform: rotate(-15deg);
+    }
+    90%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(-15deg);
+    }
+}
+.text-end-inf:hover{
+    color: rgb(0, 170, 170);
+}
+.view-chat{
+    position: fixed;
+    bottom: 70px;
+    right: 60px;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px rgb(168, 167, 168);
+    border-radius: 15px;
+    display: none;
+}
+.first-chat{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.chat-heading{
+    width: 100%;
+    height: 130px;
+    background-color: rgb(81, 231, 149);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.heading{
+    color: white;
+    font-family: cursive;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.img-avatar{
+    width: 45px;
+    height: 50px;
+    align-items: flex-start;
+}
+.avatar{
+    display: flex;
+    justify-content: center;
+}
+.chat-center{
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: white;
+    font-family: cursive;
+    font-size: 15px;
+}
+.content-chat{
+    margin-top: 5px;
+}
+.date{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+    font-size: 14px;
+    padding: 5px;
+    
+}
+.img-chat-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.chat-with{
+    width: 230px;
+    height: 50px;
+    border-radius: 8px;
+    margin-left: 15px;
+    background-color: rgb(238, 236, 236);
+}
+.img-avatar1{
+    width: 35px;
+    height: 40px;
+    margin-left: 5px;
+}
+.text-chat-content{
+    font-family: cursive;
+    font-size: 16px;
+    padding-left: 5px;
+    color: rgb(53, 53, 53);
+}
+.input-chat{
+    width: 100%;
+    height: 55px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background:linear-gradient(to bottom,rgb(247, 247, 247),rgb(255, 255, 255));
+}
+.content-input{
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+.input-value{
+    padding-left:10px;
+    outline: none;
+    border-style: none;
+    width: 80%;
+}
 
+@media (max-width:1200px){
+    .container{
+        max-width: 500px;
+    }
+    .firt-content1{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        position: fixed;
+        background-color: #fff;
+        padding-top: 10px;
+        transition: ease-out 0.7s all;
+        z-index: 8;
+    }
+    .firt-content1{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        position: fixed;
+        background-color: #fff;
+        padding-top: 10px;
+        transition: ease-out 0.7s all;
+        z-index: 8;
+        top: -70px;
+        left: -200px;
+        right: 0;
+    }
+
+    .second-content{
+        width: 90%;
+    }
+}

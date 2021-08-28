@@ -87,6 +87,9 @@
 .next{
     margin-left: 15px;
 }
+.prev:hover, .next:hover{
+  transform: scale(1.2);
+}
 .six-img1{
     border-radius: 8px;
     position: absolute;

@@ -7,10 +7,6 @@
   justify-content: flex-start;
   align-items: center;
 }
-.pos-slogan {
-  position: absolute;
-  top: 250px;
-}
 .text-slogan {
   font-family: Inter;
   font-style: normal;
@@ -54,13 +50,14 @@
 }
 
 .end-content {
+  width: 1250px;
   margin-top: 150px;
-  margin-left: 100px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 50px;
-  background-color: #f9f9fb;
   border-bottom: 1px solid #C4C4C4;
   padding-bottom: 20px;
 }
@@ -104,11 +101,19 @@
   margin-top: 8px;
 }
 .social{
-    margin-left: 550px;
     padding-top: 20px;
     padding-bottom: 20px;
 
 }
+.item-social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .icon-four-content{
     position: relative;
+}
+.end-bc{
+  width: 100%;
+  background-color: #f9f9fb;
 }
