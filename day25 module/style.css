@@ -1,0 +1,130 @@
+
+.title{
+    width: 100%;
+  line-height: 46px;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ED2553;
+  position: relative;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+body{
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.span-emty{
+    width: 5px;
+    height: 30px;
+    background-color: #ED2553;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    transition: 1s all ease-out;
+
+}
+
+.modal-content{
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(-220deg, #E3FDF5 50%, #FFE6FA 50%);
+    
+}
+.modal-body{
+    transform: scale(1);
+    transition: ease-out all 0.2s;
+    
+}
+.mb-3{
+    overflow: hidden;
+}
+.icon-email{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 30px;
+    background-color: #ED2553;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s all ease-out;
+    transform: translateX(-25px);
+
+}
+.icon-pass{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 30px;
+    background-color: #ED2553;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s all ease-out;
+    transform: translateX(-25px);
+
+}
+.password , .email{
+    opacity: 0.5;
+}
+.hiden{
+    position: relative;
+    overflow: hidden;
+}
+
+.btn1{
+    margin-top: 20px;
+    height: 50px;
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(112, 112, 112) !important;
+    border: 0.5px solid #7efafa !important;
+    opacity: 0.7;
+}
+
+.btn1:hover{
+    background-image: linear-gradient(-220deg, #FFE6FA  50%,  #E3FDF5 50%);
+    box-shadow:  0 0 10px #7debe1, 0 0 40px #7efafa , 0 0 80px #91fcee;
+}
+.forget{
+    width: 90px;
+    text-align: center;
+    color: rgb(112, 112, 112) !important;
+}
+.btn-submit{
+    width: 120px;
+    border-style: none;
+    background-color: #E3FDF5;
+    border: 0.5px #ff9deb solid !important;
+}
+img{
+    width: 30px;
+}
+.or{
+    font-family: cursive;
+    font-size: 18px;
+    color: black;
+
+}
+.pass-help{
+    position: absolute;
+    color: #f749d4;
+    top: 113px;
+    left: 30px;
+    font-size: 13px;
+}
+.email-help{
+    position: absolute;
+    color: #f749d4;
+    top: 52px;
+    font-size: 13px;
+    left: 30px;
+}
