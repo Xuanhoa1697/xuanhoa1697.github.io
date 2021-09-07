@@ -11,9 +11,7 @@ $(function () {
     })
     .append(`<h1 class="text">Ha Long Bay</h1>`)
     .append(
-      `<p class="textP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sit, error velit quo animi mollitia quae?</p>`,
-      {}
-    );
+      `<p class="textP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sit, error velit quo animi mollitia quae?</p>`);
   const $slider2 = $(`<div />`, {
     class: "slide",
     width: "655px",
@@ -89,11 +87,11 @@ $(function () {
     top:"239px",
     left:"288px"
   }).append($(`
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
+  <div class="circle" id=0></div>
+  <div class="circle" id=1></div>
+  <div class="circle" id=2></div>
+  <div class="circle" id=3></div>
+  <div class="circle" id=4></div>
   <div class="line-circle"/>`
   ))
 
@@ -111,11 +109,12 @@ $(function () {
   
   let count = 0;
   let arr = [0, `100%`, `200.5%`,`301%`];
-  let margin = [0,`20%`,`40%`,`60%`,]
+  let margin = [0,`20%`,`40%`,`60.5%`]
   $prev.on("click", function () {
     if (count <= 0)
     count = arr.length;
     count--;
+    
     $(`.slide`).css({
       "margin-right": `${arr[count]}`,
     });
@@ -159,4 +158,17 @@ $(function () {
     if (count >= arr.length - 1)
      count = -1
   },1500)
-});
+  for(let btn of $(".circle")){
+    $(btn).on("click",()=>{
+      $(`.slide`).css({
+        "margin-right": `${arr[btn.id]}`,
+      });
+      $(`.line-circle`).css({
+        "margin-left":`${margin[btn.id]}`
+      })
+      clearInterval(time)
+      console.log(btn.id);
+    })
+  }
+
+})

@@ -6,7 +6,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Sofia Pro";
   src: url("../fonts/SofiaPro-Bold.woff2") format("woff2"),
@@ -27,19 +26,16 @@
   display: flex;
   justify-content: center;
 }
-
 .slider {
   display: flex;
   overflow: hidden;
   position: relative;
   border: 1px solid rgb(35, 94, 255);
-    margin-right: 10%;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
- 
+  margin-right: 10%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 .text {
   font-family: Sofia Pro;
   font-style: normal;
@@ -57,44 +53,40 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  /* or 125% */
-
   text-align: center;
-
   color: #ffffff;
   width: 377px;
   margin-left: auto;
   margin-right: auto;
 }
-.prev:hover, .next:hover{
-    cursor: pointer;
+.prev:hover,
+.next:hover {
+  cursor: pointer;
 }
-span:hover{
-    cursor: pointer;
+span:hover {
+  cursor: pointer;
 }
-.slide{
-    transition: all 1s;
+.slide {
+  transition: all 1s;
 }
-.prev{
+.prev {
   opacity: 0.3;
 }
-.circle{
+.circle {
   width: 10px;
   height: 10px;
   background: rgba(0, 0, 0, 0.25);
   border-radius: 50%;
   opacity: 0.3;
 }
-.bi-cirle{
+.bi-cirle {
   position: absolute;
-  
 }
-.line-circle{
+.line-circle {
   background: rgba(77, 77, 77, 0.75);
-border-radius: 5px;
-width: 26px;
-height: 10px;
-position: absolute;
-transition: all 1s;
+  border-radius: 5px;
+  width: 26px;
+  height: 10px;
+  position: absolute;
+  transition: all 1s;
 }
-
