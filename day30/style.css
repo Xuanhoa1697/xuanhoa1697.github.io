@@ -1,0 +1,83 @@
+.img-logo{
+    max-width: 100%;
+}
+.img-link{
+    height: 150px;
+}
+.header{
+    color: rgb(225, 0, 255);
+    font-family: cursive;
+    font-weight: 700;
+}
+.brd{
+    font-family: cursive;
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px solid white;
+    border-color: violet;
+    
+}
+.brd:hover{
+    background-color: rgb(0, 255, 213);
+    color: white;
+}
+.brd1:hover{
+    color: white;
+    transform: scale(1.2);
+}
+.brd1{
+    font-family: cursive;
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.bi-person-fill::before{
+    color: white;
+    font-size: 30px;
+
+}
+.login{
+    border-style: none;
+}
+.input{
+    height: 50px;
+    outline: none;
+    padding-left: 10px;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    color: violet;
+    background-color: rgb(255, 66, 239);
+    top: 16px;
+}
+.btn{
+    font-size: 30px;
+    color: white;
+    outline: none;
+}
+.bi-caret-left-square-fill, .bi-caret-right-square-fill{
+    color: rgb(255, 58, 189);
+    font-size: 30px;
+}
+.bi-caret-left-square-fill{
+    margin-right: 32px;
+}
+.add{
+    background-color: #fff;
+}
+.page{
+    position: absolute;
+    background-color: rgb(255, 58, 189);
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    right: 45px;
+    top: 135px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 18px;
+}
