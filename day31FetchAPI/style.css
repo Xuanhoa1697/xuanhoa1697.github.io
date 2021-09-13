@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.header-product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:  0.5px solid rgb(131, 131, 131);
+    margin-top: 30px;
+}
+.sale{
+    margin-top: 10px;
+}
+.header-title{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.show-product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-bottom: 0.5px solid rgb(131, 131, 131);
+}
+.product{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 25%;
+}
+.img{
+    margin-left: 5px;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border: 0.5px solid black;
+}
+.price, .form, .total{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 30px !important;
+}
+.title{
+    margin-left: 5px;
+    font-family: cursive;
+}
+.btn1{
+    width: 200px;
+    height: 30px;
+    border: 2px solid tomato;
+    color: tomato;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #fff;
+}
+
+.btn2{
+    width: 200px;
+    height: 30px;
+    color: white;
+    border-style: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: tomato;
+}
+.btn-update{
+    margin-top: 10px;
+    padding-bottom: 40px;
+
+
+}
+.infomation{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.info{
+    flex-basis: 59%;
+    border-top: 0.5px solid rgb(131, 131, 131);
+    
+}
+.info-cart{
+    flex-basis: 40%;
+    border: 2px solid tomato;
+    padding: 10px;
+}
+.form2{
+    width: 100%;
+}
+.input2{
+    width: 100% !important;
+    height: 30px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+.header-info{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.btn3{
+    width: 90%;
+    height: 30px;
+    color: white;
+    border-style: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: tomato;
+    margin-left: 5%;
+}
+.check-info, .total-sub, .end-total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+.check-info{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid black;
+}
+.total-sub{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid black;
+}
+.end-total{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px double black;
+}
+.checkbox{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.color{
+    color: red;
+}
+button:hover , input:hover{
+    cursor: pointer;
+}
+input{
+    outline: none;
+}
+.product-check{
+    font-size: 14px;
+}
+.info-sale{
+    color: royalblue;
+    font-size: 14px;
+}
+.reting{
+    margin-top: 5px;
+}
+.rate{
+    margin-left: 5px;
+    color: rgb(0, 0, 0);
+}
+.bi-star-fill{
+    color: yellow;
+}
