@@ -29,3 +29,29 @@ class CownDown {
 
 
 
+
+
+
+
+
+class User{
+  constructor(name,age){
+    this.name = name
+    this.age = age
+
+  }
+  get(){
+    console.log(this.name + this.age);
+  }
+}
+class People extends User{
+  constructor(name,age,job){
+    super(name,age)
+    this.job = job
+  }
+  get(){
+    console.log(this.name + this.age +"haha");
+  }
+}
+let people = new People("hòa",24,"haha")
+people.get()
