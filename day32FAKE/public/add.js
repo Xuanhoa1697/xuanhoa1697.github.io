@@ -1,0 +1,1 @@
+export default function users(e,n,r,u,a){return{fullname:e,gender:n,age:r,email:u,phone:a}}

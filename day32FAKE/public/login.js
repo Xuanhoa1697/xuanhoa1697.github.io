@@ -1,0 +1,1 @@
+export default function regis(e,r){return{user:e,pass:r}}export function users(e,r,n,u,t){return{fullname:e,gender:r,age:n,email:u,phone:t}}

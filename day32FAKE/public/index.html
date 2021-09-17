@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="dashboard">
+        <div class="header d-flex justify-content-between align-items-center">
+          <div class="logo">
+            <a href="" class="text-logo link-logo text-decoration-none"
+              >Dashboard</a
+            >
+          </div>
+          <div class="login d-flex justify-content-between align-items-center">
+            <div class="logo-login">
+              <a href="">
+                <img src="Avatar.png" alt="" />
+              </a>
+            </div>
+            <div class="admin ms-2">
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="border-0 text-login toggle"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Login <i class="bi bi-caret-down-fill"></i>
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body p-0">
+                      <ul class="nav nav-tabs w-100" id="myTab" role="tablist">
+                        <li class="nav-item w-50" role="presentation">
+                          <button
+                            class="nav-link active w-100"
+                            id="home-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#home"
+                            type="button"
+                            role="tab"
+                            aria-controls="home"
+                            aria-selected="true"
+                          >
+                            Login
+                          </button>
+                        </li>
+                        <li class="nav-item w-50" role="presentation">
+                          <button
+                            class="nav-link w-100"
+                            id="profile-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#profile"
+                            type="button"
+                            role="tab"
+                            aria-controls="profile"
+                            aria-selected="false"
+                          >
+                            Register
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div
+                          class="tab-pane fade show active pb-5"
+                          id="home"
+                          role="tabpanel"
+                          aria-labelledby="home-tab"
+                        >
+                          <form
+                            class="pt-5 w-100 position-relative form-login"
+                            novalidate
+                          >
+                            <div class="mb-3 ps-5 pe-5">
+                              <input
+                                type="email"
+                                class="form-control user"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp"
+                                placeholder="@Username"
+                              />
+                              <label
+                                for="exampleInputEmail1"
+                                class="label-user"
+                              ></label>
+                            </div>
+                            <div class="mb-3 pt-4 ps-5 pe-5">
+                              <input
+                                type="password"
+                                class="form-control password"
+                                id="exampleInputPassword1"
+                                placeholder="Password"
+                              />
+                              <label
+                                for="exampleInputPassword1"
+                                class="label-pass"
+                              ></label>
+                            </div>
+                            <input class="ms-5" type="checkbox" name="" id="" />
+                            <span>Agree to the terms!!!</span>
+                            <button
+                              type="submit"
+                              class="btn btn-primary mt-5 btn-login"
+                            >
+                              Login
+                            </button>
+                            <button
+                              type="submit"
+                              class="btn btn-primary position-absolute btn-go"
+                              data-bs-target="#exampleModal"
+                            >
+                              Successful confirmation!!!
+                            </button>
+                          </form>
+                        </div>
+                        <div
+                          class="tab-pane fade pb-5"
+                          id="profile"
+                          role="tabpanel"
+                          aria-labelledby="profile-tab"
+                        >
+                          <form class="pt-5 w-100" novalidate>
+                            <div class="mb-3 ps-5 pe-5">
+                              <input
+                                type="email"
+                                class="form-control re-user"
+                                id="exampleInputEmail2"
+                                aria-describedby="emailHelp"
+                                placeholder="Creat @Username"
+                              />
+                              <label
+                                for="exampleInputEmail2"
+                                class="reUser-help"
+                              ></label>
+                            </div>
+                            <div class="mb-3 pt-4 ps-5 pe-5">
+                              <input
+                                type="password"
+                                class="form-control re-password"
+                                id="exampleInputPassword2"
+                                placeholder="New Password"
+                              />
+                              <label
+                                for="exampleInputPassword2"
+                                class="rePass-help"
+                              ></label>
+                            </div>
+                            <button
+                              type="submit"
+                              class="btn btn-primary mt-5 btn-regis"
+                            >
+                              Creat Account
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="title">
+          <h1 class="edit">Wellcome! Please Creat and Login to use!!!</h1>
+        </div>
+        <div class="content">
+          <div class="search-add d-flex justify-content-between align-items-center">
+            <input type="text" class="input-person p-0" placeholder="Search Name, age, ..."/>
+
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary add-person m-0 p-0"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal3"
+            >
+              Add person
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal3"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  
+                  <div class="modal-body">
+
+                    <form action="" class="add-data">
+                      <input type="text" placeholder="Fullname" class="fullname">
+                      <input type="text" placeholder="Gender" class="gender">
+                      <input type="text" placeholder="Age" class="age">
+                      <input type="text" placeholder="Email" class="email">
+                      <input type="text" placeholder="Phone" class="phone">
+                      <button type="submit" class="btn-add btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal3">Add</button>
+                    </form>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-add d-flex justify-content-between align-items-center">
+            <div class="header-id">
+              <span>#</span>
+            </div>
+            <div class="header-name">
+              <span>Fullname</span>
+            </div>
+            <div class="header-gender">
+              <span>Gender</span>
+            </div>
+            <div class="header-age">
+              <span>Age</span>
+            </div>
+            <div class="header-email">
+              <span>Email</span>
+            </div>
+            <div class="header-phone">
+              <span>Phone</span>
+            </div>
+          </div>
+          <div class="per-add">
+            <!-- <div class="content-add d-flex justify-content-between align-items-center">
+              <div class="add-id">
+                <span>#</span>
+              </div>
+              <div class="add-name">
+                <span>Fullname</span>
+              </div>
+              <div class="add-gender">
+                <span>Gender</span>
+              </div>
+              <div class="add-age">
+                <span>Age</span>
+              </div>
+              <div class="add-email">
+                <span>Email</span>
+              </div>
+              <div class="add-phone">
+                <span>Phone</span>
+              </div>
+            </div> -->
+          </div>
+          <div class="page ">
+            <!-- <span class="pager">1</span> -->
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js.js" type="module"></script>
+  </body>
+</html>

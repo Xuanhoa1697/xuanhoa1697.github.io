@@ -1,0 +1,90 @@
+{
+  "logins": [
+    {
+      "user": "admin",
+      "pass": "admin",
+      "id": 1
+    },
+    {
+      "user": "acc",
+      "pass": "123",
+      "id": 2
+    },
+    {
+      "user": "Hoa1",
+      "pass": "123",
+      "id": 3
+    },
+    {
+      "user": "nickkhac",
+      "pass": "1",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "fullname": "Đinh Xuân Hòa",
+      "gender": "Male",
+      "age": "24",
+      "email": "xuanhoa010*9*@gmail.com",
+      "phone": "034557****",
+      "id": 1
+    },
+    {
+      "fullname": "Nguyễn VĂn A",
+      "gender": "Male",
+      "age": "35",
+      "email": "A@gmail.com",
+      "phone": "0123456789",
+      "id": 2
+    },
+    {
+      "fullname": "Phạm Thị B",
+      "gender": "Female",
+      "age": "20",
+      "email": "A@gmail.com",
+      "phone": "0123456789",
+      "id": 3
+    },
+    {
+      "fullname": "Cao Văn C",
+      "gender": "Female",
+      "age": "20",
+      "email": "A@gmail.com",
+      "phone": "0123456789",
+      "id": 4
+    },
+    {
+      "fullname": "Trần Văn E",
+      "gender": "Male",
+      "age": "50",
+      "email": "A@gmail.com",
+      "phone": "0123456789",
+      "id": 5
+    },
+    {
+      "fullname": "Trần Thị H",
+      "gender": "Female",
+      "age": "22",
+      "email": "H@gmail.com",
+      "phone": "012345678900",
+      "id": 6
+    },
+    {
+      "fullname": "Trần Thị Huyen",
+      "gender": "Female",
+      "age": "22",
+      "email": "H@gmail.com",
+      "phone": "012345678900",
+      "id": 7
+    },
+    {
+      "fullname": "sd",
+      "gender": "ád",
+      "age": "ád",
+      "email": "ád",
+      "phone": "ád",
+      "id": 8
+    }
+  ]
+}
