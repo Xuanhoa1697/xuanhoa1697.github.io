@@ -1,0 +1,214 @@
+@font-face {
+    font-family: "Sofia Pro";
+    src: url("../fonts/SofiaPro-Medium.woff2") format("woff2"),
+      url("../fonts/SofiaPro-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Sofia Pro";
+    src: url("../fonts/SofiaPro-Bold.woff2") format("woff2"),
+      url("../fonts/SofiaPro-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  body{
+      background-color: #383838;
+  }
+.header{
+    height: 50px;
+    background-color: #383838;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.text-logo{
+    font-family: Sofia Pro;
+    font-size: 17px;
+    color: #00d3b9;
+    font-weight: 700;
+}
+.text-logo:hover{
+    color: #00d3b9;
+}
+
+.app1, .app3{
+    width: 20px;
+    height: 2px;
+    background-color: #b4b4b4;
+    transition: 0.5s all ease-out;
+
+}
+.menu-app:hover{
+    cursor: pointer;
+    
+}
+.app2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 20px;
+    height: 2px;
+    background-color: #b4b4b4;
+    transition: 0.5s all ease-out;
+}
+.shoose, .fashion{
+    flex-basis: 30%;
+    height: 100%;
+    text-align: center;
+}
+.shoose:hover{
+    background-color: rgb(66, 66, 66);
+    cursor: pointer;
+}
+.shoose{
+    border-bottom: 5px solid #00d3b9;
+    
+}
+.fashion:hover{
+    background-color: rgb(66, 66, 66);
+    cursor: pointer;
+}
+.fashion:hover .text-header-logo{
+    color: #ffff;
+}
+.shoose:hover .text-header-logo{
+    color: #ffff;
+}
+.text-header-logo{
+    
+    font-family:Sofia Pro;
+    font-size: 19px;
+    color: #ffff;
+}
+.start{
+    flex-basis: 30%;
+    height: 35px;
+    border: 1px solid#00d3b9;
+    background-color: #00d3b9;
+    border-radius: 50px;
+    
+}
+.text{
+    color:#171717;
+    font-family: Sofia Pro;
+    font-size: 16px;
+    font-weight: 700;
+}
+.start:hover{
+    border: 1px solid#00ffe1;
+    background-color: #00ffe1;
+    cursor: pointer;
+    
+}
+.text:hover{
+    color: black;
+}
+.text-sign{
+    font-family: Sofia Pro;
+    font-size: 14px;
+    color: #ffff;
+}
+
+.text-sign:hover{
+    color: #ffff;
+}
+.menu-drop{
+    width: 40%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    top: 50px;
+    left: -40%;
+    transition: 0.2s all ease-out;
+    z-index: 2;
+}
+img{
+    width: 100%;
+    height: 585px;
+    object-fit: cover;
+}
+.mr-img{
+    width: 400%;
+    transform: translateX(0);
+    transition: 1s all ease-out;
+}
+.heading{
+    top: 50px;
+    width: 100%;
+    text-align: center;
+}
+.text-heading{
+    font-family: Sofia Pro;
+    font-size: 75px;
+    font-weight: 800;
+    color: #ffff;
+}
+.search{
+    margin-top: 20px;
+    width: 75%;
+    height: 70px;
+    border-radius: 50px;
+    outline: none;
+    font-family: Sofia Pro;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 50px;
+    border-style: none;
+
+}
+.thumb{
+    flex-basis: 15%;
+    height: 60px;
+    background-color: #00d3b9;
+    border-radius: 50px;
+}
+.thumb:hover{
+    background-color: #00ffe1;
+    cursor: pointer;
+}
+.thumb2{
+    flex-basis: 15%;
+    height: 60px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+}
+.thumb2:hover{
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+.thumb2:hover .pri{
+    color: black;
+}
+.staring:hover{
+    color: black;
+    cursor: pointer;
+}
+.staring{
+    font-family: Sofia Pro;
+    font-size: 17px;
+    color: black;
+}
+.pri{
+    font-family: Sofia Pro;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+.bi-search{
+    top: 135px;
+    right: 200px;
+    font-size: 25px;
+    color: rgb(59, 59, 59);
+}
+.login{
+    width: 100%;
+    height: 100%;
+    right: -100%;
+    top: 50px;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s all ease;
+    opacity: 0.5;
+}
