@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title class="title">Sport</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,11 +16,23 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/1/14/Running_shoe_icon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="container-fruid">
       <div class="row m-0 header">
-        <div class="col-4 p-0 d-flex justify-content-start align-items-center">
+        <div class="col-3 p-0 d-flex justify-content-start align-items-center">
           <div class="menu-app ms-2">
             <div class="app1"></div>
             <div class="app2"></div>
@@ -43,28 +55,55 @@
             </div>
           </div>
           <div class="login position-fixed">
-                
+            <div class="bc-show w-100 h-100"></div>
+            <div class="form-sign position-absolute mt-3">
+              <div class="edit-sign">
+                <a href=""><i class="bi bi-x"></i></a>
+                <h2 class="text-sign">Sign In</h2>
+                <div class="icon-app d-flex">
+                  <a href="" class="facebook"><img src="" alt="Lỗi" /></a>
+                </div>
+              </div>
             </div>
+          </div>
           <div class="logo ms-1">
-            <a class="text-decoration-none text-logo" href="">ChangeSport</a>
+            <a class="text-decoration-none text-logo" href="">Perfect<span class="tran">S</span></a>
+          </div>
+          <div class="search-heading w-100">
+            <input
+              type="text"
+              class="search-header ms-3 ps-2 pt-1 pb-1"
+              placeholder="Search for your perfect"
+            />
           </div>
         </div>
-        <div class="col-4 p-0 d-flex justify-content-center align-items-center">
+        <div class="col-6 p-0 d-flex justify-content-center align-items-center">
+          <div class="home d-flex justify-content-center align-items-center">
+            <a class="text-decoration-none text-header-logo w-100 h-100 d-flex justify-content-center align-items-center" href="">Home</a>
+          </div>
           <div class="shoose d-flex justify-content-center align-items-center">
-            <a class="text-decoration-none text-header-logo" href="">Shose</a>
+            <a class="text-decoration-none text-header-logo w-100 h-100 d-flex justify-content-center align-items-center" href="">Shose</a>
           </div>
           <div class="fashion d-flex justify-content-center align-items-center">
-            <a class="text-decoration-none text-header-logo" href="">Fashion</a>
+            <a class="text-decoration-none text-header-logo w-100 h-100 d-flex justify-content-center align-items-center" href="">Fashion</a>
           </div>
+          <div class="pricing-header d-flex justify-content-center align-items-center">
+            <a href="" class="text-decoration-none text-header-logo w-100 h-100 d-flex justify-content-center align-items-center">Feelback</a>
+          </div>
+          <div class="contact d-flex justify-content-center align-items-center">
+            <a class="text-decoration-none text-header-logo w-100 h-100 d-flex justify-content-center align-items-center" href="">Contact Us <i class="bi bi-chevron-down ms-1"></i></a>
+          </div>
+          
         </div>
-        <div class="col-4 p-0 d-flex justify-content-end align-items-center">
+        <div class="col-3 p-0 d-flex justify-content-end align-items-center">
           <div class="start d-flex justify-content-center align-items-center">
-            <a class="text-decoration-none text" href="">Start Free Now</a>
+            <a class="text-decoration-none text w-100 h-100 d-flex justify-content-center align-items-center" href="">Try Now!</a>
           </div>
-          <div class="pricing ms-4">
-            <a class="text-decoration-none text-sign" href="">Pricing</a>
+          <div class="pricing ms-3 d-flex justify-content-center align-items-center">
+            <a class="text-decoration-none text-sign position-relative w-100 h-100 d-flex justify-content-center align-items-center" href="">My Cart <i class="bi bi-cart"></i><span class="aqua-cart position-absolute">1</span></a>
+
           </div>
-          <div class="sign me-2 ms-4">
+          <div class="sign me-2 ms-3">
             <a class="text-decoration-none text-sign" href=""
               ><i class="bi bi-person-circle"></i> Sign in</a
             >
@@ -75,19 +114,21 @@
     <div class="container-fruid position-relative overflow-hidden mt-5">
       <div class="row m-0">
         <div class="col-12 p-0">
-          <div class="mr-img d-flex">
-            <img class="img1" src="./img/sport1.jpeg" alt="" />
-            <img class="img2" src="./img/sport4.jpeg" alt="" />
-            <img class="img3" src="./img/sport6.jpeg" alt="" />
-            <img class="img4" src="./img/sport3.jpeg" alt="" />
+          <div class="mr-img">
+            <img class="img" src="./img/sport1.jpeg" alt="Fail" />
+            <img class="img" src="./img/sport4.jpeg" alt="Fail" />
+            <img class="img" src="./img/sport6.jpeg" alt="Fail" />
+            <img class="img" src="./img/sport5.jpeg" alt="Fail" />
           </div>
           <div class="heading text-align-center position-absolute">
-            <h1 class="text-heading">Finding Your Perfect Shoe</h1>
-            <input
+            <h5 class="text-small">say <span class="sub-text">Hello</span> to <a href="index.html?Home" class="sub-text text-decoration-none">PerfectS</a></h5>
+            <h1 class="text-heading">Finding your perfect shoes, <br> one pair of shoes can change your life!</h1>
+            <form action="" class="form"> 
+              <input
               class="search"
               type="text"
-              placeholder="Search for your perfect"
             />
+            </form>
             <a href=""><i class="bi bi-search position-absolute"></i></a>
             <div
               class="
@@ -107,14 +148,14 @@
                   align-items-center
                 "
               >
-                <a href="" class="staring text-decoration-none">
+                <a href="" class="staring text-decoration-none w-100 h-100 d-flex justify-content-center align-items-center">
                   Start Free Now
                 </a>
               </div>
               <div
                 class="thumb2 d-flex justify-content-center align-items-center"
               >
-                <a class="text-decoration-none pri" href="">Pricing</a>
+                <a class="text-decoration-none pri w-100 h-100 d-flex justify-content-center align-items-center" href="">About us</a>
               </div>
             </div>
           </div>
@@ -127,6 +168,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="index.js" type="module"></script>
   </body>
 </html>

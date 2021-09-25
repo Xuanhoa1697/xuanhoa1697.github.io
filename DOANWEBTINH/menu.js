@@ -14,7 +14,7 @@ export default function menu(node1, node2, node3,node4, count) {
         transform: "translateX(0)"
     });
     node4.css({
-        left:"-40%"
+        left:"-50%"
     })
   } else {
     node1.css({
