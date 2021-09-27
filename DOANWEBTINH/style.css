@@ -14,69 +14,80 @@
     font-style: normal;
     font-display: swap;
   }
-  body{
-      background-color: #383838;
-  }
+
 .header{
-    height: 50px;
-    background-color: #383838;
-    position: fixed;
-    z-index: 5;
-    top: 0;
+    height: 60px;
+    position: absolute;
+    top: 30px;
     left: 0;
     right: 0;
     z-index: 1000 !important;
+    transition: all 0.2s ease-out;
+    -webkit-transition: 0.2s all ease-out;
+    -o-transition: 0.2s all ease-out;
+    -moz-transition: 0.2s all ease-out;
+    -ms-transiton:0.2s all ease-out;
 }
 .text-logo{
     font-family: Sofia Pro;
-    font-size: 17px;
-    color: #00d3b9;
+    font-size: 25px;
+    color: #ffff;
     font-weight: 700;
 }
 .text-logo:hover{
-    color: #00d3b9;
+    color: rgb(255, 255, 255);
 }
 
 .app1, .app3{
     width: 20px;
     height: 2px;
-    background-color: #b4b4b4;
-    transition: 0.5s all ease-out;
+    background-color: #ffffff;
+    transition: 0.2s all ease-out;
 
+}
+.menu-app{
+    height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-color: #ffff !important;
 }
 .menu-app:hover{
     cursor: pointer;
     
 }
 .app2{
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 4px;
+    margin-bottom: 4px;
     width: 20px;
     height: 2px;
-    background-color: #b4b4b4;
-    transition: 0.5s all ease-out;
+    background-color: #ffffff;
+    transition: 0.2s all ease-out;
 }
 .shoose, .fashion, .home, .contact, .pricing-header{
     flex-basis: 30%;
     height: 100%;
     text-align: center;
 }
-.home{
+/* .home{
     border-bottom: 5px solid #00d3b9;
     background-color: rgb(66, 66, 66);
+
     
 }
-.text-header-logo{
-    flex-basis: 100%;
-}
+.home .text-header-logo{
+    color: #00d3b9;
+} */
 .fashion:hover .text-header-logo,
 .shoose:hover .text-header-logo,
 .home:hover .text-header-logo,
 .pricing-header:hover .text-header-logo,
 .contact:hover .text-header-logo{
-    background-color: rgb(66, 66, 66);
-    color: #00d3b9;
-    border-bottom: 5px solid #00d3b9;
+    color: rgb(76, 162, 172);
     transition: all 0.2s ease-out;
     -webkit-transition: 0.2s all ease-out;
     -o-transition: 0.2s all ease-out;
@@ -85,28 +96,30 @@
 }
 
 .text-header-logo{
-    
+    flex-basis: 100%;
     font-family:Sofia Pro;
-    font-size: 19px;
+    font-size: 15px;
     color: #ffff;
 }
 .start{
     flex-basis: 30%;
     height: 35px;
-    border: 1px solid#00d3b9;
-    background-color: #00d3b9;
-    border-radius: 50px;
-    
+
+
 }
 .text{
     color:#171717;
     font-family: Sofia Pro;
     font-size: 16px;
     font-weight: 700;
+    border: 1px solid#00d3b9;
+    background-color: #00d3b9;
+    border-radius: 50px;
 }
-.start:hover{
+.text:hover{
     border: 1px solid#00ffe1;
     background-color: #00ffe1;
+    color: #fff;
     cursor: pointer;
     transition: all 0.5s ease-out;
     -webkit-transition: 0.5s all ease-out;
@@ -130,100 +143,28 @@
     color: #ffff;
 }
 .menu-drop{
-    width: 50%;
+    width: 40%;
     height: 100%;
     background-color: rgb(0, 0, 0);
-    top: 50px;
-    left: -50%;
-    transition: 0.2s all ease-out;
+    top: 30px;
+    left: -40%;
+    transition: 0.2s all ease;
     z-index: 2;
 }
-.img{
-    width: 100%;
-    height: 650px;
-    object-fit: cover;
-    z-index: 1 !important;
+.drop-right{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    top: 30px;
+    right: -60%;
+    transition: 0.2s all ease;
+    z-index: 2;
 }
 .heading{
     top: 50px;
     width: 100%;
     text-align: center;
     z-index: 2;
-}
-.text-heading{
-    font-family: Sofia Pro;
-    font-size: 50px;
-    font-weight: 800;
-    color: rgb(221, 221, 221);
-}
-.search{
-    margin-top: 20px;
-    width: 75%;
-    height: 70px;
-    border-radius: 50px;
-    outline: none;
-    font-family: Sofia Pro;
-    font-size: 20px;
-    font-weight: 500;
-    padding-left: 50px;
-    border-style: none;
-    color: rgb(78, 78, 78);
-    opacity: 0.7;
-}
-.thumb{
-    flex-basis: 15%;
-    height: 60px;
-    background-color: #00d3b9;
-    border-radius: 50px;
-}
-.thumb:hover{
-    background-color: #00ffe1;
-    cursor: pointer;
-    transition: 1s all ease-out;
-    -webkit-transition: 1s all ease-out;
-    -o-transition: 1s all ease-out;
-    -moz-transition: 1s all ease-out;
-    -ms-transiton:1s all ease-out;
-}
-.thumb2{
-    flex-basis: 15%;
-    height: 60px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 50px;
-}
-.thumb2:hover{
-    background-color: #fff;
-    color: black;
-    cursor: pointer;
-    transition: 1s all ease-out;
-    -webkit-transition: 1s all ease-out;
-    -o-transition: 1s all ease-out;
-    -moz-transition: 1s all ease-out;
-    -ms-transiton:1s all ease-out;
-    
-}
-.thumb2:hover .pri{
-    color: #00d3b9;
-}
-.staring:hover{
-    color: black;
-    cursor: pointer;
-}
-.staring{
-    font-family: Sofia Pro;
-    font-size: 17px;
-    color: black;
-}
-.pri{
-    font-family: Sofia Pro;
-    font-size: 17px;
-    color: rgb(255, 255, 255);
-}
-.bi-search{
-    top: 55%;
-    right: 15%;
-    font-size: 25px;
-    color: rgb(59, 59, 59);
 }
 .login{
     width: 100%;
@@ -236,11 +177,11 @@
     width: 80%;
     border-radius: 50px;
     outline: none;
-    border: 1px solid rgb(107, 107, 107);
-    background-color: #383838;
+    border: 1px solid rgb(255, 255, 255);
+    background: none;
     font-family: Sofia Pro ;
     font-size: 15px;
-    color: rgb(255, 255, 255);
+    color: white;
 }
 .form-sign{
     top: 0;
@@ -258,16 +199,12 @@
 }
 .bi-cart{
     font-size: 20px;
-    color:#00d3b9 ;
+    color:rgb(76, 162, 172) ;
 }
-.text-small{
-    color: rgb(221, 221, 221);
-}
-.sub-text{
-    color: #00d3b9;
-}
+
+
 .bi-chevron-down{
-    font-size: 17px;
+    font-size: 12px;
 }
 .aqua-cart{
     display: block;
@@ -275,11 +212,94 @@
     right: -10px;
     width: 18px;
     height: 18px;
-    border: 0.5px solid #00d3b9;
-    background-color: #00d3b9;
+    border: 0.5px solid rgb(76, 162, 172);
+    background-color: rgb(76, 162, 172);
     border-radius: 50%;
     text-align: center;
     font-size: 11px;
     font-family: Sofia Pro;
     color: #ffffff;
+}
+.slide-1{
+    background-image: url(./img/sport4.jpeg);
+    height: 650px !important;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide-2{
+    background-image: url(./img/sport5.jpeg);
+    height: 650px !important;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.slide-3{
+    background-image: url(./img/sport7.jpeg);
+    height: 650px !important;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.slide-4{
+    background-image: url(./img/sport2.jpeg);
+    height: 650px !important;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.slide-5{
+    background-image: url(./img/sport1.jpeg);
+    height: 650px !important;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slick-dots{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 16px 0;
+    bottom: 20px;
+    width: 100%;
+    position: absolute;
+}
+.slick-dots li{
+    margin: 0 0.25rem;
+    
+    border-radius: 50%;
+}
+.slick-dots button{
+    display: block;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(228, 228, 228);
+}
+.slick-dots li.slick-active button{
+    background-color: #00d3b9;
+}
+.wellcome{
+    background-color: rgb(76, 162, 172);
+    height: 30px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    right: 0;
+    left: 0;
 }
