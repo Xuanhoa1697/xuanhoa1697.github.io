@@ -22,17 +22,18 @@
     left: 0;
     right: 0;
     z-index: 1000 !important;
-    transition: all 0.2s ease-out;
-    -webkit-transition: 0.2s all ease-out;
-    -o-transition: 0.2s all ease-out;
-    -moz-transition: 0.2s all ease-out;
-    -ms-transiton:0.2s all ease-out;
+    transition: all 0.5s ease-out;
+    -webkit-transition: 0.5s all ease-out;
+    -o-transition: 0.5s all ease-out;
+    -moz-transition: 0.5s all ease-out;
+    -ms-transiton:0.5s all ease-out;
 }
 .text-logo{
     font-family: Sofia Pro;
     font-size: 25px;
     color: #ffff;
     font-weight: 700;
+    z-index: 5;
 }
 .text-logo:hover{
     color: rgb(255, 255, 255);
@@ -41,7 +42,7 @@
 .app1, .app3{
     width: 20px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: rgb(253, 253, 253);
     transition: 0.2s all ease-out;
 
 }
@@ -54,7 +55,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-color: #ffff !important;
+    border-color: white !important;
+    z-index: 5;
+    position: relative;
 }
 .menu-app:hover{
     cursor: pointer;
@@ -65,7 +68,7 @@
     margin-bottom: 4px;
     width: 20px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: rgb(253, 253, 253);
     transition: 0.2s all ease-out;
 }
 .shoose, .fashion, .home, .contact, .pricing-header{
@@ -135,6 +138,9 @@
     font-size: 14px;
     color: #ffff;
 }
+.pricing{
+    z-index: 0;
+}
 .sign , .pricing{
     padding: 5px;
     cursor: pointer;
@@ -145,21 +151,18 @@
 .menu-drop{
     width: 40%;
     height: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(109, 109, 109);
     top: 30px;
     left: -40%;
-    transition: 0.2s all ease;
+    transition: all 0.2s ease-out;
+    -webkit-transition: 0.2s all ease-out;
+    -o-transition: 0.2s all ease-out;
+    -moz-transition: 0.2s all ease-out;
+    -ms-transiton:0.2s all ease-out;
     z-index: 2;
+    opacity: 0.5;
 }
-.drop-right{
-    width: 60%;
-    height: 100%;
-    background-color: rgb(255, 255, 255);
-    top: 30px;
-    right: -60%;
-    transition: 0.2s all ease;
-    z-index: 2;
-}
+
 .heading{
     top: 50px;
     width: 100%;
@@ -174,23 +177,32 @@
     display: none;
 }
 .search-header{
-    width: 80%;
+    width: 95%;
     border-radius: 50px;
     outline: none;
     border: 1px solid rgb(255, 255, 255);
     background: none;
     font-family: Sofia Pro ;
     font-size: 15px;
-    color: white;
+    color: rgb(138, 138, 138);
+}
+.search-header::-webkit-input-placeholder {
+    color: rgb(216, 216, 216);
+}
+:-ms-input-placeholder{
+    color: rgb(112, 112, 112);
 }
 .form-sign{
     top: 0;
     width: 35%;
     height: 550px;
-    background-color: #383838;
-    border-radius: 20px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    background-image: linear-gradient(-225deg, #202020 90%, rgb(76,162,172) 40%);
 }
 .bc-show{
+    position: absolute;
+    top: -20px;
     background-color: rgb(0, 0, 0);
     opacity: 0.7;
 }
@@ -198,7 +210,7 @@
     cursor: pointer;
 }
 .bi-cart{
-    font-size: 20px;
+    font-size: 25px;
     color:rgb(76, 162, 172) ;
 }
 
@@ -221,7 +233,7 @@
     color: #ffffff;
 }
 .slide-1{
-    background-image: url(./img/sport4.jpeg);
+    background-image: url(./img/sport-101.jpg);
     height: 650px !important;
     background-position: center;
     object-fit: cover;
@@ -229,16 +241,16 @@
     background-repeat: no-repeat;
 }
 .slide-2{
-    background-image: url(./img/sport5.jpeg);
+    background-image: url(./img/sport41.jpeg);
     height: 650px !important;
-    background-position: center;
+    background-position: top;
     object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
 
 }
 .slide-3{
-    background-image: url(./img/sport7.jpeg);
+    background-image: url(./img/sport71.jpeg);
     height: 650px !important;
     background-position: center;
     object-fit: cover;
@@ -247,21 +259,13 @@
 
 }
 .slide-4{
-    background-image: url(./img/sport2.jpeg);
+    background-image: url(./img/bus-690508_1280.jpg);
     height: 650px !important;
-    background-position: center;
+    background-position: top;
     object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
 
-}
-.slide-5{
-    background-image: url(./img/sport1.jpeg);
-    height: 650px !important;
-    background-position: center;
-    object-fit: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .slick-dots{
     display: -webkit-flex;
@@ -292,7 +296,7 @@
     background-color: rgb(228, 228, 228);
 }
 .slick-dots li.slick-active button{
-    background-color: #00d3b9;
+    background-color: rgb(76, 162, 172);
 }
 .wellcome{
     background-color: rgb(76, 162, 172);
@@ -302,4 +306,85 @@
     z-index: 1000;
     right: 0;
     left: 0;
+}
+.bi-x{
+    font-size: 30px;
+    color:rgb(76, 162, 172);
+    position: absolute;
+    top: 0;
+     right: 10px;
+}
+.bg-cl{
+    flex-basis: 1%;
+    height: 30px;
+    background-color: rgb(76, 162, 172);
+}
+.text-signin{
+    font-family: Sofia Pro;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(76, 162, 172);
+    width: 100%;
+    padding-bottom: 20px;
+    margin-right: 21px;
+}
+.name, .password{
+    height: 50px;
+    outline: none;
+    border: 0.5px solid rgb(134, 134, 134);
+    padding-left: 10px;
+    font-family: Sofia Pro;
+    color: rgb(107, 107, 107);
+}
+.empty-bg-name, .empty-bg-pass{
+    width: 40px;
+    height: 50px;
+    background-color: rgb(76,162,172);
+    position: absolute;
+    top: 0;
+    left: -35px;
+    border-top: 0.5px solid rgb(134, 134, 134);
+    border-bottom: 0.5px solid rgb(134, 134, 134);
+    border-left: 0.5px solid rgb(134, 134, 134);
+    transition: all 0.2s ease-out;
+    -webkit-transition: 0.2s all ease-out;
+    -o-transition: 0.2s all ease-out;
+    -moz-transition: 0.2s all ease-out;
+    -ms-transiton:0.2s all ease-out;
+}
+.bi-lock-fill, .bi-people-fill{
+    color: white;
+}
+.name:focus + .empty-bg-name{
+    left: 0;
+}
+.name:focus{
+    padding-left: 40px;
+}
+.password:focus + .empty-bg-pass{
+    left: 0;
+}
+.password:focus{
+    padding-left: 40px;
+}
+.btn-sign{
+    height: 50px;
+    font-family: Sofia Pro;
+    outline: none;
+    border: none;
+}
+.btn-sign:hover {
+    background-image: linear-gradient(-225deg, #ffe6fa 90%, #e3fdf5 50%);
+    box-shadow: 0 0 10px #7debe1, 0 0 40px #7efafa, 0 0 80px #91fcee;
+    color: rgb(76, 162, 172);
+}
+.forget-pass{
+    color: white;
+    font-family: Sofia Pro;
+    font-size: 17px;
+}
+.register{
+    width: 100px;
+    height: 30px;
+    background-color: #fff;
 }

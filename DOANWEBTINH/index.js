@@ -2,7 +2,6 @@ import menu from "./menu.js";
 
 $(() => {
   let count = 0;
-  let numnerLogin = 0;
   let number = 0;
   let countText = 0;
   let text = "";
@@ -14,7 +13,7 @@ $(() => {
 
   $(`.menu-app`).on("click", () => {
     count++;
-    menu($(`.app1`), $(`.app2`), $(`.app3`), $(`.menu-drop`),$(`.drop-right`), count);
+    menu($(`.app1`), $(`.app2`), $(`.app3`), $(`.menu-drop`), count);
   });
   function textPlaceHolder() {
     text += inputText[countText].charAt(number);
@@ -33,18 +32,17 @@ $(() => {
 
   $(`.sign`).on("click", () => {
     event.preventDefault();
-    numnerLogin++;
-    if (numnerLogin % 2 == 0) {
-      $(`.login`).css({
-        display: "none",
-      });
-    } else {
-      $(`.login`).css({
-        display: "flex",
-        "justify-content": "center",
-      });
-    }
+    $(`.login`).css({
+      display: "flex",
+      "justify-content": "center",
+    });
   });
+  $(`.bi-x`).on(`click`,()=>{
+    $(`.login`).css({
+      display: "none",
+    });
+    event.preventDefault()
+  })
 
   $(".mr-img").slick({
     dots: true,
@@ -74,7 +72,7 @@ $(() => {
         height:"80px"
       })
       $(`.text-logo`).css({
-        color:"black"
+        color:"rgb(76, 162, 172)"
       })
       $(`.search-header`).css({
         "border-color":"black"
@@ -91,11 +89,11 @@ $(() => {
       $(`.app3`).css({
         background:"black"
       })
-      $(`.menu-app`).css({
-        "border-color": "#0000 !important"
-      })
       $(`.text-sign`).css({
         color:"black"
+      }) 
+      $(`.menu-drop`).css({
+        top:"110px"
       })
     }else{
       $(`.header`).css({
@@ -124,11 +122,11 @@ $(() => {
       $(`.app3`).css({
         background:"white"
       })
-      $(`.menu-app`).css({
-        "border-color": "black "
-      })
       $(`.text-sign`).css({
         color:"white"
+      })
+      $(`.menu-drop`).css({
+        top:"30px"
       })
     }
   })
