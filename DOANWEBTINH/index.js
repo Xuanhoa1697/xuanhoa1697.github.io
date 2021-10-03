@@ -6,20 +6,20 @@ $(() => {
   let countText = 0;
   let text = "";
   let inputText = [
-    "Search for your perfect!",
-    "Find yourself the best shoes!",
-    "@ShoseName + @FashionName you need to find!",
+    "Lots of promotions are waiting for you !",
+    "Explore this year's fashion culture and trends with us now !",
+    "New products are available in the store !",
   ];
 
   $(`.menu-app`).on("click", () => {
     count++;
-    menu($(`.app1`), $(`.app2`), $(`.app3`), $(`.menu-drop`), count);
+    menu($(`.menu-drop`), count);
   });
   function textPlaceHolder() {
     text += inputText[countText].charAt(number);
     $(`.text-wellcome`).text(text);
     number++;
-    if (number >=80) {
+    if (number >=100) {
       text = "";
       number = 0;
       countText++;
@@ -43,11 +43,19 @@ $(() => {
     });
     event.preventDefault()
   })
+  $(`.bi-x-lg`).on(`click`,()=>{
+    $(`.search-item`).css({
+      visibility:"hidden",
+      opacity:0,
+      top:"100px"
+    })
+    event.preventDefault()
+  })
 
-  $(".mr-img").slick({
+  $(".slider").slick({
     dots: true,
     infinite: true,
-    speed: 700,
+    speed: 600,
     fade: true,
     cssEase: "linear",
     autoplay: true,
@@ -59,76 +67,91 @@ $(() => {
   $(`#slick-slide-control02`).text("")
   $(`#slick-slide-control03`).text("")
   $(`#slick-slide-control04`).text("")
-
+  $(`.bi-search`).on("click",()=>{
+    event.preventDefault()
+    $(`.search-item`).css({
+      visibility:"visible",
+      opacity:1,
+      top:0
+    })
+  })
   $(window).on("scroll",()=>{
+    $(`.search-item`).css({
+      visibility:"hidden",
+      opacity:0,
+      top:"100px"
+    })
     let x = document.documentElement.scrollTop
-    if(x>0){
+    if(x--){
+      $(`.pricing`).css({
+        border:"1px solid rgb(76,162,172)"
+      })
+      $(`.header-top`).css({
+        top:"-30px"
+      })
+      $(`.bi-heart`).css({
+        color:"black"
+      })
+      $(`.bi-search`).css({
+        color:"black"
+      })
+      $(`.bi-person-circle`).css({
+        color:"black"
+      })
       $(`.header`).css({
         position:`fixed`,
-        top:"30px",
+        top:0,
         right:0,
         left:0,
         background:"white",
-        height:"80px"
-      })
-      $(`.text-logo`).css({
-        color:"rgb(76, 162, 172)"
-      })
-      $(`.search-header`).css({
-        "border-color":"black"
+        height:"100px"
       })
       $(`.text-header-logo`).css({
         color:"black"
       })
-      $(`.app1`).css({
-        background:"black"
-      })
-      $(`.app2`).css({
-        background:"black"
-      })
-      $(`.app3`).css({
-        background:"black"
-      })
       $(`.text-sign`).css({
         color:"black"
-      }) 
-      $(`.menu-drop`).css({
-        top:"110px"
       })
     }else{
+      $(`.pricing`).css({
+        border:"none"
+      })
+      $(`.bi-heart`).css({
+        color:"white"
+      })
+      $(`.bi-search`).css({
+        color:"white"
+      })
+      $(`.bi-person-circle`).css({
+        color:"white"
+      })
+      $(`.header-top`).css({
+        top:0
+      })
+      $(`.pricing`).css({
+        " background-Color":"white",
+        "border":"none"
+       })
       $(`.header`).css({
         position:`absolute`,
         top:"30px",
         right:0,
         left:0,
-        background:"none",
-        height:"60px"
-      })
-      $(`.text-logo`).css({
-        color:"white"
+        background:"rgba(0, 0, 0, 0.4)",
+        height:"100px"
       })
       $(`.text-header-logo`).css({
         color:"white"
-      })
-      $(`.search-header`).css({
-        "border-color":"white"
-      })
-      $(`.app1`).css({
-        background:"white"
-      })
-      $(`.app2`).css({
-        background:"white"
-      })
-      $(`.app3`).css({
-        background:"white"
       })
       $(`.text-sign`).css({
         color:"white"
       })
       $(`.menu-drop`).css({
-        top:"30px"
+        left:"-40%"
       })
+      
     }
   })
   
 });
+ 
