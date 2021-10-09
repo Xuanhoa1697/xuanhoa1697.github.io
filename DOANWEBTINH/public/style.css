@@ -48,7 +48,7 @@
 }
 .header{
     height: 120px;
-    position: absolute;
+    position: fixed;
     top: 30px;
     left: 0;
     right: 0;
@@ -209,7 +209,7 @@
     height: 550px;
     border: 0.5px solid rgb(56, 56, 56);
     border-radius: 10px;
-    background-image: linear-gradient(-225deg, #000000 90%, rgb(76,162,172) 40%);
+    background-image: linear-gradient(-225deg, #ffffff 90%, rgb(76,162,172) 40%);
 }
 .bi-cart{
     font-size: 25px;
@@ -233,17 +233,17 @@
     color: #ffffff;
 }
 .slide-1{
-    background-image: url(./img/Artboard\ 2.jpg);
+    background-image: url(./img/slider_4.jpg);
     height: 660px !important;
-    background-position: top;
+    background-position: center;
     object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .slide-2{
-    background-image: url(./img/img123.jpg);
+    background-image: url(./img/thumb4.png);
     height: 660px !important;
-    background-position: top;
+    background-position: center;
     object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
@@ -403,7 +403,7 @@
 }
 .form-search{
     width: 70%;
-    height: 50%;
+    height: 30%;
     background-color: #fff;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -468,7 +468,7 @@
     color: rgb(255, 255, 255);
 }
 .forget-pass{
-    color: white;
+    color: rgb(117, 117, 117);
     font-family: Sofia Pro;
     font-size: 17px;
 }
@@ -478,11 +478,14 @@
     background-color: #b3ffe8;
     outline: none;
     border: none;
+    color: rgb(117, 117, 117);
+    font-family: Sofia Pro;
+    font-size: 17px;
 }
 .text-or{
     text-align: center;
     font-family: Sofia Pro;
-    color: white;
+    color: rgb(117, 117, 117);
     font-size: 18;
     line-height: 26px;
 }
@@ -531,7 +534,9 @@
     margin-top: 15px;
 }
 .experience{
-    margin-top: 50px;
+    margin-top: 30px;
+    padding: 20px 0 20px 0;
+    background-color: rgb(248, 248, 248);
 }
 .text-experience{
     font-family: Sofia Pro;
@@ -543,8 +548,8 @@
 }
 .text-sub-ex{
     font-family: Sofia Pro;
-    color: rgb(61, 61, 61);
-    font-style: 15px;
+    color: rgb(146, 146, 146);
+    font-style: 14px;
     line-height: 23px;
 }
 .technology{
@@ -560,7 +565,7 @@
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
-    background-color: rgb(241, 241, 241);
+    background-color: white;
     transform: translateX(100px);
 }
 @keyframes tech{
@@ -576,7 +581,6 @@
 .img-teck{
     max-width: 90%;
     object-fit: cover;
-    filter: grayscale(20%);
     transition: all 0.2s ease;
     -webkit-transition: 0.2s all ease;
     -o-transition: 0.2s all ease;
@@ -587,14 +591,11 @@
     background-color: rgb(247, 247, 247);
     box-shadow: 0 4px 40px rgb(0 0 0 / 40%);
 }
-.technology:hover .img-teck{
-    filter: grayscale(0);
-}
 .technology:hover .info-cart{
     background-color: rgb(238, 238, 238);
 }
 .review-product{
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .img-product{
     height: 70%;
@@ -653,7 +654,7 @@
     z-index: 10 !important;
 }
 .bi-heart-fill:hover{
-    color: rgb(160,0,0);
+    color: rgb(160,0,0) !important;
 }
 .bi-cart-plus-fill{
     color: rgb(77, 77, 77);
@@ -803,33 +804,52 @@
     width: 100%;
     height: 300px;
     background-color: rgba(0, 0, 0, 0.144);
-    margin-top: 100px;
+    margin-top: 50px;
 }
+.slide-band{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .item-brand{
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .brand-img{
     max-width: 90%;
+    padding: 30px;
     background-color: rgb(241, 241, 241);
     border-radius: 10px;
 }
 .prev-arrow{
     position: absolute;
     height: 100%;
-    width: 50px;
+    width: 40px;
     top: 0;
     left: 0;
     border-radius: 10px;
     background-color: rgb(241, 241, 241);
+    cursor: pointer;
 }
 .next-arrow{
     position: absolute;
     height: 100%;
-    width: 50px;
+    width: 40px;
     border-radius: 10px;
     top: 0;
     right: 0;
     background-color: rgb(241, 241, 241);
+    cursor: pointer;
+}
+.bi-chevron-compact-left , .bi-chevron-compact-right{
+    font-size: 50px;
+    color: white;
+}
+.bi-arrow-right{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

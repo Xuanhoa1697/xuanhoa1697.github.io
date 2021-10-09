@@ -97,13 +97,15 @@ $(() => {
     });
   });
   $(window).on("scroll", () => {
+    console.log(document.documentElement.scrollTop);
     $(`.search-item`).css({
       visibility: "hidden",
       opacity: 0,
       top: "100px",
     });
     let x = document.documentElement.scrollTop;
-    if (x >= 1350) {
+    if (x >= 600) {
+      let arrBColor = ["#E2AB6B","#FD6768","#7ABBF1","#7ABBF1","#7ABBF1","#D8B8CD","#FFAB9D","#E2AB6B"]
       let arrDelay = [0.1, 0.15, 0.2, 0.25, 0.1, 0.15, 0.2, 0.25];
       let numberDelay = -1;
       let arrTech = Array.from($(`.technology`));
@@ -111,6 +113,7 @@ $(() => {
         numberDelay++;
         item.style.animation = `tech 0.5s ease-out forwards`;
         item.style.animationDelay = `${arrDelay[numberDelay] + "s"}`;
+        item.style.backgroundColor = `${arrBColor[numberDelay]}`
       });
     }
     if (x > 0) {
@@ -273,11 +276,11 @@ $(() => {
     centerMode: true,
     centerPadding: 0,
     slidesToShow: 7,
-    autoplay: false,
+    autoplay: true,
     arrows: true,
     autoplaySpeed: 1000,
-    prevArrow:`<div class="prev-arrow"><i class="bi bi-chevron-compact-left"></i></div>`,
-    nextArrow:`<div class="next-arrow"><i class="bi bi-chevron-compact-right"></i></div>`,
+    prevArrow:`<div class="prev-arrow d-flex justify-content-center align-items-center"><i class="bi bi-chevron-compact-left"></i></div>`,
+    nextArrow:`<div class="next-arrow d-flex justify-content-center align-items-center"><i class="bi bi-chevron-compact-right"></i></div>`,
     responsive: [
       {
         breakpoint: 1000,
