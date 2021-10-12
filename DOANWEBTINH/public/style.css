@@ -24,8 +24,8 @@
     height: 100%;
 }
 .header-top{
-    background-color: rgb(76, 162, 172);
-    height: 30px;
+    background-color: rgb(47,51,58);
+    height: 40px;
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -42,42 +42,135 @@
     font-size: 15px;
     line-height: 23px;
     color: white;
-}
-.infomation:hover {
-    color: rgb(0, 0, 0);
-}
-.header{
-    height: 120px;
-    position: fixed;
-    top: 30px;
-    left: 0;
-    right: 0;
-    z-index: 1000 !important;
-    background-color: rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease-out;
     -webkit-transition: 0.3s all ease-out;
     -o-transition: 0.3s all ease-out;
     -moz-transition: 0.3s all ease-out;
     -ms-transiton:0.3s all ease-out;
 }
-.logo{
-    background-image: url(./img/logo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    object-fit: cover;
+.infomation:hover {
+    color: rgb(235,65,50);
 }
-.text-logo{
+.header{
+    height: 90px;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 1000 !important;
+    background:white;
+    transition: all 0.3s ease-out;
+    -webkit-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    -moz-transition: 0.3s all ease-out;
+    -ms-transiton:0.3s all ease-out;
+    box-shadow: 0 4px 40px rgb(0 0 0 / 30%);
+}
+.header-menu{
+    position: fixed;
+    top: 130px;
+    z-index: 10000 !important;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(47,51,58);
+    transition: all 0.3s ease-out;
+    -webkit-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    -moz-transition: 0.3s all ease-out;
+    -ms-transiton:0.3s all ease-out;
+    box-shadow: 0 4px 40px rgb(0 0 0 / 30%);
+    z-index: 1 !important;
+}
+.content-body{
+    position: absolute;
+    top: 190px;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-out;
+    -webkit-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    -moz-transition: 0.3s all ease-out;
+    -ms-transiton:0.3s all ease-out;
+}
+.select-content{
+    height: 50px;
+    outline: none;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid rgb(209, 209, 209);
     font-family: Sofia Pro;
-    font-size: 30px;
-    line-height: 38px;
-    color: rgb(6, 158, 151);
-    font-weight: 700;
-    z-index: 5;
-    padding-top: 45px;
+    font-size: 15px;
+    text-align: center;
 }
-.text-logo:hover{
-    color: rgb(0, 255, 255);
+option{
+    font-family: Sofia Pro;
+    font-size: 15px;
+    color: rgb(54,63,77);
+}
+.input-search1{
+    height: 50px;
+    border: none;
+    outline: none;
+    border-top:  1px solid rgb(209, 209, 209);
+    border-bottom:  1px solid rgb(209, 209, 209);
+    padding: 10px;
+    font-family: Sofia Pro;
+    font-size: 15px;
+    color: rgb(54,63,77);
+}
+.item-search{
+    height: 50px;
+    border: none;
+    outline: none;
+    border-top:  1px solid rgb(209, 209, 209);
+    border-bottom:  1px solid rgb(209, 209, 209);
+    border-right: 1px solid rgb(209, 209, 209);
+    background-color: rgb(235,65,50);
+    font-family: Sofia Pro;
+    font-size: 15px;
+    line-height: 23px;
+    color: rgb(255, 255, 255);
+}
+.text-logo img{
+    max-width: 80%;
+}
+.menu-display{
+    display: none;
+}
+.follow{
+    font-family:Sofia Pro;
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 800;
+    color: rgb(209, 209, 209);
+}
+.app-tw{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(131, 131, 131);
+    border-radius: 50%;
+    transition: all 0.3s ease-out;
+    -webkit-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    -moz-transition: 0.3s all ease-out;
+    -ms-transiton:0.3s all ease-out;
+}
+.bi-twitter, .bi-facebook, .bi-google, .bi-instagram{
+    color: rgb(209, 209, 209);
+}
+.app-tw:hover{
+    background-color:rgb(235,65,50);
+}
+.app-tw:hover .bi-facebook{
+    color: white;
+}
+.app-tw:hover .bi-google{
+    color: white;
+}
+.app-tw:hover .bi-instagram{
+    color: white;
+}
+.app-tw:hover .bi-twitter{
+    color: white;
 }
 .shoose, .fashion, .home, .contact, .pricing-header{
     flex-basis: 30%;
@@ -89,21 +182,43 @@
 .home:hover .text-header-logo,
 .pricing-header:hover .text-header-logo,
 .contact:hover .text-header-logo{
-    color: rgb(76, 162, 172) !important;
+    color: rgb(235,65,50) !important;
     transition: all 0.3s ease-out;
     -webkit-transition: 0.3s all ease-out;
     -o-transition: 0.3s all ease-out;
     -moz-transition: 0.3s all ease-out;
     -ms-transiton:0.3s all ease-out;
 }
-
+.fashion:hover .text-header-logo1,
+.shoose:hover .text-header-logo1,
+.home:hover .text-header-logo1,
+.pricing-header:hover .text-header-logo1,
+.contact:hover .text-header-logo1{
+    color: rgb(235,65,50) !important;
+    transition: all 0.3s ease-out;
+    -webkit-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    -moz-transition: 0.3s all ease-out;
+    -ms-transiton:0.3s all ease-out;
+}
+.home .text-header-logo{
+    color: rgb(235,65,50);
+}
 .text-header-logo{
     flex-basis: 100%;
     font-family:Sofia Pro;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 23px;
     font-weight: 800;
-    color: #ffff;
+    color: rgb(255, 255, 255);
+}
+.text-header-logo1{
+    flex-basis: 100%;
+    font-family:Sofia Pro;
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 800;
+    color: rgb(75, 75, 75);
 }
 .start{
     flex-basis: 30%;
@@ -138,39 +253,12 @@
     flex-basis: 50px;
     height: 50px;
     background-color: #fff;
-    border-radius: 50%;
     border: none;
-}
-.pricing:hover{
-    background-color: rgb(76, 162, 172);
-    transition: all 0.5s ease-out;
-    -webkit-transition: 0.5s all ease-out;
-    -o-transition: 0.5s all ease-out;
-    -moz-transition: 0.5s all ease-out;
-    -ms-transiton:0.5s all ease-out;
-}
-.pricing:hover .bi-cart{
-    color: white;
-    transition: all 0.3s ease-out;
-    -webkit-transition: 0.3s all ease-out;
-    -o-transition: 0.3s all ease-out;
-    -moz-transition: 0.3s all ease-out;
-    -ms-transiton:0.3s all ease-out;
-}
-.pricing:hover .aqua-cart{
-    background-color: white;
-    color: rgb(76, 162, 172);
-    transition: all 0.3s ease-out;
-    -webkit-transition: 0.3s all ease-out;
-    -o-transition: 0.3s all ease-out;
-    -moz-transition: 0.3s all ease-out;
-    -ms-transiton:0.3s all ease-out;
 }
 .sign , .pricing{
     padding: 5px;
     cursor: pointer;
 }
-
 .menu-drop{
     width: 40%;
     height: 100%;
@@ -209,63 +297,58 @@
     height: 550px;
     border: 0.5px solid rgb(56, 56, 56);
     border-radius: 10px;
-    background-image: linear-gradient(-225deg, #ffffff 90%, rgb(76,162,172) 40%);
-}
-.bi-cart{
-    font-size: 25px;
-    color:rgb(76, 162, 172);
+    background-image: linear-gradient(-225deg, #ffffff 90%, rgb(235,65,50) 40%);
 }
 .bi-chevron-down{
     font-size: 12px;
 }
 .aqua-cart{
     display: block;
-    top: -5px;
-    right: -10px;
+    top: 0;
+    right: 0;
     width: 18px;
     height: 18px;
-    border: 0.5px solid rgb(76, 162, 172);
-    background-color: rgb(76, 162, 172);
+    border: 0.5px solid rgb(75, 75, 75);
+    background-color: rgb(235,65,50);
     border-radius: 50%;
     text-align: center;
     font-size: 11px;
     font-family: Sofia Pro;
     color: #ffffff;
 }
-.slide-1{
-    background-image: url(./img/slider_4.jpg);
-    height: 660px !important;
-    background-position: center;
-    object-fit: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.slide-2{
-    background-image: url(./img/thumb4.png);
-    height: 660px !important;
-    background-position: center;
-    object-fit: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-
+.slider{
+    cursor: pointer;
 }
 .slide-3{
-    background-image: url(./img/kicks-2213619_1280.jpg);
-    height: 660px !important;
-    background-position: top;
+   background-image:url(./img/slide1.jpg);
+   background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+   height: 600px !important;
+}
+.slide-2{
+    background-image: url(./img/c1743c24110511.563312103909d.jpg);
+    height: 600px !important;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide-1{
+    background-image: url(./img/banner22.jpg);
+    height: 600px !important;
+    background-position: center;
     object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
 
 }
-.slide-4{
-    background-image: url(./img/pexels-grailify-4252961.jpg);
-    height: 660px !important;
-    background-position: top;
-    object-fit: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-
+.img-suport{
+    max-width: 100%;
+}
+.mr-12{
+    margin-bottom: 12px;
 }
 .content-slide1{
     flex-basis: 50%;
@@ -330,10 +413,21 @@
     padding: 0;
     border: none;
     border-radius: 50%;
+    border: 1px solid rgb(85, 85, 85);
     background-color: rgb(228, 228, 228);
+    transition: all 0.3s ease-out;
+    -webkit-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    -moz-transition: 0.3s all ease-out;
+    -ms-transiton:0.3s all ease-out;
 }
 .slick-dots li.slick-active button{
-    background-color: rgb(76, 162, 172);
+    background-color: rgb(235,65,50);
+    transform: scale(1.3);
+}
+.slick-dots button:hover{
+    background-color: rgb(235,65,50);
+    transform: scale(1.3);
 }
 .bi-x{
     font-size: 30px;
@@ -354,7 +448,7 @@
 .bg-cl{
     flex-basis: 1%;
     height: 30px;
-    background-color: rgb(76, 162, 172);
+    background-color: rgb(235,65,50);
 }
 .name, .password{
     height: 50px;
@@ -367,7 +461,7 @@
 .empty-bg-name, .empty-bg-pass{
     width: 40px;
     height: 50px;
-    background-color: rgb(76,162,172);
+    background-color: rgb(235,65,50);
     position: absolute;
     top: 0;
     left: -35px;
@@ -380,9 +474,12 @@
     -moz-transition: 0.3s all ease-out;
     -ms-transiton:0.3s all ease-out;
 }
-.bi-lock-fill, .bi-people-fill, .bi-search, .bi-heart, .bi-person-circle{
-    color: white;
+.bi-lock-fill, .bi-people-fill, .bi-gear-fill, .bi-heart, .bi-person-circle, .bi-cart, .bi-search{
+    color: rgb(83, 83, 83);
     font-size: 20px;
+}
+.bi-search{
+    display: none;
 }
 .search-item{
     top: 100px;
@@ -435,9 +532,6 @@
     color: rgb(145, 0, 0);
     line-height: 25px;
     font-weight: 600;
-}
-.img-result{
-    max-width: 10%;
 }
 .trend{
     font-family: Sofia Pro;
@@ -498,7 +592,7 @@
 .dropdown-menu{
     z-index: 10;
     top: 0;
-    left: 10px;
+    left: -10px;
     width: 250px;
     transform: translateY(60px);
     display: block;
@@ -579,7 +673,7 @@
     }
 }
 .img-teck{
-    max-width: 90%;
+    max-width: 70%;
     object-fit: cover;
     transition: all 0.2s ease;
     -webkit-transition: 0.2s all ease;
@@ -593,9 +687,6 @@
 }
 .technology:hover .info-cart{
     background-color: rgb(238, 238, 238);
-}
-.review-product{
-    padding-top: 50px;
 }
 .img-product{
     height: 70%;
@@ -656,9 +747,9 @@
 .bi-heart-fill:hover{
     color: rgb(160,0,0) !important;
 }
-.bi-cart-plus-fill{
+.bi-bag-check-fill{
     color: rgb(77, 77, 77);
-    font-size: 30px;
+    font-size: 20px;
 }
 .direct{
     bottom: 10px;
@@ -692,69 +783,13 @@
     -moz-transition: 0.5s all ease;
     -ms-transiton:0.5s all ease;
 }
-.empty{
-    width: 100px;
-    height: 1px;
-    background-color: #4e4e4e;
-}
-.empty1{
-    width: 1px;
-    height: 50px;
-    background-color: #F1674b;
-}
 .protect{
     height: 600px;
-}
-
-.img-review{
-    max-width: 80%;
 }
 .bi-plus-circle-fill{
     font-size: 35px;
     color: #F1674b;
     width: 350px;
-}
-.bi1{
-    left: 12%;
-    top: 20%;
-}
-.bi2{
-    left: 45%;
-    top: 0;
-}
-.bi3{
-    left: 55%;
-    top: 60%;
-}
-.bi4{
-    left: 10%;
-    top: 20%;
-}
-.bi5{
-    left: 60%;
-    top: 0;
-}
-.bi6{
-    left: 60%;
-    top: 68%;
-}
-.circle{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background-color: #F1674b;
-}
-.text-header-review{
-    font-size: 16px;
-    color: black;
-    font-family: Sofia Pro;
-    line-height: 24px;
-}
-.text-review{
-    font-size: 14px;
-    color: rgb(112, 112, 112);
-    font-family: Sofia Pro;
-    line-height: 22px;
 }
 .status{
     flex-basis: 25%;
@@ -806,11 +841,6 @@
     background-color: rgba(0, 0, 0, 0.144);
     margin-top: 50px;
 }
-.slide-band{
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
 .item-brand{
     padding-left: 50px;
     padding-right: 50px;
@@ -852,4 +882,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.text-select{
+    font-family: Sofia Pro;
+    font-size: 17px;
+    color: 23px;
+    color: #4e4e4e;
+}
+.text-select:nth-child(1){
+    border-bottom: 1px black solid;
+    color: black;
 }

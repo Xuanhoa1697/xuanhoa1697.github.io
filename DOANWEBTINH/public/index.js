@@ -76,18 +76,18 @@ $(() => {
   $(".slider").slick({
     dots: true,
     infinite: true,
-    speed: 600,
+    speed: 400,
     fade: true,
     cssEase: "linear",
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
   });
-  $(`#slick-slide-control10`).text(" ");
-  $(`#slick-slide-control11`).text(" ");
-  $(`#slick-slide-control12`).text(" ");
-  $(`#slick-slide-control13`).text(" ");
-  $(`#slick-slide-control14`).text(" ");
+  $(`#slick-slide-control00`).text(" ");
+  $(`#slick-slide-control01`).text(" ");
+  $(`#slick-slide-control02`).text(" ");
+  $(`#slick-slide-control03`).text(" ");
+  $(`#slick-slide-control04`).text(" ");
   $(`.bi-search`).on("click", () => {
     event.preventDefault();
     $(`.search-item`).css({
@@ -98,14 +98,14 @@ $(() => {
   });
   $(window).on("scroll", () => {
     console.log(document.documentElement.scrollTop);
+    let x = document.documentElement.scrollTop;
     $(`.search-item`).css({
       visibility: "hidden",
       opacity: 0,
       top: "100px",
     });
-    let x = document.documentElement.scrollTop;
     if (x >= 600) {
-      let arrBColor = ["#E2AB6B","#FD6768","#7ABBF1","#7ABBF1","#7ABBF1","#D8B8CD","#FFAB9D","#E2AB6B"]
+      let arrBColor = ["#E2AB6B","#FD6768","#D8B8CD","#DEA793","#7ABBF1","#D8B8CD","#FFAB9D","#E2AB6B"]
       let arrDelay = [0.1, 0.15, 0.2, 0.25, 0.1, 0.15, 0.2, 0.25];
       let numberDelay = -1;
       let arrTech = Array.from($(`.technology`));
@@ -117,69 +117,60 @@ $(() => {
       });
     }
     if (x > 0) {
-      $(`.pricing`).css({
-        border: "1px solid rgb(76,162,172)",
-      });
+      $(`.content-body`).css({
+        top:"90px"
+      })
+      $(`.bi-search`).css({
+        display:"block"
+      })
+      $(`.bi-gear-fill`).css({
+        display:"none"
+      })
+      $(`.header-menu`).css({
+        top:"-60px"
+      })
       $(`.header-top`).css({
         top: "-30px",
       });
-      $(`.bi-heart`).css({
-        color: "black",
-      });
-      $(`.bi-search`).css({
-        color: "black",
-      });
-      $(`.bi-person-circle`).css({
-        color: "black",
-      });
+      $(`.menu-display`).css({
+        display:"block"
+      })
+      $(`.search-display`).css({
+        display:"none"
+      })
       $(`.header`).css({
         position: `fixed`,
         top: 0,
         right: 0,
         left: 0,
-        background: "white",
-        height: "100px",
-        "box-shadow": "0 4px 40px rgb(0 0 0 / 30%)",
-      });
-      $(`.text-header-logo`).css({
-        color: "black",
-      });
-      $(`.text-sign`).css({
-        color: "black",
       });
     } else {
-      $(`.pricing`).css({
-        border: "none",
-      });
-      $(`.bi-heart`).css({
-        color: "white",
-      });
       $(`.bi-search`).css({
-        color: "white",
-      });
-      $(`.bi-person-circle`).css({
-        color: "white",
-      });
+        display:"none"
+      })
+      $(`.bi-gear-fill`).css({
+        display:"block"
+      })
+      $(`.menu-display`).css({
+        display:"none"
+      })
+      $(`.search-display`).css({
+        display:"block"
+      })
+      $(`.content-body`).css({
+        top:"130px"
+      })
+      $(`.header-menu`).css({
+        top:"130px"
+      })
       $(`.header-top`).css({
         top: 0,
-      });
-      $(`.pricing`).css({
-        " background-Color": "white",
-        border: "none",
-      });
+      });    
       $(`.header`).css({
-        position: `absolute`,
-        top: "30px",
+        position: `fixed`,
+        top: "40px",
         right: 0,
         left: 0,
-        background: "rgba(0, 0, 0, 0.4)",
-        height: "120px",
-      });
-      $(`.text-header-logo`).css({
-        color: "white",
-      });
-      $(`.text-sign`).css({
-        color: "white",
       });
       $(`.menu-drop`).css({
         left: "-40%",
@@ -202,7 +193,7 @@ $(() => {
   //     })
   //   });
   // });
-  axios.get("./product").then((res) => {
+  axios.get("./product-new").then((res) => {
     let data = res.data;
     data.slice(0, 8).forEach((itemNewProduct) => {
       $(`<div class="col-3 pb-4">
@@ -218,7 +209,7 @@ $(() => {
       </div>
       <div class="info-cart border border-start-0 border-end-0 border-bottom-0 w-100">
         <div class="row h-100">
-          <div class="col-8">
+          <div class="col-12">
             <div class="text-cart-money h-100">
               <p class="make-money text-center m-0">
                 ${itemNewProduct.money}
@@ -228,14 +219,60 @@ $(() => {
               </p>
             </div>
           </div>
-          <div class="col-4 d-flex justify-content-center align-items-center">
-            <i class="bi bi-cart-plus-fill"></i>
-          </div>
         </div>
       </div>
     </div>
     </div>`).appendTo(`.render-product`);
     });
+    axios.get("./logo-render").then(res=>{
+      let dataLogo = res.data
+      dataLogo.forEach(dataResLogo=>{
+        $(`<div class="brand d-flex justify-content-center align-items-center">
+        <a class="d-flex justify-content-center align-items-center" href="">
+          <img src="${dataResLogo.logo}" alt="" class="brand-img">
+        </a>
+      </div>`).appendTo(`.item-brand`)
+      })
+      $('.item-brand').slick({
+        centerMode: true,
+        centerPadding: 0,
+        slidesToShow: 7,
+        autoplay: true,
+        arrows: true,
+        autoplaySpeed: 1000,
+        prevArrow:`<div class="prev-arrow d-flex justify-content-center align-items-center"><i class="bi bi-chevron-compact-left"></i></div>`,
+        nextArrow:`<div class="next-arrow d-flex justify-content-center align-items-center"><i class="bi bi-chevron-compact-right"></i></div>`,
+        responsive: [
+          {
+            breakpoint: 1000,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: 0,
+              slidesToShow: 4
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: 0,
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: 0,
+              slidesToShow: 3
+            }
+          }
+        ]
+      });
+    })
     let arrHeart = Array.from($(`.bi-heart-fill`));
     for (let check of arrHeart) {
       let count = 0;
@@ -272,43 +309,5 @@ $(() => {
       });
     }
   });
-  $('.item-brand').slick({
-    centerMode: true,
-    centerPadding: 0,
-    slidesToShow: 7,
-    autoplay: true,
-    arrows: true,
-    autoplaySpeed: 1000,
-    prevArrow:`<div class="prev-arrow d-flex justify-content-center align-items-center"><i class="bi bi-chevron-compact-left"></i></div>`,
-    nextArrow:`<div class="next-arrow d-flex justify-content-center align-items-center"><i class="bi bi-chevron-compact-right"></i></div>`,
-    responsive: [
-      {
-        breakpoint: 1000,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: 0,
-          slidesToShow: 4
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: 0,
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: 0,
-          slidesToShow: 3
-        }
-      }
-    ]
-  });
+  
 });

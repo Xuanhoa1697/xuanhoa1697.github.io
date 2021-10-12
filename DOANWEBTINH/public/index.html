@@ -16,11 +16,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="shortcut icon"
-      href="./img/thumb4.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./img/thumb4.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
@@ -35,9 +31,15 @@
         <div class="container">
           <div class="row h-100">
             <div
-              class="col-12 d-flex justify-content-between align-items-center"
+              class="
+                col-12
+                h-100
+                d-flex
+                justify-content-between
+                align-items-center
+              "
             >
-              <h6 class="text-aligns-center m-0 text-light text-wellcome ps-2">
+              <h6 class="text-aligns-center m-0 text-light text-wellcome">
                 Wellcome hehe
               </h6>
               <div
@@ -92,18 +94,58 @@
               class="col-2 p-0 d-flex justify-content-start align-items-center"
             >
               <div
+                class="logo d-flex justify-content-center align-items-center"
+              >
+                <a class="text-decoration-none text-logo" href="index.html">
+                  <img src="./img/logo-1.png" alt="Fail" />
+                </a>
+              </div>
+            </div>
+            <div class="col-7 search-display">
+              <div
                 class="
-                  logo
+                  row
+                  p-0
+                  m-0
                   d-flex
-                  justify-content-center
+                  justify-content-start
                   align-items-center
                 "
               >
-                <a class="text-decoration-none text-logo" href="">PerfectS</a>
+                <div class="col-3 p-0">
+                  <select class="select-content w-100">
+                    <option value="">All Catelogies</option>
+                    <option value="">Adidas</option>
+                    <option value="">Adidas</option>
+                    <option value="">Adidas</option>
+                    <option value="">Adidas</option>
+                  </select>
+                </div>
+                <div class="col-6 p-0">
+                  <input
+                    class="w-100 input-search1"
+                    type="text"
+                    placeholder="Search..."
+                  />
+                </div>
+                <div class="col-2 p-0">
+                  <form action="">
+                    <button type="submit" class="item-search w-100">Search</button>
+                  </form>
+                </div>
               </div>
             </div>
-            <div class="col-8 p-0">
-              <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-6 h-100 menu-display">
+              <div
+                class="
+                  row
+                  h-100
+                  w-100
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                "
+              >
                 <div class="col-2">
                   <div
                     class="
@@ -117,14 +159,13 @@
                     <a
                       class="
                         text-decoration-none text-header-logo
-                        w-100
                         h-100
                         d-flex
-                        justify-content-center
+                        justify-content-start
                         align-items-center
                       "
                       href=""
-                      >Home</a
+                      >HOME</a
                     >
                   </div>
                 </div>
@@ -140,15 +181,13 @@
                   >
                     <a
                       class="
-                        text-decoration-none text-header-logo
-                        w-100
-                        h-100
+                        text-decoration-none text-header-logo1
                         d-flex
-                        justify-content-center
+                        justify-content-start
                         align-items-center
                       "
                       href=""
-                      >Shopping <i class="bi bi-chevron-down ms-1 mt-1"></i
+                      >SHOPPING <i class="bi bi-chevron-down ms-1 mt-1"></i
                     ></a>
                     <div class="dropdown-menu position-absolute">
                       <ul class="list-shopping">
@@ -191,15 +230,15 @@
                   >
                     <a
                       class="
-                        text-decoration-none text-header-logo
+                        text-decoration-none text-header-logo1
                         w-100
                         h-100
                         d-flex
-                        justify-content-center
+                        justify-content-start
                         align-items-center
                       "
                       href=""
-                      >Design</a
+                      >DESIGN</a
                     >
                   </div>
                 </div>
@@ -215,14 +254,14 @@
                     <a
                       href=""
                       class="
-                        text-decoration-none text-header-logo
+                        text-decoration-none text-header-logo1
                         w-100
                         h-100
                         d-flex
-                        justify-content-center
+                        justify-content-start
                         align-items-center
                       "
-                      >Custom</a
+                      >CUSTOM</a
                     >
                   </div>
                 </div>
@@ -237,31 +276,31 @@
                   >
                     <a
                       class="
-                        text-decoration-none text-header-logo
+                        text-decoration-none text-header-logo1
                         w-100
                         h-100
                         d-flex
-                        justify-content-center
+                        justify-content-start
                         align-items-center
                       "
                       href=""
-                      >Feedback <i class="bi bi-chevron-down ms-1 mt-1"></i
+                      >FEEDBACK <i class="bi bi-chevron-down ms-1 mt-1"></i
                     ></a>
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="col-2 p-0 d-flex justify-content-center align-items-center"
+              class="
+                col-2
+                p-0
+                d-flex
+                justify-content-between
+                align-items-center
+              "
             >
               <div
-                class="
-                  pricing
-                  ms-3
-                  d-flex
-                  justify-content-center
-                  align-items-center
-                "
+                class="pricing d-flex justify-content-center align-items-center"
               >
                 <a
                   class="
@@ -274,12 +313,21 @@
                     align-items-center
                   "
                   href=""
-                  ><i class="bi bi-cart"></i
+                  ><i class="bi bi-bag-check-fill"></i
                   ><span class="aqua-cart position-absolute">0</span></a
                 >
               </div>
+              <div class="heart ms-3">
+                <a href=""><i class="bi bi-heart"></i></a>
+              </div>
+              <div class="sign ms-3">
+                <a class="text-decoration-none" href=""
+                  ><i class="bi bi-person-circle"></i
+                ></a>
+              </div>
               <div class="search ms-3">
                 <a href="" class="search-icon">
+                  <i class="bi bi-gear-fill"></i>
                   <i class="bi bi-search"></i>
                 </a>
                 <div class="search-item position-fixed">
@@ -299,19 +347,17 @@
                       placeholder="@FashionName..."
                     />
                     <a href=""> <i class="bi bi-x-lg"></i></a>
-                    <div class="result-search d-flex justify-content-center align-items-center flex-column">
-                      
-                    </div>
+                    <div
+                      class="
+                        result-search
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                        flex-column
+                      "
+                    ></div>
                   </form>
                 </div>
-              </div>
-              <div class="heart ms-3">
-                <a href=""><i class="bi bi-heart"></i></a>
-              </div>
-              <div class="sign ms-3">
-                <a class="text-decoration-none" href=""
-                  ><i class="bi bi-person-circle"></i
-                ></a>
               </div>
               <div class="login position-fixed">
                 <div class="form-sign position-absolute mt-3">
@@ -322,11 +368,11 @@
                       mt-5
                       d-flex
                       justify-content-start
-                      align-items-start
+                      align-items-center
                     "
                   >
                     <span class="bg-cl me-3"> </span>
-                    <h2 class="text-signin">Sign In</h2>
+                    <h2 class="text-signin m-0">Sign In</h2>
                   </div>
                   <form class="form-valid w-100 ps-5 pe-5 pt-4" novalidate>
                     <div class="form-name position-relative overflow-hidden">
@@ -417,6 +463,7 @@
                 </div>
               </div>
             </div>
+
             <!-- <div class="menu-drop position-fixed">
               <div class="row">
                 <div class="col-12">
@@ -436,6 +483,297 @@
           </div>
         </div>
       </div>
+      <div class="header-menu">
+        <div class="container">
+          <div class="row h-100">
+            <div class="col-6 h-100">
+              <div
+                class="
+                  row
+                  h-100
+                  w-100
+                  d-flex
+                  justify-content-start
+                  align-items-center
+                "
+              >
+                <div class="col-2">
+                  <div
+                    class="
+                      home
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                      h-100
+                    "
+                  >
+                    <a
+                      class="
+                        text-decoration-none text-header-logo
+                        h-100
+                        d-flex
+                        justify-content-start
+                        align-items-center
+                      "
+                      href=""
+                      >HOME</a
+                    >
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div
+                    class="
+                      shoose
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                      position-relative
+                    "
+                  >
+                    <a
+                      class="
+                        text-decoration-none text-header-logo
+                        d-flex
+                        justify-content-start
+                        align-items-center
+                      "
+                      href=""
+                      >SHOPPING <i class="bi bi-chevron-down ms-1 mt-1"></i
+                    ></a>
+                    <div class="dropdown-menu position-absolute">
+                      <ul class="list-shopping">
+                        <li class="item-dropdown">
+                          <a href="" class="dropdown-link">Nike</a>
+                        </li>
+                        <li class="item-dropdown">
+                          <a href="" class="dropdown-link">Adidas</a>
+                        </li>
+                        <li class="item-dropdown">
+                          <a href="" class="dropdown-link">Vans</a>
+                        </li>
+                        <li class="item-dropdown">
+                          <a href="" class="dropdown-link">Lining</a>
+                        </li>
+                        <li class="item-dropdown">
+                          <a href="" class="dropdown-link">Asicr</a>
+                        </li>
+                        <li class="item-dropdown">
+                          <a href="" class="dropdown-link">Pumma</a>
+                        </li>
+                        <li class="item-dropdown">
+                          <a href="" class="dropdown-link">Jordan</a>
+                        </li>
+                        <li class="item-dropdown">
+                          <a href="" class="dropdown-link">Other types...</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div
+                    class="
+                      fashion
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <a
+                      class="
+                        text-decoration-none text-header-logo
+                        w-100
+                        h-100
+                        d-flex
+                        justify-content-start
+                        align-items-center
+                      "
+                      href=""
+                      >DESIGN</a
+                    >
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div
+                    class="
+                      pricing-header
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <a
+                      href=""
+                      class="
+                        text-decoration-none text-header-logo
+                        w-100
+                        h-100
+                        d-flex
+                        justify-content-start
+                        align-items-center
+                      "
+                      >CUSTOM</a
+                    >
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div
+                    class="
+                      contact
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <a
+                      class="
+                        text-decoration-none text-header-logo
+                        w-100
+                        h-100
+                        d-flex
+                        justify-content-start
+                        align-items-center
+                      "
+                      href=""
+                      >FEEDBACK <i class="bi bi-chevron-down ms-1 mt-1"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 h-100">
+              <div
+                class="row h-100 w-100 m-0 p-0 d-flex justify-content-end align-items-center"
+              >
+                <div class="col-3 h-100">
+                  <p
+                    class="
+                      follow
+                      h-100
+                      m-0
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    FOLLOW US:
+                  </p>
+                </div>
+                <div
+                  class="
+                    col-1
+                    p-0
+                    d-flex
+                    justify-content-end
+                    align-items-center
+                  "
+                >
+                  <div
+                    class="
+                      app-tw
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <a href="">
+                      <i class="bi bi-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="
+                    col-1
+                    p-0
+                    d-flex
+                    justify-content-end
+                    align-items-center
+                  "
+                >
+                  <div
+                    class="
+                      app-tw
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <a href="">
+                      <i class="bi bi-facebook"></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="
+                    col-1
+                    p-0
+                    d-flex
+                    justify-content-end
+                    align-items-center
+                  "
+                >
+                  <div
+                    class="
+                      app-tw
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <a href="">
+                      <i class="bi bi-google"></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="
+                    col-1
+                    p-0
+                    d-flex
+                    justify-content-end
+                    align-items-center
+                  "
+                >
+                  <div
+                    class="
+                      app-tw
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <a href="">
+                      <i class="bi bi-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="
+                    col-1
+                    p-0
+                    d-flex
+                    justify-content-end
+                    align-items-center
+                  "
+                >
+                  <div
+                    class="
+                      app-tw
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <a href="">
+                      <i class="bi bi-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="direct position-fixed">
         <a href=""><i class="bi bi-arrow-up-square-fill"></i></a>
       </div>
@@ -448,65 +786,30 @@
               <div class="slide-1"></div>
               <div class="slide-2"></div>
               <div class="slide-3"></div>
-              <div class="slide-4"></div>
             </div>
           </div>
         </div>
-        <div class="slide-band d-flex justify-content-center align-items-center">
+        <div class="support mt-3 ">
+          <div class="container-fruid">
+            <div class="container">
+              <div class="row">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="slide-band mt-3 d-flex justify-content-center align-items-center"
+        >
           <div class="container">
             <div class="row">
-              <div class="col-12 ">
+              <div class="col-12">
                 <div class="item-brand position-relative">
-                  <div class="brand d-flex justify-content-center align-items-center">
+                  <!-- <div class="brand d-flex justify-content-center align-items-center">
                     <a class="d-flex justify-content-center align-items-center" href="">
                       <img src="./logo-slider/adidas.png" alt="" class="brand-img">
                     </a>
-                  </div>
-                  <div class="brand d-flex justify-content-center align-items-center">
-                    <a class="d-flex justify-content-center align-items-center" href="">
-                      <img src="./logo-slider/Asicr.png" alt="" class="brand-img">
-                    </a>
-                  </div>
-                  <div class="brand d-flex justify-content-center align-items-center">
-                    <a class="d-flex justify-content-center align-items-center" href="">
-                      <img src="./logo-slider/Convert.png" alt="" class="brand-img">
-                    </a>
-                  </div>
-                  <div class="brand d-flex justify-content-center align-items-center">
-                    <a class="d-flex justify-content-center align-items-center" href="">
-                      <img src="./logo-slider/nb.png" alt="" class="brand-img">
-                    </a>
-                  </div>
-                  <div class="brand d-flex justify-content-center align-items-center">
-                    <a class="d-flex justify-content-center align-items-center" href="">
-                      <img src="./logo-slider/nke.png" alt="" class="brand-img">
-                    </a>
-                  </div>
-                  <div class="brand d-flex justify-content-center align-items-center">
-                    <a class="d-flex justify-content-center align-items-center" href="">
-                      <img src="./logo-slider/puma.png" alt="" class="brand-img">
-                    </a>
-                  </div>
-                  <div class="brand d-flex justify-content-center align-items-center">
-                    <a class="d-flex justify-content-center align-items-center" href="">
-                      <img src="./logo-slider/reebok.png" alt="" class="brand-img">
-                    </a>
-                  </div>
-                  <div class="brand d-flex justify-content-center align-items-center">
-                    <a class="d-flex justify-content-center align-items-center" href="">
-                      <img src="./logo-slider/skeche.png" alt="" class="brand-img">
-                    </a>
-                  </div>
-                  <div class="brand d-flex justify-content-center align-items-center">
-                    <a class="d-flex justify-content-center align-items-center" href="">
-                      <img src="./logo-slider/Sup.png" alt="" class="brand-img">
-                    </a>
-                  </div>
-                  <div class="brand d-flex justify-content-center align-items-center">
-                    <a class="d-flex justify-content-center align-items-center" href="">
-                      <img src="./logo-slider/vans.png" alt="" class="brand-img">
-                    </a>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -516,98 +819,80 @@
           <div class="container">
             <div class="row render-product">
               <div
-                class="col-12 pb-4 d-flex justify-content-center align-items-center flex-column">
-                <h1 class="text-experience m-0 d-flex justify-content-center align-items-center"><span class="empty d-block me-2"></span> New Arrival<span class="empty d-block ms-2"></span></h1>
+                class="
+                  col-12
+                  pb-4
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                  flex-column
+                "
+              >
+                <h1
+                  class="
+                    text-experience
+                    m-0
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  "
+                >
+                  <span class="empty d-block me-2"></span> New Arrival<span
+                    class="empty d-block ms-2"
+                  ></span>
+                </h1>
                 <p class="text-sub-ex m-0">New products available in store</p>
               </div>
+              <div
+                class="
+                  col-12
+                  pb-3
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <a class="text-select me-5" href="">New Arrival</a>
+                <a class="text-select me-5" href="">Best Sale</a>
+                <a class="text-select" href="">Most Popular</a>
+              </div>
               <div class="loading justify-content-center align-items-center">
-                <div class="status d-flex justify-content-center align-items-center flex-column">
+                <div
+                  class="
+                    status
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                    flex-column
+                  "
+                >
                   <span class="cart-circle"></span>
                   <p class="text-loading pt-3">Adding to cart...</p>
                 </div>
               </div>
             </div>
             <div class="row pt-3">
-              <div class="col-12 d-flex justify-content-center align-items-center">
+              <div
+                class="col-12 d-flex justify-content-center align-items-center"
+              >
                 <a href="#" class="more">
-                  <button class="btn-more w-100 h-100" type="button">See more →</button>
+                  <button class="btn-more w-100 h-100" type="button">
+                    See more →
+                  </button>
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="review-product">
-          <div class="container-fruid">
-            <div class="container">
-              <div class="row">
-                <div class="col-12 pb-3 d-flex justify-content-center align-items-center flex-column">
-                  <h1 class="text-experience m-0 d-flex justify-content-center align-items-center"><span class="empty d-block me-2"></span>Protection Technology<span class="empty d-block ms-2"></span></h1>
-                  <p class="text-sub-ex m-0">Protect your feet with the latest technology</p>
-                </div>
-                <div class="col-12 mt-3">
-                  <div class="slider-review">
-                    <a href="" class="protect position-relative d-flex justify-content-center align-items-center">
-                      <img class="img-review" src="./img/thumb4.png" alt="">
-                      <span class="bi4 bi-plus-circle-fill position-absolute d-flex justify-content-center align-items-center flex-column-reverse">
-                        <span class="empty1 d-block"></span>
-                        <span class="circle d-block"></span>
-                        <p class="text-review m-0 text-center">Thanks to Ultra Boost technology for the sole, users will have the best experience when using the product. With running and jumping activities, hiking, gym, ... or young people who have to move a lot.</p>
-                        <p class="text-header-review text-center">Ultra Boost 19 has excellent support</p>
-                      </span>
-                      <span class="bi5 bi-plus-circle-fill position-absolute d-flex justify-content-center align-items-center flex-column-reverse">
-                        <span class="empty1 d-block"></span>
-                        <span class="circle d-block"></span>
-                        <p class="text-review m-0 text-center">Applies waterproof technology to the Nike Air Force 1 Low version. With this advanced technology, you can withstand extreme weather with ease!</p>
-                        <p class="text-header-review text-center">Waterproof technology</p>
-                      </span>
-                      <span class="bi6 bi-plus-circle-fill position-absolute d-flex justify-content-center align-items-center flex-column">
-                        <span class="empty1 d-block"></span>
-                        <span class="circle d-block"></span>
-                        <p class="text-header-review text-center">Ultra Boost 19 has excellent support</p>
-                        <p class="text-review m-0 text-center">Thanks to Ultra Boost TP technology for the sole, users will have the best experience when using the product !</p>
-                      </span>
-                    </a>
-                    <a href="" class="protect position-relative d-flex justify-content-center align-items-center">
-                      <img class="img-review" src="./img/thumb5.png" alt="">
-                      <span class="bi1 bi-plus-circle-fill position-absolute d-flex justify-content-center align-items-center flex-column-reverse">
-                        <span class="empty1 d-block"></span>
-                        <span class="circle d-block"></span>
-                        <p class="text-review m-0 text-center">Applies waterproof technology to the Nike Air Force 1 Low version. With this advanced technology, you can withstand extreme weather with ease!</p>
-                        <p class="text-header-review text-center">Waterproof technology</p>
-                      </span>
-                      <span class="bi2 bi-plus-circle-fill position-absolute d-flex justify-content-center align-items-center flex-column-reverse">
-                        <span class="empty1 d-block"></span>
-                        <span class="circle d-block"></span>
-                        <p class="text-review m-0 text-center">Applies waterproof technology to the Nike Air Force 1 Low version. With this advanced technology, you can withstand extreme weather with ease!</p>
-                        <p class="text-header-review text-center">Waterproof technology</p>
-                      </span>
-                      <span class="bi3 bi-plus-circle-fill position-absolute d-flex justify-content-center align-items-center flex-column">
-                        <span class="empty1 d-block"></span>
-                        <span class="circle d-block"></span>
-                        <p class="text-header-review text-center">Damping gel technology</p>
-                        <p class="text-review m-0 text-center">The NB React Infinity Run shifts the focus from a fast running shoe to an injury-reducing shoe.</p>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        
         <div class="highlight-sale">
           <div class="container">
             <div class="row">
-              <div class="col-12">
-  
-              </div>
+              <div class="col-12"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
