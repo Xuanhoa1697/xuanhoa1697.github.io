@@ -76,11 +76,11 @@ $(() => {
   $(".slider").slick({
     dots: true,
     infinite: true,
-    speed: 400,
+    speed: 500,
     fade: true,
     cssEase: "linear",
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 7000,
     arrows: false,
   });
   $(`#slick-slide-control00`).text(" ");
@@ -118,7 +118,7 @@ $(() => {
     }
     if (x > 0) {
       $(`.content-body`).css({
-        top:"90px"
+        marginTop:"90px"
       })
       $(`.bi-search`).css({
         display:"block"
@@ -127,7 +127,7 @@ $(() => {
         display:"none"
       })
       $(`.header-menu`).css({
-        top:"-60px"
+       top:0
       })
       $(`.header-top`).css({
         top: "-30px",
@@ -139,10 +139,7 @@ $(() => {
         display:"none"
       })
       $(`.header`).css({
-        position: `fixed`,
-        top: 0,
-        right: 0,
-        left: 0,
+        top: 0
       });
     } else {
       $(`.bi-search`).css({
@@ -157,20 +154,17 @@ $(() => {
       $(`.search-display`).css({
         display:"block"
       })
-      $(`.content-body`).css({
-        top:"130px"
-      })
       $(`.header-menu`).css({
         top:"130px"
+      })
+      $(`.content-body`).css({
+        marginTop:"190px"
       })
       $(`.header-top`).css({
         top: 0,
       });    
       $(`.header`).css({
-        position: `fixed`,
-        top: "40px",
-        right: 0,
-        left: 0,
+        top: "40px"
       });
       $(`.menu-drop`).css({
         left: "-40%",
@@ -309,5 +303,21 @@ $(() => {
       });
     }
   });
-  
+
+  function textAnimation(){
+    let headeingSlide = ["NIKE JORDAN PRO","ADIDAS 2021","NEW BALENCE"]
+    let arrAnimation = [1.5,1.55,1.6,1.65,1.7,1.75,1.8,1.85,1.9,1.95,2.05,2.1,2.15,2.2,2.25,2.3]
+    let arrText = Array.from($(`.animation-text`))
+    console.log(arrText[2]);
+    for(let x = 0;x<arrText.length;x++){
+      console.log(arrText[1]);
+      for(let i = 0;i<headeingSlide[x].trim().split("").length;i++){
+        $(`<div class="animation">${headeingSlide[x].charAt(i)}</div>`).css({
+          animationDelay:`${arrAnimation[i] + "s"}`
+        }).appendTo(arrText[x])
+      }
+    }
+    // let arrHeading = Array.from($(`.animation-text .animation`))
+  }
+  textAnimation()
 });

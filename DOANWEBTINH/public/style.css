@@ -82,15 +82,12 @@
     z-index: 1 !important;
 }
 .content-body{
-    position: absolute;
-    top: 190px;
-    left: 0;
-    right: 0;
-    transition: all 0.3s ease-out;
-    -webkit-transition: 0.3s all ease-out;
-    -o-transition: 0.3s all ease-out;
-    -moz-transition: 0.3s all ease-out;
-    -ms-transiton:0.3s all ease-out;
+    margin-top: 190px;
+    transition: all 0.4s ease-out;
+    -webkit-transition: 0.4s all ease-out;
+    -o-transition: 0.4s all ease-out;
+    -moz-transition: 0.4s all ease-out;
+    -ms-transiton:0.4s all ease-out;
 }
 .select-content{
     height: 50px;
@@ -154,22 +151,19 @@ option{
     -moz-transition: 0.3s all ease-out;
     -ms-transiton:0.3s all ease-out;
 }
-.bi-twitter, .bi-facebook, .bi-google, .bi-instagram{
+.bi-twitter, .bi-facebook, .bi-google, .bi-instagram, .appS{
+    font-size: 17px;
+    font-weight: 700;
     color: rgb(209, 209, 209);
 }
 .app-tw:hover{
     background-color:rgb(235,65,50);
 }
-.app-tw:hover .bi-facebook{
-    color: white;
-}
-.app-tw:hover .bi-google{
-    color: white;
-}
-.app-tw:hover .bi-instagram{
-    color: white;
-}
-.app-tw:hover .bi-twitter{
+.app-tw:hover .bi-facebook,
+.app-tw:hover .bi-google,
+.app-tw:hover .bi-instagram,
+.app-tw:hover .bi-twitter,
+.app-tw:hover .appS{
     color: white;
 }
 .shoose, .fashion, .home, .contact, .pricing-header{
@@ -320,16 +314,16 @@ option{
     cursor: pointer;
 }
 .slide-3{
-   background-image:url(./img/slide1.jpg);
+   background-image:url(./img/slider1-pedona1-1920x631.jpg);
    background-position: center;
     object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
-   height: 600px !important;
+   height: 540px !important;
 }
 .slide-2{
-    background-image: url(./img/c1743c24110511.563312103909d.jpg);
-    height: 600px !important;
+    background-image: url(./img/slider3-pedona1-1920x631.jpg);
+    height: 540px !important;
     background-position: center;
     object-fit: cover;
     background-size: cover;
@@ -337,12 +331,26 @@ option{
 }
 .slide-1{
     background-image: url(./img/banner22.jpg);
-    height: 600px !important;
+    height: 540px !important;
     background-position: center;
     object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
-
+}
+.slick-active{
+    animation: scale-bgi 0.7s easeout forwards;
+    -webkit-animation: scale-bgi 0.7s ease-in-out forwards;
+    -o-animation: scale-bgi 0.7s ease-in-out forwards;
+    -moz-animation: scale-bgi 0.7s ease-in-out forwards;
+    -moz-animation: scale-bgi 0.7s ease-in-out forwards;
+}
+@keyframes scale-bgi{
+    from{
+       transform: scale(1.2);
+    }
+    to{
+        transform: scale(1);
+    }
 }
 .img-suport{
     max-width: 100%;
@@ -893,3 +901,142 @@ option{
     border-bottom: 1px black solid;
     color: black;
 }
+.slick-slide .container{
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.title-animation{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgb(47, 51, 58);
+    font-weight: 600;
+    transform: translateY(-20px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease;
+    -webkit-transition: 0.2s all ease;
+    -o-transition: 0.2s all ease;
+    -moz-transition: 0.2s all ease;
+    -ms-transiton:0.2s all ease;
+}
+.slick-active .container .title-animation{
+    animation: slide 0.2s ease-out forwards 1.1s;
+}
+@keyframes slide{
+    from{
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.animation-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    line-height: 55px;
+    color: rgb(47, 51, 58);
+    font-weight: 600;
+}
+
+.animation{
+    white-space: nowrap;
+    display: inline-block;
+    visibility:hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.slick-active .container .animation-text .animation{
+    animation: slogan 0.2s ease-in forwards ;
+    
+}
+@keyframes slogan{
+    from{
+    transform: translateY(-20px);
+    }
+    to{
+    transform: translateY(0);
+    transform-origin: right top;
+    -moz-transform-origin: right top;
+    -webkit-transform-origin: right top;
+    -o-transform-origin: right top;
+    -ms-transform-origin: right top;
+    visibility: visible;
+    opacity: 1;
+    }
+}
+.slogan-slide{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(47, 51, 58);
+    margin-top: 20px;
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+}
+.slick-active .container .slogan-slide{
+    transform: translateY(30px);
+    animation: sub-slogan 0.15s ease-in forwards 1.3s ;
+    transition: all 0.2s ease;
+    -webkit-transition: 0.2s all ease;
+    -o-transition: 0.2s all ease;
+    -moz-transition: 0.2s all ease;
+    -ms-transiton:0.2s all ease;
+}
+@keyframes sub-slogan{
+    from{
+        transform: translateY(30px);
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.link-slide-btn{
+    margin-top: 50px;
+    width: 20%;
+    height: 50px;
+    border: 1px solid rgb(47, 51, 58) ;
+    border-radius: 5px;
+    visibility:hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.2s ease;
+    -webkit-transition: 0.2s all ease;
+    -o-transition: 0.2s all ease;
+    -moz-transition: 0.2s all ease;
+    -ms-transiton:0.2s all ease;
+}
+.slick-active .container .link-slide-btn{
+    animation: btnSlide 0.3s ease-in-out forwards 2.5s;
+}
+@keyframes btnSlide{
+    from{
+        transform: translateY(30px);
+    }
+    to{
+        visibility:visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.link-slide-btn:hover{
+    background: rgb(235,65,50);
+    border: none;
+    color: white;
+}
+.link-slide-btn a{
+    font-size: 17px;
+    color: inherit;
+    line-height: 25px;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+}
+
