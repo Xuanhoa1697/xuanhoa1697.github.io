@@ -24,15 +24,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container-fruid">
       <div class="header-menu">
         <div class="container position-relative">
           <div class="row h-100">
-            <div class="col-6 h-100">
-              
-            </div>
             <div class="col-6 h-100">
               <div
                 class="
@@ -42,22 +42,22 @@
                   m-0
                   p-0
                   d-flex
-                  justify-content-end
+                  justify-content-start
                   align-items-center
                 "
               >
-                <div class="col-3 h-100">
+                <div class="col-2 h-100 p-0">
                   <p
                     class="
                       follow
                       h-100
                       m-0
                       d-flex
-                      justify-content-center
+                      justify-content-start
                       align-items-center
                     "
                   >
-                    FOLLOW US:
+                    FOLLOW:
                   </p>
                 </div>
                 <div
@@ -65,7 +65,7 @@
                     col-1
                     p-0
                     d-flex
-                    justify-content-end
+                    justify-content-start
                     align-items-center
                   "
                 >
@@ -87,7 +87,7 @@
                     col-1
                     p-0
                     d-flex
-                    justify-content-end
+                    justify-content-start
                     align-items-center
                   "
                 >
@@ -109,7 +109,7 @@
                     col-1
                     p-0
                     d-flex
-                    justify-content-end
+                    justify-content-start
                     align-items-center
                   "
                 >
@@ -131,7 +131,7 @@
                     col-1
                     p-0
                     d-flex
-                    justify-content-end
+                    justify-content-start
                     align-items-center
                   "
                 >
@@ -153,7 +153,7 @@
                     col-1
                     p-0
                     d-flex
-                    justify-content-end
+                    justify-content-start
                     align-items-center
                   "
                 >
@@ -168,26 +168,18 @@
                     <a class="appS" href=""> S </a>
                   </div>
                 </div>
-                <div class="col-1 p-0 d-flex justify-content-end align-items-center">
-                  <a href="" class="search-icon ps-2 border border-end-0 border-top-0 border-bottom-0">
-                    <i class="bi bi-gear-fill"></i>
-                  </a>
-                  <div class="form-setting d-flex justify-content-center align-items-center  h-100 position-absolute">
-                    <div class="row h-100">
-                      <div class="col-6 h-100">
-                        <div class="heart h-100 d-flex justify-content-center align-items-center">
-                          <a href=""><i class="bi bi-heart"></i></a>
-                        </div>
-                      </div>
-                      <div class="col-6 h-100">
-                        <div class="sign h-100 d-flex justify-content-center align-items-center">
-                          <a class="text-decoration-none" href=""
-                            ><i class="bi bi-person-circle"></i
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div class="col-6 h-100">
+              <div
+                class="row h-100 d-flex justify-content-end align-items-center"
+              >
+                <div
+                  class="col-12 d-flex justify-content-end align-items-center"
+                >
+                  <a href="" class="help">Help Center</a>
+                  <a href="" class="help">Report</a>
+                  <a href="" class="help border-end-0">Hotline:034.557.50**</a>
                 </div>
               </div>
             </div>
@@ -195,7 +187,7 @@
         </div>
       </div>
       <div class="header d-flex justify-content-center align-items-center">
-        <div class="container">
+        <div class="container position-relative">
           <div
             class="
               row
@@ -320,7 +312,7 @@
                         align-items-center
                       "
                       href=""
-                      >BLOGS</a
+                      >NEWS</a
                     >
                   </div>
                 </div>
@@ -373,41 +365,64 @@
               </div>
             </div>
             <div
-              class="
-                col-3
-                p-0
-                d-flex
-                justify-content-between
-                align-items-center
-              "
+              class="col-3 p-0 d-flex justify-content-end align-items-center"
             >
-            <div class="col-9">
-              <form class="search position-relative">
-                <input class="search-header" type="text" placeholder="SEARCH">
-                <div class="icon-search d-flex justify-content-center align-items-center position-absolute">
-                  <a href=""><i class="bi bi-search"></i></a>
-                </div>
-              </form>
-            </div>
               <div class="col-3 d-flex justify-content-end align-items-center">
                 <div
-                class="pricing d-flex justify-content-end align-items-center"
+                  class="pricing d-flex justify-content-end align-items-center"
                 >
-                <a
+                  <a
+                    class="
+                      text-decoration-none text-sign
+                      position-relative
+                      w-100
+                      h-100
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                    href=""
+                    ><i class="bi item-search bi-bag-check-fill"></i
+                    ><span
+                      class="
+                        aqua-cart
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                        position-absolute
+                      "
+                      >0</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <div class="col-2 d-flex justify-content-end align-items-center">
+                <a href=""><i class="bi bi-search"></i></a>
+              </div>
+              <div class="col-2 d-flex justify-content-end align-items-center">
+                <a href=""><i class="bi bi-heart"></i></a>
+              </div>
+              <div class="col-2">
+                <div
                   class="
-                    text-decoration-none text-sign
-                    position-relative
-                    w-100
+                    sign
                     h-100
                     d-flex
-                    justify-content-center
+                    justify-content-end
                     align-items-center
                   "
-                  href=""
-                  ><i class="bi bi-bag-check-fill"></i
-                  ><span class="aqua-cart position-absolute">0</span></a
                 >
-              </div>
+                  <a class="text-decoration-none ms-2" href=""
+                    ><i
+                      class="
+                        bi bi-person-circle
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                      "
+                    ></i
+                  ></a>
+                </div>
               </div>
               <div class="login position-fixed">
                 <div class="form-sign position-absolute mt-3">
@@ -528,17 +543,51 @@
               <div class="slide-1">
                 <div class="container">
                   <div class="row h-100">
-                    <div class="col-12 h-100 d-flex justify-content-center align-items-center flex-column">
+                    <div
+                      class="
+                        col-12
+                        h-100
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                        flex-column
+                      "
+                    >
                       <h1 class="heading-slide m-0 text-center">Nike</h1>
                       <h2 class="sub-heading-slide text-center">AIR FORCE</h2>
-                      <h2 class="title-slide text-center">Air Force 1 Ultra Flyknit</h2>
-                      <p class="sub-title text-center w-75">The Nike Air Force 1 Ultra Flyknit Low 'White Ice' sneaker upgrades the classic silhouette with Nike’s Flyknit technology in this fresh iteration of the original.</p>
-                      <a href="" class="link-slide d-flex justify-content-center align-items-center">
+                      <h2 class="title-slide text-center">
+                        Air Force 1 Ultra Flyknit
+                      </h2>
+                      <p class="sub-title text-center w-75">
+                        The Nike Air Force 1 Ultra Flyknit Low 'White Ice'
+                        sneaker upgrades the classic silhouette with Nike’s
+                        Flyknit technology in this fresh iteration of the
+                        original.
+                      </p>
+                      <a
+                        href=""
+                        class="
+                          link-slide
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                        "
+                      >
                         <span class="item-empty"></span>
                         <span class="item-empty"></span>
                         <span class="item-empty"></span>
                         <span class="item-empty"></span>
-                        <p class="link-btn m-0 d-flex justify-content-center align-items-center">MORE INFO <i class="bi bi-arrow-right ms-1"></i></p>
+                        <p
+                          class="
+                            link-btn
+                            m-0
+                            d-flex
+                            justify-content-center
+                            align-items-center
+                          "
+                        >
+                          MORE INFO <i class="bi bi-arrow-right ms-1"></i>
+                        </p>
                       </a>
                     </div>
                   </div>
@@ -547,13 +596,47 @@
               <div class="slide-2">
                 <div class="container">
                   <div class="row h-100">
-                    <div class="col-12 h-100 d-flex justify-content-center align-items-center flex-column">
+                    <div
+                      class="
+                        col-12
+                        h-100
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                        flex-column
+                      "
+                    >
                       <h1 class="heading-slide m-0 text-center">ADIDAS</h1>
-                      <h2 class="sub-heading-slide text-center">MEN'S RUNNING</h2>
+                      <h2 class="sub-heading-slide text-center">
+                        MEN'S RUNNING
+                      </h2>
                       <h2 class="title-slide text-center">Adizero Adios Pro</h2>
-                      <p class="sub-title text-center w-75">Instead of one plate, the Adios Adizero Pro uses five carbon fiber rods that are aligned with the tarsal bones. This makes for a bit more controlled walking than in the original shoes.</p>
-                      <a href="" class="link-slide d-flex justify-content-center align-items-center">
-                        <p class="link-btn m-0 d-flex justify-content-center align-items-center">MORE INFO <i class="bi bi-arrow-right ms-1"></i></p>
+                      <p class="sub-title text-center w-75">
+                        Instead of one plate, the Adios Adizero Pro uses five
+                        carbon fiber rods that are aligned with the tarsal
+                        bones. This makes for a bit more controlled walking than
+                        in the original shoes.
+                      </p>
+                      <a
+                        href=""
+                        class="
+                          link-slide
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                        "
+                      >
+                        <p
+                          class="
+                            link-btn
+                            m-0
+                            d-flex
+                            justify-content-center
+                            align-items-center
+                          "
+                        >
+                          MORE INFO <i class="bi bi-arrow-right ms-1"></i>
+                        </p>
                       </a>
                     </div>
                   </div>
@@ -562,13 +645,47 @@
               <div class="slide-3">
                 <div class="container">
                   <div class="row h-100">
-                    <div class="col-12 h-100 d-flex justify-content-center align-items-center flex-column">
+                    <div
+                      class="
+                        col-12
+                        h-100
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                        flex-column
+                      "
+                    >
                       <h1 class="heading-slide m-0 text-center">NEW BALACE</h1>
-                      <h2 class="sub-heading-slide text-center">FRESH FOAM 860 V11</h2>
+                      <h2 class="sub-heading-slide text-center">
+                        FRESH FOAM 860 V11
+                      </h2>
                       <h2 class="title-slide text-center">Adizero Adios Pro</h2>
-                      <p class="sub-title text-center w-75">While many stability shoes can feel a bit clunky underfoot, the 860 supports a healthy stride without weighing you down, and it makes a great trainer for moderate overpronators.</p>
-                      <a href="" class="link-slide d-flex justify-content-center align-items-center">
-                        <p class="link-btn m-0 d-flex justify-content-center align-items-center">MORE INFO <i class="bi bi-arrow-right ms-1"></i></p>
+                      <p class="sub-title text-center w-75">
+                        While many stability shoes can feel a bit clunky
+                        underfoot, the 860 supports a healthy stride without
+                        weighing you down, and it makes a great trainer for
+                        moderate overpronators.
+                      </p>
+                      <a
+                        href=""
+                        class="
+                          link-slide
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                        "
+                      >
+                        <p
+                          class="
+                            link-btn
+                            m-0
+                            d-flex
+                            justify-content-center
+                            align-items-center
+                          "
+                        >
+                          MORE INFO <i class="bi bi-arrow-right ms-1"></i>
+                        </p>
                       </a>
                     </div>
                   </div>
@@ -578,28 +695,8 @@
           </div>
         </div>
         <div class="support">
-          <div class="container h-100 p-0">
+          <div class="container h-100">
             <div class="row h-100">
-              <div class="col-3 pe-0">
-                <div
-                  class="
-                    support-heading
-                    w-100
-                    h-100
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                  "
-                >
-                  <div class="title-support w-100 d-flex justify-content-center align-items-center flex-column">
-                    <img src="./img/ship.webp" alt="">
-                    <p class="text-support m-0 text-center mt-2">Free Shipping</p>
-                    <p class="sub-support m-0 text-center">
-                      Free shipping on all order
-                    </p>
-                  </div>
-                </div>
-              </div>
               <div class="col-3 p-0">
                 <div
                   class="
@@ -611,53 +708,116 @@
                     align-items-center
                   "
                 >
-                  <div class="title-support w-100 d-flex justify-content-center align-items-center flex-column">
-                    <img src="./img/return.webp" alt="">
-                    <p class="text-support m-0 text-center mt-2">Money Return</p>
-                    <p class="sub-support m-0 text-center">
-                      30 days for free return
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 p-0">
-                <div
-                  class="
-                    support-heading
-                    w-100
-                    h-100
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                  "
-                >
-                  <div class="title-support w-100 d-flex justify-content-center align-items-center flex-column"">
-                    <img src="./img/supot.webp" alt="">
-                    <p class="text-support m-0 text-center mt-2">Online Support</p>
-                    <p class="sub-support m-0 text-center">
-                      Support 24 hours a day
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3 ps-0">
-                <div
-                  class="
-                    support-heading
-                    w-100
-                    h-100
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                  "
-                >
-                  <div class="title-support border-end-0 w-100 d-flex justify-content-center align-items-center flex-column"">
-                    <img src="./img/secure.webp" alt="">
+                  <div
+                    class="
+                      title-support
+                      w-100
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                      flex-column
+                    "
+                  >
+                    <img src="./img/ship.webp" alt="" />
                     <p class="text-support m-0 text-center mt-2">
-                      Deals & Promotions
+                      Miễn phí gia hàng
                     </p>
                     <p class="sub-support m-0 text-center">
-                      Price savings, discounts, coupons
+                      Áp dụng đối với tất cả sản phẩm
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 p-0">
+                <div
+                  class="
+                    support-heading
+                    w-100
+                    h-100
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  "
+                >
+                  <div
+                    class="
+                      title-support
+                      w-100
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                      flex-column
+                    "
+                  >
+                    <img src="./img/return.webp" alt="" />
+                    <p class="text-support m-0 text-center mt-2">
+                      Đổi trả hoàn tiền
+                    </p>
+                    <p class="sub-support m-0 text-center">
+                      30 ngày đổi trả miễn phí
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 p-0">
+                <div
+                  class="
+                    support-heading
+                    w-100
+                    h-100
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  "
+                >
+                  <div
+                    class="
+                      title-support
+                      w-100
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                      flex-column
+                    "
+                  >
+                    <img src="./img/supot.webp" alt="" />
+                    <p class="text-support m-0 text-center mt-2">
+                      Hỗ trợ trực tuyến
+                    </p>
+                    <p class="sub-support m-0 text-center">
+                      Luôn hỗ trợ về mọi câu hỏi
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 p-0">
+                <div
+                  class="
+                    support-heading
+                    w-100
+                    h-100
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  "
+                >
+                  <div
+                    class="
+                      title-support
+                      border-end-0
+                      w-100
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                      flex-column
+                    "
+                  >
+                    <img src="./img/secure.webp" alt="" />
+                    <p class="text-support m-0 text-center mt-2">
+                      Ưu đãi và khuyến mại
+                    </p>
+                    <p class="sub-support m-0 text-center">
+                      Nhiều mã giảm giá dành cho bạn
                     </p>
                   </div>
                 </div>
@@ -680,16 +840,17 @@
                       flex-column
                     "
                   >
-                    <p class="text-direct m-0">For Women's</p>
-                    <p class="sub-direct m-0 pb-3">Collection Sneaker</p>
-                    <a href="" class="link-direct">Discover Now</a>
+                    <p class="text-direct m-0 text-center">Women's</p>
+                    <p class="sub-direct m-0 pb-3 text-center">
+                      Collection Sneaker
+                    </p>
+                    <a href="" class="link-direct text-center">Discover Now</a>
                   </div>
                 </div>
                 <div class="col-6">
                   <div
                     class="
                       direct-select2
-                      ps-3
                       h-100
                       d-flex
                       justify-content-center
@@ -697,9 +858,11 @@
                       flex-column
                     "
                   >
-                    <p class="text-direct m-0">For Men's</p>
-                    <p class="sub-direct m-0 pb-5">Collection Sneaker</p>
-                    <a href="" class="link-direct">Discover Now</a>
+                    <p class="text-direct m-0 text-center">Men's</p>
+                    <p class="sub-direct m-0 pb-3 text-center">
+                      Collection Sneaker
+                    </p>
+                    <a href="" class="link-direct text-center">Discover Now</a>
                   </div>
                 </div>
               </div>
@@ -712,7 +875,8 @@
               <div
                 class="
                   col-12
-                  pb-4
+                  pt-5
+                  pb-2
                   d-flex
                   justify-content-center
                   align-items-center
@@ -734,9 +898,557 @@
                 </h1>
                 <p class="text-sub-ex m-0">New products available in store</p>
               </div>
-              <div class="col-12">
-                <div class="render-product w-100">
-
+              <div class="col-12 ">
+                <nav class="d-flex justify-content-center align-items-center pb-3">
+                  <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                    <button
+                      class="nav-link active select-link border-0 border-active"
+                      id="nav-home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-home"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-home"
+                      aria-selected="true"
+                    >
+                      New Arrival
+                    </button>
+                    <button
+                      class="nav-link select-link border-0"
+                      id="nav-profile-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-profile"
+                      aria-selected="false"
+                    >
+                      Best Sale
+                    </button>
+                    <button
+                      class="nav-link select-link border-0"
+                      id="nav-contact-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-contact"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-contact"
+                      aria-selected="false"
+                    >
+                      Most popular
+                    </button>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="nav-home"
+                    role="tabpanel"
+                    aria-labelledby="nav-home-tab"
+                  >
+                    <div class="render-product">
+                      <div class="product">
+                        <div
+                          class="
+                            img-cart
+                            position-relative
+                            overflow-hidden
+                            h-75
+                            d-flex
+                            justify-content-center
+                            align align-items-center
+                          "
+                        >
+                          <div class="row">
+                            <div
+                              class="
+                                col-12
+                                d-flex
+                                justify-content-start
+                                align-items-center
+                              "
+                            >
+                              <img
+                                class="img-product"
+                                src="./img-product/nike2.jpg"
+                                alt=""
+                              />
+                              <img
+                                class="img-product1"
+                                src="./img-product/nike1.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="
+                              sale
+                              position-absolute
+                              d-flex
+                              justify-content-center
+                              align align-items-center
+                            "
+                          >
+                            <p class="text-sale m-0">-20%</p>
+                          </div>
+                          <a class="heart position-absolute" href="">
+                            <i class="bi bi-heart-fill"></i>
+                          </a>
+                        </div>
+                        <div class="content-cart h-25">
+                          <div class="row h-100">
+                            <div class="col-12 h-100">
+                              <div
+                                class="
+                                  star-brand
+                                  d-flex
+                                  justify-content-between
+                                  align-items-center
+                                  ps-3
+                                  pe-3
+                                "
+                              >
+                                <p class="brand-sneaker m-0">NIKE</p>
+                              </div>
+                              <div
+                                class="
+                                  price
+                                  d-flex
+                                  justify-content-between
+                                  align-items-center
+                                  ps-3
+                                  pe-3
+                                "
+                              >
+                                <div class="name-sneaker w-75 h-100">
+                                  <p class="text-name m-0 h-50">Air Max 270</p>
+                                  <p class="text-price m-0 h-50">
+                                    $290.0 <span class="old-price">$310.0</span>
+                                  </p>
+                                </div>
+                                <div
+                                  class="
+                                    add-cart
+                                    w-25
+                                    h-100
+                                    d-flex
+                                    justify-content-center
+                                    align-items-center
+                                  "
+                                >
+                                  <a href="">
+                                    <i class="bi bi-bag-plus"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product">
+                        <div
+                          class="
+                            img-cart
+                            overflow-hidden
+                            position-relative
+                            h-75
+                            d-flex
+                            justify-content-center
+                            align align-items-center
+                          "
+                        >
+                          <div class="row">
+                            <div
+                              class="
+                                col-12
+                                d-flex
+                                justify-content-start
+                                align-items-center
+                              "
+                            >
+                              <img
+                                class="img-product"
+                                src="./img-product/adidas1.jpg"
+                                alt=""
+                              />
+                              <img
+                                class="img-product1"
+                                src="./img-product/adidas2.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="
+                              sale
+                              position-absolute
+                              d-flex
+                              justify-content-center
+                              align align-items-center
+                            "
+                          >
+                            <p class="text-sale m-0">-20%</p>
+                          </div>
+                          <a class="heart position-absolute" href="">
+                            <i class="bi bi-heart-fill"></i>
+                          </a>
+                        </div>
+                        <div class="content-cart h-25">
+                          <div class="row h-100">
+                            <div class="col-12 h-100">
+                              <div
+                                class="
+                                  star-brand
+                                  d-flex
+                                  justify-content-between
+                                  align-items-center
+                                  ps-3
+                                  pe-3
+                                "
+                              >
+                                <p class="brand-sneaker m-0">NIKE</p>
+                              </div>
+                              <div
+                                class="
+                                  price
+                                  d-flex
+                                  justify-content-between
+                                  align-items-center
+                                  ps-3
+                                  pe-3
+                                "
+                              >
+                                <div class="name-sneaker w-75 h-100">
+                                  <p class="text-name m-0 h-50">Air Max 270</p>
+                                  <p class="text-price m-0 h-50">
+                                    $290.0 <span class="old-price">$310.0</span>
+                                  </p>
+                                </div>
+                                <div
+                                  class="
+                                    add-cart
+                                    w-25
+                                    h-100
+                                    d-flex
+                                    justify-content-center
+                                    align-items-center
+                                  "
+                                >
+                                  <a href="">
+                                    <i class="bi bi-bag-plus"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product">
+                        <div
+                          class="
+                            img-cart
+                            overflow-hidden
+                            h-75
+                            d-flex
+                            justify-content-center
+                            align align-items-center
+                          "
+                        >
+                          <div class="row">
+                            <div
+                              class="
+                                col-12
+                                d-flex
+                                justify-content-start
+                                align-items-center
+                              "
+                            >
+                              <img
+                                class="img-product"
+                                src="./img-product/vans1.jpg"
+                                alt=""
+                              />
+                              <img
+                                class="img-product1"
+                                src="./img-product/vans2.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-cart h-25">
+                          <div class="row h-100">
+                            <div class="col-12 h-50">123</div>
+                            <div class="col-12 h-50">123</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product">
+                        <div
+                          class="
+                            img-cart
+                            border
+                            overflow-hidden
+                            h-75
+                            d-flex
+                            justify-content-center
+                            align align-items-center
+                          "
+                        >
+                          <div class="row">
+                            <div
+                              class="
+                                col-12
+                                d-flex
+                                justify-content-start
+                                align-items-center
+                              "
+                            >
+                              <img
+                                class="img-product"
+                                src="./img-product/asic1.jpg"
+                                alt=""
+                              />
+                              <img
+                                class="img-product1"
+                                src="./img-product/asic2.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-cart h-25">
+                          <div class="row h-100">
+                            <div class="col-12 h-50">123</div>
+                            <div class="col-12 h-50">123</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product">
+                        <div
+                          class="
+                            img-cart
+                            border
+                            overflow-hidden
+                            h-75
+                            d-flex
+                            justify-content-center
+                            align align-items-center
+                          "
+                        >
+                          <div class="row">
+                            <div
+                              class="
+                                col-12
+                                d-flex
+                                justify-content-start
+                                align-items-center
+                              "
+                            >
+                              <img
+                                class="img-product"
+                                src="./img-product/vans-old-skool-36-dx-anaheim-factory-vn0a38g2pxc.jpg"
+                                alt=""
+                              />
+                              <img
+                                class="img-product1"
+                                src="./img-product/vans-old-skool-36-dx-anaheim-factory-vn0a38g2vpj-thumb1.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-cart h-25">
+                          <div class="row h-100">
+                            <div class="col-12 h-50">123</div>
+                            <div class="col-12 h-50">123</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product">
+                        <div
+                          class="
+                            img-cart
+                            position-relative
+                            border
+                            overflow-hidden
+                            h-75
+                            d-flex
+                            justify-content-center
+                            align align-items-center
+                          "
+                        >
+                          <div class="row">
+                            <div
+                              class="
+                                col-12
+                                d-flex
+                                justify-content-start
+                                align-items-center
+                              "
+                            >
+                              <img
+                                class="img-product"
+                                src="./img-product/new-balance-ms327re1-ms327re1-thumb.jpg"
+                                alt=""
+                              />
+                              <img
+                                class="img-product1"
+                                src="./img-product/new-balance-ms327rf1-ms327rf1-thumb.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-cart h-25">
+                          <div class="row h-100">
+                            <div class="col-12 h-50">123</div>
+                            <div class="col-12 h-50">123</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product">
+                        <div
+                          class="
+                            img-cart
+                            position-relative
+                            border
+                            overflow-hidden
+                            h-75
+                            d-flex
+                            justify-content-center
+                            align align-items-center
+                          "
+                        >
+                          <div class="row">
+                            <div
+                              class="
+                                col-12
+                                d-flex
+                                justify-content-start
+                                align-items-center
+                              "
+                            >
+                              <img
+                                class="img-product"
+                                src="./img-product/reebok-club-c-legacy-5589-thumb.jpg"
+                                alt=""
+                              />
+                              <img
+                                class="img-product1"
+                                src="./img-product/reebok-club-c-legacy-5531.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-cart h-25">
+                          <div class="row h-100">
+                            <div class="col-12 h-50">123</div>
+                            <div class="col-12 h-50">123</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product">
+                        <div
+                          class="
+                            img-cart
+                            border
+                            overflow-hidden
+                            h-75
+                            d-flex
+                            justify-content-center
+                            align align-items-center
+                          "
+                        >
+                          <div class="row">
+                            <div
+                              class="
+                                col-12
+                                d-flex
+                                justify-content-start
+                                align-items-center
+                              "
+                            >
+                              <img
+                                class="img-product"
+                                src="./img-product/nike-air-max-97-921826-011-thumb.jpg"
+                                alt=""
+                              />
+                              <img
+                                class="img-product1"
+                                src="./img-product/nike-air-max-97-921826-401-thumb01.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-cart h-25">
+                          <div class="row h-100">
+                            <div class="col-12 h-50">123</div>
+                            <div class="col-12 h-50">123</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product">
+                        <div
+                          class="
+                            img-cart
+                            border
+                            overflow-hidden
+                            h-75
+                            d-flex
+                            justify-content-center
+                            align align-items-center
+                          "
+                        >
+                          <div class="row">
+                            <div
+                              class="
+                                col-12
+                                d-flex
+                                justify-content-start
+                                align-items-center
+                              "
+                            >
+                              <img
+                                class="img-product"
+                                src="./img-product/converse-chuck-taylor-all-star-hi-167643c.jpg"
+                                alt=""
+                              />
+                              <img
+                                class="img-product1"
+                                src="./img-product/converse-chuck-taylor-all-star-ii-hi-w-150146c-thumb.jpg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-cart h-25">
+                          <div class="row h-100">
+                            <div class="col-12 h-50">123</div>
+                            <div class="col-12 h-50">123</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="nav-profile"
+                    role="tabpanel"
+                    aria-labelledby="nav-profile-tab"
+                  >
+                    s
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="nav-contact"
+                    role="tabpanel"
+                    aria-labelledby="nav-contact-tab"
+                  >
+                    s
+                  </div>
                 </div>
               </div>
               <div class="loading justify-content-center align-items-center">

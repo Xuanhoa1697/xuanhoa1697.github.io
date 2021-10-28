@@ -1,19 +1,3 @@
-@font-face {
-    font-family: "Sofia Pro";
-    src: url("./fonts/SofiaPro-Medium.woff2") format("woff2"),
-      url("./fonts/SofiaPro-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Sofia Pro";
-    src: url("./fonts/SofiaPro-Bold.woff2") format("woff2"),
-      url("./fonts/SofiaPro-Bold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
 *{
     vertical-align: baseline !important;
     list-style: none !important;
@@ -66,17 +50,17 @@
     max-width: 50%;
 }
 .follow{
-    font-family:Sofia Pro;
-    font-size: 15px;
+    font-family:'Open Sans', sans-serif;
+    font-size: 14px;
     line-height: 23px;
-    font-weight: 800;
+    font-weight: 500;
     color: rgb(209, 209, 209);
 }
 .app-tw{
-    width: 35px;
-    height: 35px;
-    background-color: rgb(131, 131, 131);
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
+    background-color: rgb(102, 102, 102);
     transition: all 0.3s ease-out;
     -webkit-transition: 0.3s all ease-out;
     -o-transition: 0.3s all ease-out;
@@ -133,7 +117,7 @@
 }
 .text-header-logo{
     flex-basis: 100%;
-    font-family:Sofia Pro;
+    font-family:'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 23px;
     font-weight: 800;
@@ -141,7 +125,7 @@
 }
 .text-header-logo1{
     flex-basis: 100%;
-    font-family:Sofia Pro;
+    font-family:'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 23px;
     font-weight: 800;
@@ -153,7 +137,7 @@
 }
 .text{
     color:#171717;
-    font-family: Sofia Pro;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 700;
     border: 1px solid#00d3b9;
@@ -181,8 +165,14 @@
     height: 50px;
     border-radius: 50%;
     background-color: #f54f29;
-    border: none;
-    box-shadow: 0 15px 40px rgb(245 79 41 / 50%);
+    border: 1px solid #f54f29;
+}
+.pricing:hover{
+    background-color: #fff;
+    box-shadow: 0 15px 40px rgb(245 79 41 / 20%);
+}
+.pricing:hover .bi-bag-check-fill{
+    color: #f54f29;
 }
 .heading{
     top: 50px;
@@ -220,11 +210,11 @@
     width: 18px;
     height: 18px;
     border: 0.5px solid rgb(75, 75, 75);
-    background-color: black;
+    background-color: #4e4e4e;
     border-radius: 50%;
     text-align: center;
     font-size: 11px;
-    font-family: Sofia Pro;
+    font-family: 'Open Sans', sans-serif;
     color: #ffffff;
 }
 .slider{
@@ -266,7 +256,6 @@
 .bi-chevron-compact-right{
     top: 38%;
     right: 0;
-    animation: right 5s linear infinite ease;
 }
 .heading-slide{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -286,7 +275,7 @@
     transform: translateX(-300px);
     opacity: 0;
     visibility: hidden;
-    animation: heading 0.5s ease forwards 0.5s;
+    animation: heading 0.3s ease forwards 0.5s;
 }
 @keyframes heading{
     from{
@@ -312,7 +301,7 @@
     transform: translateX(-300px);
     opacity: 0;
     visibility: hidden;
-    animation: sub-heading 0.5s ease forwards 0.8s;
+    animation: sub-heading 0.3s ease forwards 0.8s;
 }
 @keyframes sub-heading{
     from{
@@ -339,7 +328,7 @@
     transform: translateX(-300px);
     opacity: 0;
     visibility: hidden;
-    animation: title-slide 0.5s ease forwards 1.2s;
+    animation: title-slide 0.3s ease forwards 1.1s;
 }
 @keyframes title-slide{
     from{
@@ -367,7 +356,7 @@
     transform: translateX(-300px);
     opacity: 0;
     visibility: hidden;
-    animation: sub-title 0.5s ease forwards 1.6s;
+    animation: sub-title 0.3s ease forwards 1.4s;
 }
 @keyframes sub-title{
     from{
@@ -434,7 +423,7 @@
     transform: translateX(-300px);
     opacity: 0;
     visibility: hidden;
-    animation: sub-title 0.5s ease forwards 2s;
+    animation: sub-title 0.3s ease forwards 1.7s;
 }
 @keyframes link-slide{
     from{
@@ -480,7 +469,7 @@
 }
 .text-content-1{
     color: white;
-    font-family: Sofia Pro;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 22px;
 }
@@ -489,7 +478,7 @@
     height: 50px;
     outline: none;
     border: none;
-    font-family: Sofia Pro;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 28px;
@@ -535,6 +524,7 @@
     -o-transition: 0.3s all ease-out;
     -moz-transition: 0.3s all ease-out;
     -ms-transiton:0.3s all ease-out;
+    font-size: 0;
 }
 .slick-dots li.slick-active button{
     background-color: #f54f29;
@@ -570,7 +560,7 @@
     outline: none;
     border: 0.5px solid rgb(134, 134, 134);
     padding-left: 10px;
-    font-family: Sofia Pro;
+    font-family: 'Open Sans', sans-serif;
     color: rgb(107, 107, 107);
 }
 .empty-bg-name, .empty-bg-pass{
@@ -589,49 +579,18 @@
     -moz-transition: 0.3s all ease-out;
     -ms-transiton:0.3s all ease-out;
 }
-.bi-lock-fill, .bi-people-fill, .bi-heart, .bi-person-circle, .bi-cart, .bi-search{
+.bi-lock-fill, .bi-people-fill, .bi-lightbulb-off ,.bi-heart, .bi-person-circle, .bi-cart, .bi-search{
     color: rgb(83, 83, 83);
     font-size: 20px;
 }
-.search{
-    width: 100%;
-    height: 50px;
-}
-.search-header{
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    border: solid 2px rgb(232, 235, 236);
-    padding-left: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: Sofia Pro;
-    font-size: 13px;
-    color: rgb(134, 134, 134);
-    outline: none;
-}   
-.search-header:focus{
-    box-shadow: 0 4px 40px rgb(0 0 0 / 30%);
 
-}
-.search-header:focus + .icon-search{
-    background-color: #f54f29;
-}
-.search-header:focus + .icon-search .bi.bi-search{
-    color: rgb(255, 255, 255);
-}
-.bi-gear-fill{
-    color: rgb(139, 139, 139);
-    font-size: 20px;
-}
-.search-icon:focus + .form-setting{
-    transform: translateY(0);
-    visibility: visible;
-    opacity: 1;
-}
-.bi-heart:hover, .bi-person-circle:hover {
-    color: #f54f29;
-
+.help{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #D1D1D1;
+    padding: 10px;
+    line-height: 5px;
+    border-right: 1px solid #D1D1D1;
 }
 .icon-search{
     width: 42px;
@@ -665,12 +624,28 @@
 .password:focus + .empty-bg-pass{
     left: 0;
 }
+.empty{
+    width: 100px;
+    height: 1px;
+    background-color: rgb(151, 151, 151);
+}
+.select-link{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: #4e4e4e !important;
+    line-height:25px;
+    border-bottom: 1px solid white !important;
+}
+.border-active{
+    color: #f54f29 !important;
+    border-bottom: 1px solid #4e4e4e !important;
+}
 .password:focus{
     padding-left: 45px;
 }
 .btn-sign{
     height: 50px;
-    font-family: Sofia Pro;
+    font-family: 'Open Sans', sans-serif;
     outline: none;
     border: none;
     background-color: rgb(76,162,172);
@@ -681,7 +656,7 @@
 }
 .forget-pass{
     color: rgb(117, 117, 117);
-    font-family: Sofia Pro;
+    font-family: 'Open Sans', sans-serif;
     font-size: 17px;
 }
 .regis-btn{
@@ -691,12 +666,12 @@
     outline: none;
     border: none;
     color: rgb(117, 117, 117);
-    font-family: Sofia Pro;
+    font-family: 'Open Sans', sans-serif;
     font-size: 17px;
 }
 .text-or{
     text-align: center;
-    font-family: Sofia Pro;
+    font-family: 'Open Sans', sans-serif;
     color: rgb(117, 117, 117);
     font-size: 18;
     line-height: 26px;
@@ -730,7 +705,7 @@
     visibility: visible;
 }
 .dropdown-link{
-    font-family: Sofia Pro;
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 23px;
     font-weight: 500px;
@@ -746,10 +721,11 @@
     margin-top: 15px;
 }
 .experience{
-    margin-top: 50px;
+    margin-top: 80px;
+    background-color: rgb(255, 255, 255);
 }
 .text-experience{
-    font-family: Sofia Pro;
+    font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     line-height: 38px;
     font-weight: 600;
@@ -757,7 +733,7 @@
     text-shadow: 10px black;
 }
 .text-sub-ex{
-    font-family: Sofia Pro;
+    font-family: 'Open Sans', sans-serif;
     color: rgb(146, 146, 146);
     font-style: 14px;
     line-height: 23px;
@@ -785,7 +761,7 @@
     border: 1px solid rgb(76,162,172);
     background-color: #fff;
     border-radius: 5px;
-    font-family: Sofia Pro;
+    font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     color: rgb(76, 162, 172);
 }
@@ -823,7 +799,7 @@
     display: none;
 }
 .text-loading{
-    font-family: Sofia Pro;
+    font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     line-height: 25px;
     font-weight: 500;
@@ -858,7 +834,7 @@
 }
 
 .text-select{
-    font-family: Sofia Pro;
+    font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     color: 23px;
     color: #4e4e4e;
@@ -881,9 +857,8 @@
 }
 .support{
     height: 150px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .support .container{
     box-shadow: 0 10px 50px rgb(0 0 0 / 20%);
@@ -909,8 +884,8 @@
 }
 .text-support{
     font-size: 17px;
-    font-family: Sofia Pro;
-    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     color: black;
     line-height: 25px;
 }
@@ -919,7 +894,7 @@
 }
 .sub-support{
     font-size: 14px;
-    font-family: Sofia Pro;
+    font-family: Arial, Helvetica, sans-serif;
     color: rgb(180, 180, 180);
     line-height: 20px;
 }
@@ -971,140 +946,153 @@
     font-weight: 600;
 }
 .sub-direct{
-    font-family: Sofia Pro;
+    font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     color:white ;
     line-height: 20px;
 }
 .link-direct{
     color: white !important;
-    font-family: Sofia Pro;
+    font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     border-bottom: 1px solid rgb(255, 255, 255);
 }
-.img-product{
-    height: 280px !important;
-}
-.img-link{
-    max-width: 100%;
-    top: 0;
-    padding: 0 12px ;
-}
-.img-sub{
-   max-width: 100%;
-}
-.img-product{
-    background-color: #F6F6F6;
-}
-.product.slick-slide {
-	margin: 0 12px;
-}
-.render-product .slick-list {
-	margin: 0 -12px !important;
-}
-.rate {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px;
-}
-.rate:not(:checked) > input {
-    display: none;
-}
-.rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:20px;
-    color:#ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-label::before{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.rate > input:checked ~ label {
-    color: #ffc700;    
-}
-.rate:not(:checked) > label:before {
-    content: '★ ';
-}
-.sub-price{
-    text-decoration: line-through !important;
-}
-.sub-slider{
-    width: 100%;
-    height: 60px !important;
-    transition: all 0.2s ease-in-out;
-    -webkit-transition: 0.2s all ease-in-out;
-    -o-transition: 0.2s all ease-in-out;
-    -moz-transition: 0.2s all ease-in-out;
-    -ms-transiton:0.2s all ease-out;
-    position: absolute !important;
-    bottom: 10px !important;
-    left: 0 !important;
-    right: 0 !important;
-    transform: translateY(10px);
-    visibility: hidden;
-    opacity: 0;
-    
-}
 .product{
-    position: relative !important;
+    height:350px !important;
+    background-color: #fff;
 }
-.slider-product:hover  .sub-slider{
-    transform: translateY(0);
-    visibility: visible;
-    opacity: 1;
+.render-product .slick-list{
+    margin: -12px -12px;
 }
-.sub-slider .slick-list{
-    padding: 0 !important;
-    height: 100% !important;
+.product.slick-slide{
+    margin: 12px 12px;
 }
-.border-sub{
-    width: 50px !important;
-    height: 50px !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+.render-product .slick-dots{
+    position: static;
 }
-.sub-slider .slick-list{
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    padding: 0 12px !important;
-    height: 100% !important;
+.img-cart{
+    background-color: #f8f8f8;
 }
-.sub-slider .slick-list .slick-track{
-    width: 90% !important;
-    height: 100% !important;
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    background: white;
-    transform: none !important;
+.img-product{
+    max-width: 100%;
+    transition: all 0.5s ease;
+    -webkit-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -ms-transiton:0.5s all ease;
 }
-.form-setting{
-    height: 30px;
-    width: 100px;
-    background-color: rgb(214, 214, 214);
-    top: 50px;
-    right: 12px;
-    transform: translateY(10px);
-    visibility: hidden;
+.img-product1{
+    max-width: 100%;
+    object-fit: cover;
+    transform: translateX(-50%);
     opacity: 0;
-    z-index: 1 !important;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    transition: all 0.2s ease-in-out;
-    -webkit-transition: 0.2s all ease-in-out;
-    -o-transition: 0.2s all ease-in-out;
-    -moz-transition: 0.2s all ease-in-out;
-    -ms-transiton:0.2s all ease-out;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    -webkit-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -ms-transiton:0.5s all ease;
+}
+.product:hover{
+    box-shadow: 0 4px 15px rgb(0 0 0 / 10%);
+}
+.img-cart:hover .img-product{
+    transform: translateX(50%);
+    opacity: 0;
+    visibility: hidden;
+}
+.img-cart:hover .img-product1{
+    transform: translateX(-100%);
+    opacity: 1;
+    visibility: visible;
+}
+.content-cart{
+    background-color: #ffffff;
+}
+.sale{
+    width: 20%;
+    height: 25px;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+    background-color: #428EFF;
+}
+
+.heart{
+    top: 5px;
+    right: 10px;
+}
+.text-sale{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+}
+.bi-heart-fill{
+    font-size: 20px;
+    color: rgb(170, 170, 170);
+}
+.bi-heart-fill:hover{
+    color: rgb(197, 79, 79) !important;
+}
+.bi-star-fill{
+    font-size: 13px;
+    color: rgb(255, 255, 0);
+}
+.star-brand{
+    height: 35%;
+}
+.price{
+    height: 65%;
+    border-top: 1px solid black;
+}
+.brand-sneaker{
+    font-size: 17px;
+    color: #4e4e4e;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 25px;
+}
+.text-name{
+    font-size: 15px;
+    color: #4e4e4e;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 23px;
+    font-weight: 500;
+}
+.text-price{
+    color: #FB0000;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+.old-price{
+    text-decoration: line-through !important;
+    color: #b1b1b1;
+    font-size: 15px;
+    font-weight: 300;
+}
+.bi-bag-plus{
+    font-size: 25px;
+    color: #383838;
+}
+
+@media (max-width:1050px) {
+    .img-cart .row .col-12{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .img-cart:hover .img-product{
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    .img-product{
+        max-width: 100% !important;
+        object-fit: cover !important;
+    }
+    .img-product1{
+        display: none !important;
+    }
 }

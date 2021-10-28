@@ -42,23 +42,20 @@ $(() => {
     nextArrow:`<i class="bi bi-chevron-compact-right position-absolute"></i>`,
     adaptiveHeight:true
   });
-  $(`#slick-slide-control00`).text(" ");
-  $(`#slick-slide-control01`).text(" ");
-  $(`#slick-slide-control02`).text(" ");
-  $(`#slick-slide-control03`).text(" ");
-  $(`#slick-slide-control04`).text(" ");
   $(`.bi-search`).on("click", () => {
+    $(`.form-search`).css({
+      right:0,
+      left:0
+    })
+    $(`.item-search`).css({
+      display:"block"
+    })
     event.preventDefault();
-    $(`.search-item`).css({
-      visibility: "visible",
-      opacity: 1,
-      top: 0,
-    });
   });
   $(window).on("scroll", () => {
     console.log(document.documentElement.scrollTop);
     let x = document.documentElement.scrollTop;
-    if (x++) {
+    if (x>500) {
       $(`.content-body`).css({
         marginTop:"90px"
       })
@@ -82,79 +79,69 @@ $(() => {
       });
     }
   });
-  let settingNumber = 0
-  $(`.bi-gear-fill`).on(`click`,()=>{
-    event.preventDefault()
-    // settingNumber++
-    // if(settingNumber % 2 == 0){
-    //   $(`.form-setting`).css({
-    //     transform:"translateY(30px)",
-    //     visibility:"hidden",
-    //     opacity:0
-    //   })
-    // }else{
-    //   $(`.form-setting`).css({
-    //     transform:"translate(0)",
-    //     visibility:"visible",
-    //     opacity:1
-    //   })
-    // }
-
+  $(`.render-product`).slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    adaptiveHeight:true,
+    adaptiveWidth:true,
+    arrows:false,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2
+        }
+      }
+    ]
+  });
+  let arrBorder = Array.from($(`.select-link`))
+  arrBorder.forEach(select=>{
+    $(select).on(`click`,()=>{;
+      event.preventDefault()
+      $(`.select-link`).removeClass(`border-active`)
+      $(select).addClass(`border-active`)
+    })
   })
-  // $(`.render-product`).slick({
-  //   dots: false,
-  //   infinite: false,
-  //   speed: 300,
-  //   slidesToShow: 4,
-  //   slidesToScroll: 4,
-  //   adaptiveHeight:true,
-  //   adaptiveWidth:true,
-  //   arrows:false,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1025,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         infinite: true,
-  //         dots: false
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 600,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 2
-  //       }
-  //     }
-  //   ]
-  // });
-  // let arrBannerSLider = Array.from($(`.img-product`))
-  // let numberSlick = 0
-  // for(let slider of arrBannerSLider){
-  //   numberSlick++
-  //   $(slider).addClass(`slider-banner-` + numberSlick).slick({
-  //     slidesToShow: 1,
-  //     slidesToScroll: 1,
-  //     arrows: false,
-  //     fade: true,
-  //     speed:200,
-  //     asNavFor: `.slider-nav-` + numberSlick
-  //   });
-  // }
   
-  // let arrBannerSub = Array.from($(`.sub-slider`))
-  // let numberSub = 0
-  // for(let nav of arrBannerSub){
-  //   numberSub++
-  //   $(nav).addClass(`slider-nav-` + numberSub).slick({
-  //     slidesToShow: 4,
-  //     asNavFor: `.slider-banner-` + numberSub,
-  //     dots: false,
-  //     arrows:false,
-  //     centerMode: true,
-  //     userCSS:false,
-  //     focusOnSelect: true
-  //   });
-  // }
-  
+  let arrHeart = Array.from($(`.bi-heart-fill`))
+  arrHeart.forEach(heart=>{
+    let numberHeart = 0
+    $(heart).on(`click`,(()=>{
+      event.preventDefault()
+      
+      numberHeart++
+      if(numberHeart % 2 ==0){
+        setTimeout(()=>{
+          $(heart).css({
+            color:"rgb(170, 170, 170)"
+          })
+        },1000)
+      }else{
+        setTimeout(()=>{
+          $(heart).css({
+            color:"rgb(197, 79, 79)"
+          })
+        },1000)
+      }
+    }))
+  })
+  let $arrBillStar = Array.from($(`.rate`))
+  for(let i =0; i < $arrBillStar.length;i++){
+    $($arrBillStar[i]).on(`click`,()=>{
+      console.log(i);
+    })
+  }
+
 });
