@@ -1,16 +1,17 @@
 import menu from "./menu.js";
 
 $(() => {
-  $(`.sign`).on("click", () => {
+  $(`.bi-person-circle`).on("click", () => {
     event.preventDefault();
-    setTimeout(() => {
-      $(`.login`).css({
-        display: "flex",
-        "justify-content": "center",
-      });
-    }, 300);
+    $(`.modal-open`).removeAttr("style")
   });
-
+  let $nav = Array.from($(`.nav-link`))
+  $nav.forEach(nav=>{
+    $(nav).on(`click`,()=>{
+      $(`.nav-link`).removeClass("color-forcut")
+      $(nav).addClass("color-forcut")
+    })
+  })
   $(`.bi-arrow-up-square-fill`).on("click", (e) => {
     let toTop = setInterval(() => {
       document.documentElement.scrollTop -= 50;
@@ -19,15 +20,7 @@ $(() => {
         clearInterval(toTop);
       }
     }, 15);
-
     e.preventDefault();
-  });
-
-  $(`.bi-x`).on(`click`, () => {
-    $(`.login`).css({
-      display: "none",
-    });
-    event.preventDefault();
   });
   $(".slider").slick({
     dots: true,

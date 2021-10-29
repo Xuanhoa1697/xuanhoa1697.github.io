@@ -24,9 +24,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container-fruid">
@@ -57,7 +60,7 @@
                       align-items-center
                     "
                   >
-                    FOLLOW:
+                    Cộng đồng:
                   </p>
                 </div>
                 <div
@@ -204,9 +207,14 @@
               <div
                 class="logo d-flex justify-content-center align-items-center"
               >
-                <a class="text-decoration-none text-logo" href="index.html">
-                  <img src="./img/logo-1.png" alt="Fail" />
-                </a>
+                <div class="item-logo h-100">
+                  <a
+                    class="text-decoration-none text-logo h-100"
+                    href="index.html"
+                  >
+                    <img src="./img/logo-1.png" alt="Fail" />
+                  </a>
+                </div>
               </div>
             </div>
             <div class="col-6 h-100">
@@ -261,7 +269,7 @@
                         align-items-center
                       "
                       href=""
-                      >Sneaker
+                      >Sneaker<i class="bi bi-chevron-down ms-1"></i>
                     </a>
                     <div class="dropdown-menu position-absolute">
                       <ul class="list-shopping">
@@ -420,113 +428,267 @@
                         justify-content-center
                         align-items-center
                       "
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
                     ></i
                   ></a>
-                </div>
-              </div>
-              <div class="login position-fixed">
-                <div class="form-sign position-absolute mt-3">
-                  <a href=""><i class="bi bi-x"></i></a>
                   <div
-                    class="
-                      edit-sign
-                      mt-5
-                      d-flex
-                      justify-content-start
-                      align-items-center
-                    "
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
                   >
-                    <span class="bg-cl me-3"> </span>
-                    <h2 class="text-signin m-0">Sign In</h2>
-                  </div>
-                  <form class="form-valid w-100 ps-5 pe-5 pt-4" novalidate>
-                    <div class="form-name position-relative overflow-hidden">
-                      <input
-                        type="text"
-                        placeholder="@Username"
-                        class="name w-100"
-                      />
-                      <span
-                        class="
-                          empty-bg-name
-                          d-flex
-                          justify-content-center
-                          align-items-center
-                        "
-                        ><i class="bi bi-people-fill"></i
-                      ></span>
-                    </div>
-                    <div
-                      class="form-pass mt-5 position-relative overflow-hidden"
-                    >
-                      <input
-                        type="text"
-                        placeholder="Password"
-                        class="password w-100"
-                      />
-                      <span
-                        class="
-                          empty-bg-pass
-                          d-flex
-                          justify-content-center
-                          align-items-center
-                        "
-                        ><i class="bi bi-lock-fill"></i
-                      ></span>
-                    </div>
-                    <button type="submit" class="btn-sign w-100 mt-5">
-                      Shopping now!
-                    </button>
-                    <div
-                      class="
-                        end-sign
-                        d-flex
-                        justify-content-between
-                        align-items-center
-                        mt-3
-                      "
-                    >
-                      <a href="" class="forget-pass">Forgot password?</a>
-                      <div class="register">
-                        <button class="regis-btn">
-                          Sign Up!<i class="bi bi-person-plus-fill"></i>
-                        </button>
+                    <div class="modal-dialog">
+                      <div class="modal-content rounded-0">
+                        <div class="modal-body p-0">
+                          <nav>
+                            <div
+                              class="nav nav-tabs"
+                              id="nav-tab"
+                              role="tablist"
+                            >
+                              <button
+                                class="
+                                  nav-link
+                                  color-forcut
+                                  active
+                                  w-50
+                                  border-top-0 border-start-0
+                                "
+                                id="nav-home-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#nav-home"
+                                type="button"
+                                role="tab"
+                                aria-controls="nav-home"
+                                aria-selected="true"
+                              >
+                                Đăng nhập
+                              </button>
+                              <button
+                                class="nav-link w-50 border-top-0 border-end-0"
+                                id="nav-profile-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#nav-profile"
+                                type="button"
+                                role="tab"
+                                aria-controls="nav-profile"
+                                aria-selected="false"
+                              >
+                                Đăng ký
+                              </button>
+                            </div>
+                          </nav>
+                          <div class="tab-content" id="nav-tabContent">
+                            <div
+                              class="tab-pane fade show active"
+                              id="nav-home"
+                              role="tabpanel"
+                              aria-labelledby="nav-home-tab"
+                            >
+                              <div class="login h-100">
+                                <div class="form-sign h-100 p-5">
+                                  <form class="form-valid">
+                                    <div
+                                      class="
+                                        form-name
+                                        position-relative
+                                        overflow-hidden
+                                      "
+                                    >
+                                      <input
+                                        type="text"
+                                        placeholder="Email đăng nhập"
+                                        class="name w-100"
+                                      />
+                                      <span
+                                        class="
+                                          empty-bg-name
+                                          d-flex
+                                          justify-content-center
+                                          align-items-center
+                                        "
+                                        ><i class="bi bi-people-fill"></i
+                                      ></span>
+                                    </div>
+                                    <div
+                                      class="
+                                        form-pass
+                                        mt-5
+                                        position-relative
+                                        overflow-hidden
+                                      "
+                                    >
+                                      <input
+                                        type="text"
+                                        placeholder="Mật khẩu"
+                                        class="password w-100"
+                                      />
+                                      <span
+                                        class="
+                                          empty-bg-pass
+                                          d-flex
+                                          justify-content-center
+                                          align-items-center
+                                        "
+                                        ><i class="bi bi-lock-fill"></i
+                                      ></span>
+                                    </div>
+                                    <button
+                                      type="submit"
+                                      class="btn-sign w-100 mt-5"
+                                    >
+                                      Đăng nhập
+                                    </button>
+                                    <div
+                                      class="
+                                        end-sign
+                                        d-flex
+                                        justify-content-between
+                                        align-items-center
+                                        mt-3
+                                      "
+                                    >
+                                      <div class="save d-flex justify-content-start align-items-center">
+                                        <input type="checkbox">
+                                        <p class="text-save m-0 ms-2">Lưu mật khẩu</p>
+                                      </div>
+                                      <a href="" class="forget-pass"
+                                        >Quên mật khẩu?</a
+                                      >
+                                    </div>
+                                  </form>
+                                  <p class="text-or w-100 mt-4 mb-4">Hoặc</p>
+                                  <div
+                                    class="
+                                      app-using
+                                      d-flex
+                                      justify-content-center
+                                      align-items-center
+                                    "
+                                  >
+                                    <a href="" class="facebook me-3">
+                                      <img
+                                        class="icon-app"
+                                        src="https://techmaster.vn/resources/image/facebook.png"
+                                        alt="Lỗi"
+                                      />
+                                    </a>
+                                    <a href="" class="google me-3">
+                                      <img
+                                        class="icon-app"
+                                        src="https://techmaster.vn/resources/image/google.png"
+                                        alt="Lỗi"
+                                      />
+                                    </a>
+                                    <a href="" class="twiter">
+                                      <img
+                                        class="icon-app"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLzMryeVMY8pZ5nn7NBBT27PZYPLjgoi8dPgDXDiyx9bYBt5UEeM0B6-BDSMP41uQbusM&usqp=CAU"
+                                        alt=""
+                                      />
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="tab-pane fade"
+                              id="nav-profile"
+                              role="tabpanel"
+                              aria-labelledby="nav-profile-tab"
+                            >
+                              <div class="login h-100">
+                                <div class="form-sign h-100 p-5">
+                                  <form class="form-valid">
+                                    <div
+                                      class="
+                                        form-name
+                                        position-relative
+                                        overflow-hidden
+                                      "
+                                    >
+                                      <input
+                                        type="text"
+                                        placeholder="Email đăng ký"
+                                        class="name w-100"
+                                      />
+                                      <span
+                                        class="
+                                          empty-bg-name
+                                          d-flex
+                                          justify-content-center
+                                          align-items-center
+                                        "
+                                        ><i class="bi bi-people-fill"></i
+                                      ></span>
+                                    </div>
+                                    <div
+                                      class="
+                                        form-pass
+                                        mt-5
+                                        position-relative
+                                        overflow-hidden
+                                      "
+                                    >
+                                      <input
+                                        type="text"
+                                        placeholder="Mật khẩu"
+                                        class="password w-100"
+                                      />
+                                      <span
+                                        class="
+                                          empty-bg-pass
+                                          d-flex
+                                          justify-content-center
+                                          align-items-center
+                                        "
+                                        ><i class="bi bi-lock-fill"></i
+                                      ></span>
+                                    </div>
+                                    <div
+                                      class="
+                                        form-pass
+                                        mt-5
+                                        position-relative
+                                        overflow-hidden
+                                      "
+                                    >
+                                      <input
+                                        type="text"
+                                        placeholder="Nhập lại mật khẩu"
+                                        class="password w-100"
+                                      />
+                                      <span
+                                        class="
+                                          empty-bg-pass
+                                          d-flex
+                                          justify-content-center
+                                          align-items-center
+                                        "
+                                        ><i class="bi bi-arrow-repeat"></i
+                                      ></span>
+                                    </div>
+                                    <button
+                                      type="submit"
+                                      class="btn-sign w-100 mt-5"
+                                    >
+                                      Đăng ký
+                                    </button>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </form>
-                  <p class="text-or w-100">Or</p>
-                  <div
-                    class="
-                      app-using
-                      d-flex
-                      justify-content-center
-                      align-items-center
-                    "
-                  >
-                    <a href="" class="facebook me-3">
-                      <img
-                        class="icon-app"
-                        src="https://techmaster.vn/resources/image/facebook.png"
-                        alt="Lỗi"
-                      />
-                    </a>
-                    <a href="" class="google me-3">
-                      <img
-                        class="icon-app"
-                        src="https://techmaster.vn/resources/image/google.png"
-                        alt="Lỗi"
-                      />
-                    </a>
-                    <a href="" class="twiter">
-                      <img
-                        class="icon-app"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLzMryeVMY8pZ5nn7NBBT27PZYPLjgoi8dPgDXDiyx9bYBt5UEeM0B6-BDSMP41uQbusM&usqp=CAU"
-                        alt=""
-                      />
-                    </a>
                   </div>
                 </div>
               </div>
+              <!-- Button trigger modal -->
+              <!-- Modal -->
             </div>
           </div>
         </div>
@@ -559,10 +721,9 @@
                         Air Force 1 Ultra Flyknit
                       </h2>
                       <p class="sub-title text-center w-75">
-                        Giày Nike Air Force 1 Ultra Flyknit Low 'White Ice'
-                        giày thể thao nâng cấp hình bóng cổ điển với
-                        công nghệ Flyknit trong phiên bản mới này của
-                        nguyên bản.
+                        Giày Nike Air Force 1 Ultra Flyknit Low 'White Ice' giày
+                        thể thao nâng cấp hình bóng cổ điển với công nghệ
+                        Flyknit trong phiên bản mới này của nguyên bản.
                       </p>
                       <a
                         href=""
@@ -899,11 +1060,17 @@
                 </h1>
                 <p class="text-sub-ex m-0">New products available in store</p>
               </div>
-              <div class="col-12 ">
-                <nav class="d-flex justify-content-center align-items-center pb-3">
-                  <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+              <div class="col-12">
+                <nav
+                  class="d-flex justify-content-center align-items-center pb-3"
+                >
+                  <div
+                    class="nav nav-tabs border-0"
+                    id="nav-tab"
+                    role="tablist"
+                  >
                     <button
-                      class="nav-link active select-link border-0 border-active" 
+                      class="nav-link active select-link border-0 border-active"
                       id="nav-home-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-home"
