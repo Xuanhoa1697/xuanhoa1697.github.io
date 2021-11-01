@@ -223,7 +223,7 @@
   background-color: #4e4e4e;
   border-radius: 50%;
   text-align: center;
-  font-size: 11px;
+  font-size: 9px;
   font-family: "Roboto", sans-serif;
   color: #ffffff;
 }
@@ -868,7 +868,12 @@
   left: 0;
   right: 0;
   z-index: 10;
-  display: none;
+  display: none !important;
+  background-color: rgba(2, 2, 2, 0.486);
+}
+
+.flex-visible{
+  display: flex !important;
 }
 .text-loading {
   font-family: "Roboto", sans-serif;
@@ -879,9 +884,9 @@
 .cart-circle {
   width: 50px;
   height: 50px;
-  border: 5px solid rgb(76, 162, 172);
+  border: 5px solid #f54f29;
   border-top: 5px solid white;
-  animation: rotate 0.5s infinite linear;
+  animation: rotate 0.3s infinite linear;
   z-index: 5 !important;
   border-radius: 50%;
   transition: all 0.2s ease;
@@ -900,12 +905,12 @@
 }
 .highlight-sale {
   width: 100%;
-  height: 350px;
+  height: 400px;
   background-image: url(./img-product/Rectangle\ 79.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 29px 300px;
+  margin-top: 80px;
 }
 .sub-hightlight {
   font-family: "Roboto", sans-serif;
@@ -915,19 +920,29 @@
   line-height: 22px;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 40px;
+  width: 700px;
 }
 .text-higtlight {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   font-size: 35px;
   line-height: 42px;
   color: white;
+  margin-bottom: 10px;
 }
 .day-sale {
   width: 80px;
   height: 50px;
-  background-color: rgb(250, 250, 250);
+  background-color: rgba(0, 0, 0, 0.397);
+  border-radius: 10px;
+}
+.day-sale .text-center{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 700;
 }
 .sale-email {
   height: 50px;
@@ -966,7 +981,7 @@
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 .text-select {
   font-family: "Roboto", sans-serif;
@@ -1108,7 +1123,6 @@
 }
 .render-product .slick-dots {
   position: static;
-  margin-top: 10px;
 }
 .img-cart {
   background-color: #f8f8f8;
@@ -1255,6 +1269,62 @@
 }
 .text-buy:hover {
   color: #f54f29 !important;
+}
+
+.out-product{
+  margin-top: 80px;
+}
+.sub-out-product{
+  width: 170px;
+  height: 50px;
+  background-color:rgb(245, 79, 41);
+  border-radius: 50px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: white !important;
+}
+.mr-btn{
+  margin-top: 30px;
+}
+.news{
+  margin-top: 80px;
+}
+.img-story{
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.highlight-news{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #EB3E32
+}
+.text-content{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 35px;
+
+  color: #000000;
+}
+.text-lock{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #B7B2B2;
+}
+.bi-clock{
+  font-size: 20px;
+  color: #000000;
 }
 @media (max-width: 1050px) {
   .img-cart .row .col-12 {

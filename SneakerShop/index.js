@@ -149,4 +149,32 @@ $(() => {
     }))
   })
 
+  function dayLeft(){
+    
+    setInterval(() => {
+      let dayNow = new Date()
+      let presentDay = new Date(2021,10,15)
+      let left = presentDay - dayNow
+      let day = Math.ceil(left / 1000 / 60 /60 / 24)
+      let hour = Math.ceil(left / 1000 / 60 /60) % 24
+      let minute = Math.ceil(left /1000 / 60 ) % 60
+      let second = Math.ceil(left / 1000) % 60
+      $(`.render-day`).text(day)
+      $(`.render-hour`).text(hour)
+      $(`.render-minute`).text(minute)
+      $(`.render-second`).text(second)
+    }, 1000);
+  }
+  dayLeft()
+  let buy = Array.from($(`.text-buy`))
+  let numberProduct = 0
+  $(buy).on("click",()=>{
+    numberProduct++
+    event.preventDefault()
+    $(`.loading`).addClass("flex-visible")
+    setTimeout(()=>{
+      $(`.aqua-cart`).text(numberProduct)
+      $(`.loading`).removeClass("flex-visible")
+    },1500)
+  })
 });
