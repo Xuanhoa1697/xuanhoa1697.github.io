@@ -28,27 +28,37 @@ $(() => {
     speed: 500,
     fade: true,
     cssEase: "linear",
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 7000,
     arrows: true,
     prevArrow:`<i class="bi bi-chevron-compact-left position-absolute"></i>`,
     nextArrow:`<i class="bi bi-chevron-compact-right position-absolute"></i>`,
     adaptiveHeight:true
   });
+
   $(`.bi-search`).on("click", () => {
-    $(`.form-search`).css({
-      right:0,
-      left:0
-    })
-    $(`.item-search`).css({
-      display:"block"
-    })
+    $(`.span-search`).addClass("display-search")
+      $(`.search-hidden`).addClass("display-hidden")
+    
+    event.preventDefault();
+  });
+  $(`.bi-x`).on("click", () => {
+    $(`.span-search`).removeClass("display-search")
+      $(`.search-hidden`).removeClass("display-hidden")
+
     event.preventDefault();
   });
   $(window).on("scroll", () => {
     console.log(document.documentElement.scrollTop);
     let x = document.documentElement.scrollTop;
     if (x>500) {
+      $(`.list-shopping`).css({
+        "margin-top":"90px"
+      })
+      $(`.dropdown-menu`).css({
+        top:0,
+        height:"350px",
+      })
       $(`.content-body`).css({
         marginTop:"90px"
       })
@@ -60,6 +70,13 @@ $(() => {
         height:"90px"
       });
     } else {
+      $(`.list-shopping`).css({
+        "margin-top":"170px"
+      })
+      $(`.dropdown-menu`).css({
+        top:0,
+        height:"450px"
+      })
       $(`.header-menu`).css({
         top:0
       })
@@ -72,6 +89,7 @@ $(() => {
       });
     }
   });
+
   $(`.render-product`).slick({
     dots: true,
     infinite: false,
@@ -130,11 +148,5 @@ $(() => {
       }
     }))
   })
-  let $arrBillStar = Array.from($(`.rate`))
-  for(let i =0; i < $arrBillStar.length;i++){
-    $($arrBillStar[i]).on(`click`,()=>{
-      console.log(i);
-    })
-  }
 
 });
