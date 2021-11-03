@@ -1,4 +1,7 @@
 @media (max-width: 992px) {
+  .header img{
+    max-width: 100% !important;
+  }
     .img-cart .row .col-lg-12 {
       display: flex !important;
       justify-content: center !important;
