@@ -32,8 +32,9 @@
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
+        margin-bottom: 10px;
     }
-    .item-logo .text-logo{
+    .end-page .item-logo .text-logo{
       display: flex !important;
         justify-content: flex-start !important;
         align-items: center !important;
