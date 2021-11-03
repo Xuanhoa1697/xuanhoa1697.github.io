@@ -235,7 +235,7 @@ $(`.support-slider`).slick({
     }, 1000);
   }
   dayLeft()
-  let buy = Array.from($(`.text-buy`))
+  let buy = Array.from($(`.buy`))
   let numberProduct = 0
   $(buy).on("click",()=>{
     numberProduct++
