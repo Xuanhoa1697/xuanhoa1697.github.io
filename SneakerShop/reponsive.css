@@ -78,10 +78,25 @@
     .pa-0{
       padding: 0 !important;
     }
-    
+    .mr-0{
+      margin-top: 0 !important;
+    }
+    .option-cart{
+      bottom: 0!important;
+    }
+  }
+  @media (max-width:768px){
+    .pt-end1{
+      margin-top: 0 !important;
+    }
+    .pt-576{
+      margin-top: 50px !important;
+    }
   }
   @media (max-width:576px){
-    
+    .pt-576-1{
+      margin-top: 50px !important;
+    }
     .pa-0{
       padding: 0 !important;
     }
