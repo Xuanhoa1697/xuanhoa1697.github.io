@@ -49,7 +49,10 @@
   max-width: 50%;
 }
 .logo {
-  z-index: 3 !important;
+  z-index: 1 !important;
+}
+.p-48px{
+  padding-left: 48px !important;
 }
 .follow {
   font-family: "Roboto", sans-serif;
@@ -1391,15 +1394,15 @@
   height: 100%;
   width: 100%;
   background-color: rgb(255, 255, 255);
-  top: -70%;
+  top: -100%;
   left: 0;
   right: 0;
   z-index: 1 !important;
-  transition: all 0.5s ease;
-  -webkit-transition: 0.5s all ease;
-  -o-transition: 0.5s all ease;
-  -moz-transition: 0.5s all ease;
-  -ms-transiton: 0.5s all ease;
+  transition: all 0.3s ease;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -ms-transiton: 0.3s all ease;
   display: none;
 }
 .text-header-reponsive{
@@ -1433,4 +1436,7 @@
 }
 .support .slick-track{
   height: 100% !important;
+}
+.select-item{
+  display: none;
 }

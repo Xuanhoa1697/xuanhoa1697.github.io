@@ -33,6 +33,14 @@
         justify-content: center !important;
         align-items: center !important;
     }
+    .item-logo .text-logo{
+      display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+    }
+    .item-logo .text-logo img{
+      z-index: -1 !important;
+    }
     .list{
         display: block !important;
     }
@@ -41,6 +49,7 @@
     }
     .reponsive-menu{
       display: block;
+      top: -100%;
     }
     .search-hidden:nth-child(1){
         justify-content: flex-end !important;
@@ -50,5 +59,91 @@
     }
     .sub-title{
       width: 100% !important;
+    }
+    .day{
+      margin: 10px !important;
+    }
+    .pt-icon{
+      margin-top: 6px;
+    }
+    .pe-icon{
+      margin-right: 6px;
+    }
+    .pt-end{
+      margin-top: 50px !important;
+    }
+    .item-logo .text-logo img{
+      z-index: 1 !important;
+    }
+    .pa-0{
+      padding: 0 !important;
+    }
+    
+  }
+  @media (max-width:576px){
+    
+    .pa-0{
+      padding: 0 !important;
+    }
+    .empty{
+      display: none !important;
+    }
+    .direct{
+      display: none !important;
+    }
+    .pd{
+      padding-left: 24px !important;
+      padding-right: 24px !important;
+    }
+    .pd1{
+      padding-bottom: 24px !important;
+    }
+    .day{
+      margin: 3px !important;
+    }
+    .day-sale{
+      width: 40px !important;
+      height: 40px !important;
+    }
+    .highlight-sale{
+      height: 500px !important;
+    }
+    .sub-hightlight{
+      margin-bottom: 20px !important;
+    }
+    .select-item{
+      display: block !important;
+    }
+    .item-link{
+      display: none !important;
+    }
+    .sale-email{
+      width: 100% !important;
+    }
+    .btn-sale{
+      width: 70px;
+    }
+    .logo{
+      justify-content: flex-start !important;
+    }
+    .heading-slide{
+      font-size: 35px !important;
+    }
+    .sub-heading-slide{
+      font-size: 30px !important;
+    }
+    .title-slide{
+      font-size: 30px !important;
+    }
+    .sub-title{
+      font-size: 15px !important;
+      width: 100% !important;
+      margin-bottom: 20px !important;
+    }
+    .link-slide{
+      width: 150px !important;
+    }
+    .link-btn{
+      font-size: 14px !important;
     }
   }
