@@ -137,11 +137,11 @@
       padding-bottom: 24px !important;
     }
     .day{
-      margin: 3px !important;
+      margin: 10px !important;
     }
     .day-sale{
-      width: 40px !important;
-      height: 40px !important;
+      width: 50px !important;
+      height: 50px !important;
     }
     .highlight-sale{
       height: 500px !important;
