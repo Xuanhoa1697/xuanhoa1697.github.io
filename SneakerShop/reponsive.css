@@ -32,15 +32,16 @@
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
-        margin-bottom: 10px;
     }
     .end-page .item-logo .text-logo{
       display: flex !important;
         justify-content: flex-start !important;
         align-items: center !important;
+        margin-bottom: 10px;
     }
     .item-logo .text-logo img{
       z-index: -1 !important;
+      width: 100% !important;
     }
     .list{
         display: block !important;
@@ -85,6 +86,12 @@
     .option-cart{
       bottom: 0!important;
     }
+    .span-search{
+      display: none !important;
+    }
+    .status{
+      flex-basis: 30% !important;
+    }
   }
   @media (max-width:768px){
     .pt-end1{
@@ -95,6 +102,21 @@
     }
   }
   @media (max-width:576px){
+    .status{
+      flex-basis: 200px !important;
+      height: 200px !important;
+    }
+    .pricing{
+      width: 40px !important;
+      height: 40px !important;
+    }
+    .bi-bag-check-fill{
+      font-size: 17px !important;
+    }
+    .aqua-cart{
+      width: 15px !important;
+      height: 15px !important;
+    }
     .pt-576-1{
       margin-top: 50px !important;
     }
