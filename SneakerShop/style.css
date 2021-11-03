@@ -1397,7 +1397,7 @@
   top: -100%;
   left: 0;
   right: 0;
-  z-index: 1 !important;
+  z-index: 2 !important;
   transition: all 0.3s ease;
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
@@ -1416,7 +1416,7 @@
 .reponsive-menu .detail-header{
   color: #000000 !important;
 }
-.reponsive-menu .active-menu .detail-header:nth-child(1){
+.reponsive-menu .detail-header:nth-child(1){
   color: #f54f29 !important;
 }
 .reponsive-menu .bi-person-circle, .bi-house-fill , .bi-cart-check , .bi-newspaper , .bi-geo-alt, .bi-shop{
