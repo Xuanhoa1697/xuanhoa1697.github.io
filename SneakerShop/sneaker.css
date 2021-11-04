@@ -1,0 +1,64 @@
+.reponsive-menu .active-menu .detail-header:nth-child(2){
+    color: #f54f29 !important;
+}
+.reponsive-menu .active-menu .detail-header:nth-child(1){
+    color: #000000 !important;
+}
+.home .text-header-logo{
+    color: #000000 !important;
+}
+.shoose .text-header-logo1{
+    color: #f54f29 !important;
+}
+.banner-img{
+    background-image: url(./img/Rectangle\ 179.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+.heading-sneaker{
+    font-size: 42px;
+    line-height: 49px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: white;
+    border-bottom: 5px solid #f54f29;
+}
+.list-sneaker{
+    margin-top: 40px;
+}
+.list-product{
+    height: 330px;
+    background-color: #F5F5F5;
+}
+.heading-list{
+    height: 50px;
+}
+.list-style{
+    width: 90%;
+    height: 100%;
+    border-bottom: 1px solid #aaaaaa;
+}
+.text-list{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px;
+    color: #000000;
+}
+.dropdown-menu{
+    top: 0 !important;
+    left: 100% !important;
+    transform: none !important;
+}
+.dropdown-toggle{
+    border: none !important;
+    background: none;
+    height: 50px;
+    cursor: pointer;
+}
+.dropdown-toggle::after{
+    display: none !important;
+}

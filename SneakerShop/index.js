@@ -55,26 +55,30 @@ $(() => {
     ]
   });
 
-  $(`.bi-search`).on("click", () => {
-    $(`.span-search`).addClass("display-search")
-      $(`.search-hidden`).addClass("display-hidden")
-    
-    event.preventDefault();
-  });
-  $(`.bi-x`).on("click", () => {
-    $(`.span-search`).removeClass("display-search")
-      $(`.search-hidden`).removeClass("display-hidden")
 
-    event.preventDefault();
-  });
+  let transformProduct = [0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9]
+  let $Product = Array.from($(`.transform-product`))
   $(window).on("scroll", () => {
     console.log(document.documentElement.scrollTop);
     let x = document.documentElement.scrollTop;
+    if(x > 2100){
+      for(let i = 0;i < $Product.length;i++){
+        $($Product[i]).css({
+          "animation":"product 0.5s ease forwards",
+          "animation-delay":`${transformProduct[i] + "s"}`
+        })
+      }
+      // $Product.forEach(product=>{
+      // $(product).css({
+      //   "animation":"product 0.5s ease forwards"
+      // })
+  // })
+    }
     if (x>500) {
       $(`.list-shopping`).css({
-        "margin-top":"90px"
+        "margin-top":"120px"
       })
-      $(`.dropdown-menu`).css({
+      $(`.dropdown-menu1`).css({
         top:0,
         height:"350px",
       })
@@ -91,7 +95,7 @@ $(() => {
       $(`.list-shopping`).css({
         "margin-top":"170px"
       })
-      $(`.dropdown-menu`).css({
+      $(`.dropdown-menu1`).css({
         top:0,
         height:"450px"
       })
@@ -106,6 +110,12 @@ $(() => {
       });
     }
   });
+  $(`.span-search .bi-heart`).on("click",()=>{
+    event.preventDefault()
+  })
+  $(`.bi-search`).on("click",()=>{
+    event.preventDefault()
+  })
   let numberList = 0
   $(`.bi-list`).on(`click`,()=>{
     numberList++
@@ -140,14 +150,16 @@ $(`.support-slider`).slick({
         settings: {
           slidesToShow: 2,
           infinite: true,
-          dots: false
+          dots: false,
+          slidesToScroll: 1,
         }
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 2
+          slidesToScroll: 2,
+          slidesToScroll: 1
         }
       }
     ]
@@ -203,17 +215,13 @@ $(`.support-slider`).slick({
       
       numberHeart++
       if(numberHeart % 2 ==0){
-        setTimeout(()=>{
-          $(heart).css({
-            color:"rgb(170, 170, 170)"
-          })
-        },1000)
+        $(heart).css({
+          color:"rgb(170, 170, 170)"
+        })
       }else{
-        setTimeout(()=>{
-          $(heart).css({
-            color:"rgb(197, 79, 79)"
-          })
-        },1000)
+        $(heart).css({
+          color:"rgb(197, 79, 79)"
+        })
       }
     }))
   })

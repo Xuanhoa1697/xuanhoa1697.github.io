@@ -49,7 +49,7 @@
   max-width: 50%;
 }
 .logo {
-  z-index: 1 !important;
+  z-index: 3 !important;
 }
 .p-48px{
   padding-left: 48px !important;
@@ -248,52 +248,31 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background: #fb0000;
-  top: 2.5px;
-  right: 11%;
+  background: #ffffff;
+  top: 0;
+  right: 0;
   border: none;
   outline: none;
 }
 .circle-item .bi-search {
-  color: white;
-}
-.span-search {
-  display: none !important;
-  z-index: 3 !important;
-}
-.bi-x {
-  top: 5px;
-  right: 0;
-  padding: 0;
-  right: none;
-  font-size: 25px;
-  cursor: pointer;
-}
-.search-hidden {
-  z-index: 3;
-}
-.display-hidden {
-  display: none !important;
-}
-.display-search {
-  display: block !important;
+  color: rgb(102, 102, 102);
 }
 .slide-1 {
-  height: 560px !important;
+  height: 600px !important;
   background-image: url(./img/sport-101.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .slide-2 {
-  height: 560px !important;
+  height: 600px !important;
   background-image: url(./img/bannerok2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .slide-3 {
-  height: 560px !important;
+  height: 600px !important;
   background-image: url(./img/kicks-2213619_1280.jpg);
   background-position: center;
   background-size: cover;
@@ -653,8 +632,8 @@
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #d1d1d1;
-  padding: 10px;
-  line-height: 5px;
+  line-height: 22px;
+  padding: 0 10px;
   border-right: 1px solid #d1d1d1;
 }
 .help:hover {
@@ -754,7 +733,7 @@
   color: rgb(41, 41, 41);
   font-weight: 500;
 }
-.dropdown-menu {
+.dropdown-menu1 {
   z-index: 2;
   top: 0;
   left: 0;
@@ -774,7 +753,7 @@
   -moz-transition: 0.2s all ease;
   -ms-transiton: 0.2s all ease;
 }
-.shoose:hover .dropdown-menu {
+.shoose:hover .dropdown-menu1 {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
@@ -944,7 +923,7 @@
 .day-sale .text-center{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 25px;
-  color: #ffffff;
+  color: #df0068;
   font-weight: 700;
 }
 .sale-email {
@@ -1331,6 +1310,14 @@
   background-color: #464C57;
   padding-top: 55px;
 }
+.end-page img{
+  max-width: 50%;
+}
+.d-app{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .title-logo{
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -1439,4 +1426,36 @@
 }
 .select-item{
   display: none;
+}
+.transform-product{
+  transform: translateY(50px);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -ms-transiton: 0.3s all ease;
+}
+
+@keyframes product{
+  from{
+    transform: translateY(50px);
+    visibility: hidden;
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.offcanvas-body{
+  overflow: hidden !important;
+  background: none !important;
+}
+body{
+  overflow-y: scroll !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
