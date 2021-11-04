@@ -254,4 +254,17 @@ $(`.support-slider`).slick({
       $(`.loading`).removeClass("flex-visible")
     },1500)
   })
+  let $removeNow = Array.from($(`.remove-like`))
+  let $listLike = Array.from($(`.like-product`))
+  for(let remove = 0;remove < $removeNow.length;remove++){
+    $($removeNow[remove]).on(`click`,()=>{
+      $($listLike[remove]).remove()
+      event.preventDefault()
+      console.log($removeNow.length);
+      console.log($("div").hasClass("like-product"));
+      if(!($("div").hasClass("like-product"))){
+        $(`<p class="empty-like">Không có sản phẩm yêu thích</p>`).appendTo(".list-like")
+      }
+    })
+  }
 });

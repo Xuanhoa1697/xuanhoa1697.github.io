@@ -1175,11 +1175,7 @@
   z-index: 1;
 }
 .modal {
-  /* padding: 0 !important; */
-  margin-top: 30px;
-}
-.modal-backdrop {
-  z-index: 0 !important;
+  padding: 0 !important;
 }
 .bi-heart-fill:hover {
   color: rgb(197, 79, 79) !important;
@@ -1454,8 +1450,92 @@
   overflow: hidden !important;
   background: none !important;
 }
+.offcanvas-body:nth-child(2){
+  overflow-y: scroll !important;
+}
+.offcanvas{
+  z-index: 100000 !important;
+}
+.header-like{
+  font-size: 20px;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.like-product img{
+  max-width: 100%;
+}
 body{
   overflow-y: scroll !important;
   margin: 0 !important;
   padding: 0 !important;
+}
+.like-product{
+  padding: 15px;
+  border-bottom: 1px solid #cecece;
+}
+.like-product:last-child{
+  border: none !important;
+}
+.name-like{
+  font-size: 15px;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+.money-like{
+  font-size: 17px;
+  color: #fb0000;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+.add-now{
+  font-size: 15px;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+}
+.add-now:hover{
+  color: #f54f29 !important;
+}
+.remove-like{
+  font-size: 14px;
+  color: #b1b1b1 !important;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+}
+.bccl{
+  background-color: #f9f9f9;
+}
+.add-all{
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: #f54f29;
+  font-size: 17px;
+  color: #ffffff !important;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+.remove-all{
+  display: block;
+  text-decoration: overline !important;
+  font-size: 15px;
+  color: #bbbbbb !important;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 23px;
 }

@@ -532,7 +532,7 @@
                     align-items-center
                   "
                 >
-                  <a href=""><i class="bi bi-search"></i></a>
+                  <a href=""><i class="bi bi-search" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i></a>
                 </div>
                 <div
                   class="
@@ -544,15 +544,6 @@
                   "
                 >
                 <a href=""><i class="bi bi-heart" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i></a>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                  <div class="offcanvas-header">
-                    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  </div>
-                  <div class="offcanvas-body">
-                    ...
-                  </div>
-                </div>  
                 </div>
                 <div class="col-lg-2 col-2 p-0">
                   <div
@@ -585,6 +576,98 @@
           </div>
         </div>
       </div>
+      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-body">
+          <div class="container">
+            <form class="w-100 h-100 mt-5 position-relative">
+              <button class="circle-item position-absolute">
+                <i class="bi bi-search"></i>
+              </button>
+              <input
+                class="detail-search rounded-0 border-top-0 border-end-0 border-start-0 w-100"
+                type="text"
+                placeholder="Tìm kiếm..."
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="header-like m-0" id="offcanvasRightLabel">Sản phẩm yêu thích</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="list-like">
+            
+            <div class="like-product">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="row">
+                    <div class="col-lg-3 bccl border d-flex justify-content-center align-items-center">
+                      <img src="./img-product/nike2.jpg" alt="">
+                    </div>
+                    <div class="col-lg-9">
+                      <div class="content-like h-100 d-flex justify-content-between align-items-start flex-column">
+                        <p class="name-like m-0">Nike Air Max 270</p>
+                        <p class="money-like m-0 mb-3">1.750.000đ</p>
+                        <div class="combo-like d-flex justify-content-start align-items-center">
+                          <a href="" class="add-now me-3">Mua ngay</a>
+                          <a href="" class="remove-like">Bỏ thích</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="like-product">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="row">
+                    <div class="col-lg-3 bccl border d-flex justify-content-center align-items-center">
+                      <img src="./img-product/vans-ua-old-skool-vn0a4u3bsjz-thumb.jpg" alt="">
+                    </div>
+                    <div class="col-lg-9">
+                      <div class="content-like h-100 d-flex justify-content-between align-items-start flex-column">
+                        <p class="name-like m-0">Vans Old Skool</p>
+                        <p class="money-like m-0 mb-3">1.450.000đ</p>
+                        <div class="combo-like d-flex justify-content-start align-items-center">
+                          <a href="" class="add-now me-3">Mua ngay</a>
+                          <a href="" class="remove-like">Bỏ thích</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="like-product">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="row">
+                    <div class="col-lg-3 bccl border d-flex justify-content-center align-items-center">
+                      <img src="./img-product/new-balance-574-classic-ml574mub-thumb.jpg" alt="">
+                    </div>
+                    <div class="col-lg-9">
+                      <div class="content-like h-100 d-flex justify-content-between align-items-start flex-column">
+                        <p class="name-like m-0">574 Classic</p>
+                        <p class="money-like m-0 mb-3">1.250.000đ</p>
+                        <div class="combo-like d-flex justify-content-start align-items-center">
+                          <a href="" class="add-now me-3">Mua ngay</a>
+                          <a href="" class="remove-like">Bỏ thích</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="" class="add-all d-flex justify-content-center align-items-center text-center mt-4">Thêm tất cả vảo giỏ hàng</a>
+          <a href="" class="remove-all mt-2">Bỏ yêu thích tất cả</a>
+        </div>
+      </div>  
       <div class="container">
         <div
                       class="modal fade"
