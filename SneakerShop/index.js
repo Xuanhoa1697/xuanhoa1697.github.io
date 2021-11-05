@@ -254,11 +254,23 @@ $(`.support-slider`).slick({
       $(`.loading`).removeClass("flex-visible")
     },1500)
   })
+  let addNow = Array.from($(`.add-now`))
+  addNow.forEach(add=>{
+    $(add).on(`click`,()=>{
+      $(`.loading`).addClass("flex-visible")
+      setTimeout(()=>{
+        $(`.aqua-cart`).text(numberProduct)
+        $(`.loading`).removeClass("flex-visible")
+      },1500)
+      event.preventDefault()
+    })
+  })
   let $removeNow = Array.from($(`.remove-like`))
   let $listLike = Array.from($(`.like-product`))
   for(let remove = 0;remove < $removeNow.length;remove++){
     $($removeNow[remove]).on(`click`,()=>{
       $($listLike[remove]).remove()
+      $(`.empty-like`).remove()
       event.preventDefault()
       console.log($removeNow.length);
       console.log($("div").hasClass("like-product"));
@@ -267,4 +279,13 @@ $(`.support-slider`).slick({
       }
     })
   }
+  let removeAll= Array.from($(`.remove-all`))
+  $(removeAll).on(`click`,()=>{
+    $(`.empty-like`).remove()
+    event.preventDefault()
+    $(`.like-product`).remove()
+    if(!($("div").hasClass("like-product"))){
+      $(`<p class="empty-like">Không có sản phẩm yêu thích</p>`).appendTo(".list-like")
+    }
+  })
 });

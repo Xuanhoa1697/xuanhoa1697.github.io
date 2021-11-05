@@ -15,10 +15,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
-    
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="sneaker.css" />
-    <link rel="stylesheet" href="reponsive.css">
+    <link rel="stylesheet" href="reponsive.css" />
     <link rel="shortcut icon" href="./img/thumb4.png" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -34,6 +34,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="reponsive.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    
   </head>
   <body>
     <div class="container-fruid">
@@ -191,7 +193,9 @@
                 >
                   <a href="" class="help">Hỗ trợ</a>
                   <a href="" class="help">Phản hồi</a>
-                  <a href="" class="help border-end-0">Hotline: 098.8686.888</a>
+                  <a href="" class="help pe-0 border-end-0"
+                    >Hotline: 098.8686.888</a
+                  >
                 </div>
               </div>
             </div>
@@ -251,9 +255,9 @@
               </div>
             </div>
             <!-- <div class="col-6 d-flex justify-content-end align-items-start"> 
-                  <i class="bi bi-heart d-flex justify-content-end align-items-center me-3"></i>
-                  <i class=" bi bi-person-circle d-flex justify-content-end align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-                </div> -->
+              <i class="bi bi-heart d-flex justify-content-end align-items-center me-3"></i>
+              <i class=" bi bi-person-circle d-flex justify-content-end align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            </div> -->
             <div class="col-6"></div>
           </div>
         </div>
@@ -270,7 +274,7 @@
               align-items-center
             "
           >
-            <div class="col-4 d-none list">
+            <div class="col-sm-4 col-4 d-none list">
               <a href="">
                 <i class="bi bi-list"></i>
               </a>
@@ -284,7 +288,6 @@
                 align-items-center
               "
             >
-              
               <div
                 class="logo d-flex justify-content-center align-items-center"
               >
@@ -352,7 +355,7 @@
                       href="sneaker.html"
                       >Sneaker<i class="bi bi-chevron-down ms-1"></i>
                     </a>
-                    <div class="dropdown-menu position-fixed p-0">
+                    <div class="dropdown-menu1 position-fixed p-0">
                       <div class="container">
                         <div class="row">
                           <div
@@ -504,11 +507,10 @@
               <div class="row d-flex justify-content-end align-items-center">
                 <div
                   class="
-                    col-lg-5 col-12
-                    search-hidden
+                    col-lg-6 col-12
                     cart-hidden
                     d-flex
-                    justify-content-center
+                    justify-content-end
                     align-items-center
                   "
                 >
@@ -518,7 +520,6 @@
                       d-flex
                       justify-content-end
                       align-items-center
-                      
                     "
                   >
                     <a
@@ -532,7 +533,7 @@
                         align-items-center
                       "
                       href=""
-                      ><i class="bi item-search bi-bag-check-fill"></i
+                      ><i class="bi bi-bag-check-fill"></i
                       ><span
                         class="
                           aqua-cart
@@ -546,54 +547,57 @@
                     >
                   </div>
                 </div>
-                <div class="col-lg-12 col-12 span-search">
-                  <form class="w-100 h-100 position-relative">
-                    <button class="circle-item position-absolute">
-                      <i class="bi bi-search"></i>
-                    </button>
-                    <span class="bi bi-x position-absolute"></span>
-                    <input
-                      class="detail-search"
-                      type="text"
-                      placeholder="Tìm kiếm..."
-                    />
-                  </form>
-                </div>
                 <div
                   class="
-                    col-lg-2 col-2
-                    search-hidden
-                    reponsive-hidden
+                    col-lg-2
+                    p-0
+                    span-search
                     d-flex
                     justify-content-end
                     align-items-center
                   "
                 >
-                  <a href=""><i class="bi bi-search"></i></a>
+                  <a href=""
+                    ><i
+                      class="bi bi-search"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasTop"
+                      aria-controls="offcanvasTop"
+                    ></i
+                  ></a>
                 </div>
                 <div
                   class="
-                    col-lg-2 col-2
-                    reponsive-hidden
-                    search-hidden
+                    col-lg-2
+                    p-0
+                    span-search
                     d-flex
                     justify-content-end
                     align-items-center
                   "
                 >
-                  <a href=""><i class="bi bi-heart"></i></a>
+                  <a href=""
+                    ><i
+                      class="bi bi-heart"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasRight"
+                      aria-controls="offcanvasRight"
+                    ></i
+                  ></a>
                 </div>
-                <div class="col-lg-2 col-2 search-hidden reponsive-hidden">
+                <div class="col-lg-2 col-2 p-0">
                   <div
                     class="
                       sign
+                      w-100
                       h-100
+                      span-search
                       d-flex
                       justify-content-end
                       align-items-center
                     "
                   >
-                    <a class="text-decoration-none ms-2" href=""
+                    <a class="text-decoration-none" href=""
                       ><i
                         class="
                           bi bi-person-circle
@@ -614,263 +618,789 @@
       </div>
       <div class="container">
         <div
-                      class="modal fade"
-                      id="exampleModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+              <div class="modal-body p-0">
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button
+                      class="
+                        nav-link
+                        col-lgor-forcut
+                        active
+                        w-50
+                        border-top-0 border-start-0
+                      "
+                      id="nav-login-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-login"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-login"
+                      aria-selected="true"
                     >
-                      <div class="modal-dialog">
-                        <div class="modal-content rounded-0">
-                          <div class="modal-body p-0">
-                            <nav>
+                      Đăng nhập
+                    </button>
+                    <button
+                      class="nav-link w-50 border-top-0 border-end-0"
+                      id="nav-register-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-register"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-register"
+                      aria-selected="false"
+                    >
+                      Đăng ký
+                    </button>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="nav-login"
+                    role="tabpanel"
+                    aria-labelledby="nav-login-tab"
+                  >
+                    <div class="login h-100">
+                      <div class="form-sign h-100 p-5">
+                        <form class="form-valid">
+                          <div
+                            class="form-name position-relative overflow-hidden"
+                          >
+                            <input
+                              type="text"
+                              placeholder="Email đăng nhập"
+                              class="name w-100"
+                            />
+                            <span
+                              class="
+                                empty-bg-name
+                                d-flex
+                                justify-content-center
+                                align-items-center
+                              "
+                              ><i class="bi bi-people-fill"></i
+                            ></span>
+                          </div>
+                          <div
+                            class="
+                              form-pass
+                              mt-5
+                              position-relative
+                              overflow-hidden
+                            "
+                          >
+                            <input
+                              type="text"
+                              placeholder="Mật khẩu"
+                              class="password w-100"
+                            />
+                            <span
+                              class="
+                                empty-bg-pass
+                                d-flex
+                                justify-content-center
+                                align-items-center
+                              "
+                              ><i class="bi bi-lock-fill"></i
+                            ></span>
+                          </div>
+                          <button type="submit" class="btn-sign w-100 mt-5">
+                            Đăng nhập
+                          </button>
+                          <div
+                            class="
+                              end-sign
+                              d-flex
+                              justify-content-between
+                              align-items-center
+                              mt-3
+                            "
+                          >
+                            <div
+                              class="
+                                save
+                                d-flex
+                                justify-content-start
+                                align-items-center
+                              "
+                            >
+                              <input type="checkbox" />
+                              <p class="text-save m-0 ms-2">Lưu mật khẩu</p>
+                            </div>
+                            <a href="" class="forget-pass">Quên mật khẩu?</a>
+                          </div>
+                        </form>
+                        <p class="text-or w-100 mt-4 mb-4">Hoặc</p>
+                        <div
+                          class="
+                            app-using
+                            d-flex
+                            justify-content-center
+                            align-items-center
+                          "
+                        >
+                          <a href="" class="facebook me-3">
+                            <img
+                              class="icon-app"
+                              src="https://techmaster.vn/resources/image/facebook.png"
+                              alt="Lỗi"
+                            />
+                          </a>
+                          <a href="" class="google me-3">
+                            <img
+                              class="icon-app"
+                              src="https://techmaster.vn/resources/image/google.png"
+                              alt="Lỗi"
+                            />
+                          </a>
+                          <a href="" class="twiter">
+                            <img
+                              class="icon-app"
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLzMryeVMY8pZ5nn7NBBT27PZYPLjgoi8dPgDXDiyx9bYBt5UEeM0B6-BDSMP41uQbusM&usqp=CAU"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="nav-register"
+                    role="tabpanel"
+                    aria-labelledby="nav-register-tab"
+                  >
+                    <div class="login h-100">
+                      <div class="form-sign h-100 p-5">
+                        <form class="form-valid">
+                          <div
+                            class="form-name position-relative overflow-hidden"
+                          >
+                            <input
+                              type="text"
+                              placeholder="Email đăng ký"
+                              class="name w-100"
+                            />
+                            <span
+                              class="
+                                empty-bg-name
+                                d-flex
+                                justify-content-center
+                                align-items-center
+                              "
+                              ><i class="bi bi-people-fill"></i
+                            ></span>
+                          </div>
+                          <div
+                            class="
+                              form-pass
+                              mt-5
+                              position-relative
+                              overflow-hidden
+                            "
+                          >
+                            <input
+                              type="text"
+                              placeholder="Mật khẩu"
+                              class="password w-100"
+                            />
+                            <span
+                              class="
+                                empty-bg-pass
+                                d-flex
+                                justify-content-center
+                                align-items-center
+                              "
+                              ><i class="bi bi-lock-fill"></i
+                            ></span>
+                          </div>
+                          <div
+                            class="
+                              form-pass
+                              mt-5
+                              position-relative
+                              overflow-hidden
+                            "
+                          >
+                            <input
+                              type="text"
+                              placeholder="Nhập lại mật khẩu"
+                              class="password w-100"
+                            />
+                            <span
+                              class="
+                                empty-bg-pass
+                                d-flex
+                                justify-content-center
+                                align-items-center
+                              "
+                              ><i class="bi bi-arrow-repeat"></i
+                            ></span>
+                          </div>
+                          <button type="submit" class="btn-sign w-100 mt-5">
+                            Đăng ký
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="loading d-flex justify-content-center align-items-center"
+              >
+                <div
+                  class="
+                    status
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                    flex-column
+                  "
+                >
+                  <span class="cart-circle"></span>
+                  <p class="text-loading pt-3">Adding to cart...</p>
+                </div>
+              </div>
+      <div
+        class="offcanvas offcanvas-top"
+        tabindex="-1"
+        id="offcanvasTop"
+        aria-labelledby="offcanvasTopLabel"
+      >
+        <div class="offcanvas-body">
+          <div class="container">
+            <form class="w-100 h-100 mt-5 position-relative">
+              <button class="circle-item position-absolute">
+                <i class="bi bi-search"></i>
+              </button>
+              <input
+                class="
+                  detail-search
+                  rounded-0
+                  border-top-0 border-end-0 border-start-0
+                  w-100
+                "
+                type="text"
+                placeholder="Tìm kiếm..."
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="header-like m-0" id="offcanvasRightLabel">
+            Sản phẩm yêu thích
+          </h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="list-like">
+            <div class="like-product">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="row">
+                    <div
+                      class="
+                        col-lg-3
+                        bccl
+                        border
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                      "
+                    >
+                      <img src="./img-product/nike2.jpg" alt="" />
+                    </div>
+                    <div class="col-lg-9">
+                      <div
+                        class="
+                          content-like
+                          h-100
+                          d-flex
+                          justify-content-between
+                          align-items-start
+                          flex-column
+                        "
+                      >
+                        <p class="name-like m-0">Nike Air Max 270</p>
+                        <p class="money-like m-0 mb-3">1.750.000đ</p>
+                        <div
+                          class="
+                            combo-like
+                            d-flex
+                            justify-content-start
+                            align-items-center
+                          "
+                        >
+                          <a href="" class="add-now me-3">Mua ngay</a>
+                          <a href="" class="remove-like">Bỏ thích</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="like-product">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="row">
+                    <div
+                      class="
+                        col-lg-3
+                        bccl
+                        border
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                      "
+                    >
+                      <img
+                        src="./img-product/vans-ua-old-skool-vn0a4u3bsjz-thumb.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-lg-9">
+                      <div
+                        class="
+                          content-like
+                          h-100
+                          d-flex
+                          justify-content-between
+                          align-items-start
+                          flex-column
+                        "
+                      >
+                        <p class="name-like m-0">Vans Old Skool</p>
+                        <p class="money-like m-0 mb-3">1.450.000đ</p>
+                        <div
+                          class="
+                            combo-like
+                            d-flex
+                            justify-content-start
+                            align-items-center
+                          "
+                        >
+                          <a href="" class="add-now me-3">Mua ngay</a>
+                          <a href="" class="remove-like">Bỏ thích</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="like-product">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="row">
+                    <div
+                      class="
+                        col-lg-3
+                        bccl
+                        border
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                      "
+                    >
+                      <img
+                        src="./img-product/new-balance-574-classic-ml574mub-thumb.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-lg-9">
+                      <div
+                        class="
+                          content-like
+                          h-100
+                          d-flex
+                          justify-content-between
+                          align-items-start
+                          flex-column
+                        "
+                      >
+                        <p class="name-like m-0">574 Classic</p>
+                        <p class="money-like m-0 mb-3">1.250.000đ</p>
+                        <div
+                          class="
+                            combo-like
+                            d-flex
+                            justify-content-start
+                            align-items-center
+                          "
+                        >
+                          <a href="" class="add-now me-3">Mua ngay</a>
+                          <a href="" class="remove-like">Bỏ thích</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            href=""
+            class="
+              add-all
+              d-flex
+              justify-content-center
+              align-items-center
+              text-center
+              mt-4
+            "
+            >Thêm tất cả vảo giỏ hàng</a
+          >
+          <a href="" class="remove-all mt-2">Bỏ yêu thích tất cả</a>
+        </div>
+      </div>
+      <div class="content-body">
+        <div class="container-fruid">
+          <div class="banner-sneaker">
+            <div class="banner-img">
+              <div
+                class="
+                  container
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <a href="sneaker.html" class="heading-sneaker text-center"
+                  >Sneaker</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="list-sneaker">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="list-product">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div
+                              class="
+                                heading-list
+                                d-flex
+                                justify-content-center
+                                align-items-center
+                              "
+                            >
                               <div
-                                class="nav nav-tabs"
-                                id="nav-tab"
-                                role="tablist"
+                                class="
+                                  list-style
+                                  d-flex
+                                  justify-content-center
+                                  align-items-center
+                                "
                               >
-                                <button
-                                  class="
-                                    nav-link
-                                    col-lgor-forcut
-                                    active
-                                    w-50
-                                    border-top-0 border-start-0
-                                  "
-                                  id="nav-login-tab"
-                                  data-bs-toggle="tab"
-                                  data-bs-target="#nav-login"
-                                  type="button"
-                                  role="tab"
-                                  aria-controls="nav-login"
-                                  aria-selected="true"
-                                >
-                                  Đăng nhập
-                                </button>
-                                <button
-                                  class="
-                                    nav-link
-                                    w-50
-                                    border-top-0 border-end-0
-                                  "
-                                  id="nav-register-tab"
-                                  data-bs-toggle="tab"
-                                  data-bs-target="#nav-register"
-                                  type="button"
-                                  role="tab"
-                                  aria-controls="nav-register"
-                                  aria-selected="false"
-                                >
-                                  Đăng ký
-                                </button>
+                                <p class="text-list m-0 text-center">
+                                  DANH MỤC SẢN PHẨM
+                                </p>
                               </div>
-                            </nav>
-                            <div class="tab-content" id="nav-tabContent">
-                              <div
-                                class="tab-pane fade show active"
-                                id="nav-login"
-                                role="tabpanel"
-                                aria-labelledby="nav-login-tab"
-                              >
-                                <div class="login h-100">
-                                  <div class="form-sign h-100 p-5">
-                                    <form class="form-valid">
-                                      <div
-                                        class="
-                                          form-name
-                                          position-relative
-                                          overflow-hidden
-                                        "
-                                      >
-                                        <input
-                                          type="text"
-                                          placeholder="Email đăng nhập"
-                                          class="name w-100"
-                                        />
-                                        <span
-                                          class="
-                                            empty-bg-name
-                                            d-flex
-                                            justify-content-center
-                                            align-items-center
-                                          "
-                                          ><i class="bi bi-people-fill"></i
-                                        ></span>
-                                      </div>
-                                      <div
-                                        class="
-                                          form-pass
-                                          mt-5
-                                          position-relative
-                                          overflow-hidden
-                                        "
-                                      >
-                                        <input
-                                          type="text"
-                                          placeholder="Mật khẩu"
-                                          class="password w-100"
-                                        />
-                                        <span
-                                          class="
-                                            empty-bg-pass
-                                            d-flex
-                                            justify-content-center
-                                            align-items-center
-                                          "
-                                          ><i class="bi bi-lock-fill"></i
-                                        ></span>
-                                      </div>
-                                      <button
-                                        type="submit"
-                                        class="btn-sign w-100 mt-5"
-                                      >
-                                        Đăng nhập
-                                      </button>
-                                      <div
-                                        class="
-                                          end-sign
-                                          d-flex
-                                          justify-content-between
-                                          align-items-center
-                                          mt-3
-                                        "
-                                      >
-                                        <div
-                                          class="
-                                            save
-                                            d-flex
-                                            justify-content-start
-                                            align-items-center
-                                          "
-                                        >
-                                          <input type="checkbox" />
-                                          <p class="text-save m-0 ms-2">
-                                            Lưu mật khẩu
-                                          </p>
-                                        </div>
-                                        <a href="" class="forget-pass"
-                                          >Quên mật khẩu?</a
-                                        >
-                                      </div>
-                                    </form>
-                                    <p class="text-or w-100 mt-4 mb-4">Hoặc</p>
-                                    <div
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="container h-100">
+                              <div class="row h-100 d-flex justify-content-between align-items-start flex-column">
+                                <div class="col-lg-12 p-0">
+                                  <div class="btn-group h-100 dropend w-100">
+                                    <p
                                       class="
-                                        app-using
+                                        m-0
+                                        w-100
+                                        dropdown-toggle
                                         d-flex
-                                        justify-content-center
+                                        justify-content-between
                                         align-items-center
                                       "
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
                                     >
-                                      <a href="" class="facebook me-3">
-                                        <img
-                                          class="icon-app"
-                                          src="https://techmaster.vn/resources/image/facebook.png"
-                                          alt="Lỗi"
-                                        />
-                                      </a>
-                                      <a href="" class="google me-3">
-                                        <img
-                                          class="icon-app"
-                                          src="https://techmaster.vn/resources/image/google.png"
-                                          alt="Lỗi"
-                                        />
-                                      </a>
-                                      <a href="" class="twiter">
-                                        <img
-                                          class="icon-app"
-                                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLzMryeVMY8pZ5nn7NBBT27PZYPLjgoi8dPgDXDiyx9bYBt5UEeM0B6-BDSMP41uQbusM&usqp=CAU"
-                                          alt=""
-                                        />
-                                      </a>
-                                    </div>
+                                      <span>Nike</span>
+                                      <i class="bi bi-chevron-right"></i>
+                                    </p>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <button
+                                          class="dropdown-item"
+                                          type="button"
+                                        >
+                                          Air Force 1 Pixel
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button
+                                          class="dropdown-item"
+                                          type="button"
+                                        >
+                                          Air Max 270
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button
+                                          class="dropdown-item"
+                                          type="button"
+                                        >
+                                          Blazer Mid
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button
+                                          class="dropdown-item"
+                                          type="button"
+                                        >
+                                          Free Run
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button
+                                          class="dropdown-item"
+                                          type="button"
+                                        >
+                                          Xem thêm
+                                        </button>
+                                      </li>
+                                    </ul>
                                   </div>
                                 </div>
-                              </div>
-                              <div
-                                class="tab-pane fade"
-                                id="nav-register"
-                                role="tabpanel"
-                                aria-labelledby="nav-register-tab"
-                              >
-                                <div class="login h-100">
-                                  <div class="form-sign h-100 p-5">
-                                    <form class="form-valid">
-                                      <div
-                                        class="
-                                          form-name
-                                          position-relative
-                                          overflow-hidden
-                                        "
-                                      >
-                                        <input
-                                          type="text"
-                                          placeholder="Email đăng ký"
-                                          class="name w-100"
-                                        />
-                                        <span
-                                          class="
-                                            empty-bg-name
-                                            d-flex
-                                            justify-content-center
-                                            align-items-center
-                                          "
-                                          ><i class="bi bi-people-fill"></i
-                                        ></span>
-                                      </div>
-                                      <div
-                                        class="
-                                          form-pass
-                                          mt-5
-                                          position-relative
-                                          overflow-hidden
-                                        "
-                                      >
-                                        <input
-                                          type="text"
-                                          placeholder="Mật khẩu"
-                                          class="password w-100"
-                                        />
-                                        <span
-                                          class="
-                                            empty-bg-pass
-                                            d-flex
-                                            justify-content-center
-                                            align-items-center
-                                          "
-                                          ><i class="bi bi-lock-fill"></i
-                                        ></span>
-                                      </div>
-                                      <div
-                                        class="
-                                          form-pass
-                                          mt-5
-                                          position-relative
-                                          overflow-hidden
-                                        "
-                                      >
-                                        <input
-                                          type="text"
-                                          placeholder="Nhập lại mật khẩu"
-                                          class="password w-100"
-                                        />
-                                        <span
-                                          class="
-                                            empty-bg-pass
-                                            d-flex
-                                            justify-content-center
-                                            align-items-center
-                                          "
-                                          ><i class="bi bi-arrow-repeat"></i
-                                        ></span>
-                                      </div>
-                                      <button
-                                        type="submit"
-                                        class="btn-sign w-100 mt-5"
-                                      >
-                                        Đăng ký
-                                      </button>
-                                    </form>
+                                <div class="col-lg-12 p-0">
+                                  <div
+                                    class="
+                                      btn-group
+                                      h-100
+                                      dropend
+                                      w-100
+                                      position-relative
+                                    "
+                                  >
+                                    <p
+                                      class="
+                                        m-0
+                                        w-100
+                                        dropdown-toggle
+                                        d-flex
+                                        justify-content-between
+                                        align-items-center
+                                      "
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      <span>Nike</span>
+                                      <i class="bi bi-chevron-right"></i>
+                                    </p>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <button
+                                          class="dropdown-item"
+                                          type="button"
+                                        >
+                                          Action
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button
+                                          class="dropdown-item"
+                                          type="button"
+                                        >
+                                          Another action
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button
+                                          class="dropdown-item"
+                                          type="button"
+                                        >
+                                          Something else here
+                                        </button>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col-lg-12 p-0">
+                                  <div
+                                    class="
+                                      btn-group
+                                      h-100
+                                      dropend
+                                      w-100
+                                      position-relative
+                                    "
+                                  >
+                                    <p
+                                      class="
+                                        m-0
+                                        w-100
+                                        dropdown-toggle
+                                        d-flex
+                                        justify-content-between
+                                        align-items-center
+                                      "
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      <span>Nike</span>
+                                      <i class="bi bi-chevron-right"></i>
+                                    </p>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <button
+                                          class="dropdown-item"
+                                          type="button"
+                                        >
+                                          Action
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button
+                                          class="dropdown-item"
+                                          type="button"
+                                        >
+                                          Another action
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button
+                                          class="dropdown-item"
+                                          type="button"
+                                        >
+                                          Something else here
+                                        </button>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col-lg-12 p-0">
+                                  <div
+                                    class="
+                                      btn-group
+                                      h-100
+                                      dropend
+                                      w-100
+                                      position-relative
+                                    "
+                                  >
+                                    <p
+                                      class="
+                                        m-0
+                                        w-100
+                                        dropdown-toggle
+                                        d-flex
+                                        justify-content-between
+                                        align-items-center
+                                      "
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      <span>Nike</span>
+                                      <i class="bi bi-chevron-right"></i>
+                                    </p>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <button
+                                          class="dropdown-item"
+                                          type="button"
+                                        >
+                                          Action
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button
+                                          class="dropdown-item"
+                                          type="button"
+                                        >
+                                          Another action
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button
+                                          class="dropdown-item"
+                                          type="button"
+                                        >
+                                          Something else here
+                                        </button>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col-lg-12 p-0">
+                                  <div
+                                    class="
+                                      btn-group
+                                      h-100
+                                      dropend
+                                      w-100
+                                      position-relative
+                                    "
+                                  >
+                                    <p
+                                      class="
+                                        m-0
+                                        w-100
+                                        dropdown-toggle
+                                        d-flex
+                                        justify-content-between
+                                        align-items-center
+                                      "
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      <span>Nike</span>
+                                      <i class="bi bi-chevron-right"></i>
+                                    </p>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <button
+                                          class="dropdown-item"
+                                          type="button"
+                                        >
+                                          Action
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button
+                                          class="dropdown-item"
+                                          type="button"
+                                        >
+                                          Another action
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button
+                                          class="dropdown-item"
+                                          type="button"
+                                        >
+                                          Something else here
+                                        </button>
+                                      </li>
+                                    </ul>
                                   </div>
                                 </div>
                               </div>
@@ -879,98 +1409,70 @@
                         </div>
                       </div>
                     </div>
-      </div>
-      <div class="content-body">
-          <div class="container-fruid">
-              <div class="banner-sneaker">
-                <div class="banner-img">
-                    <div class="container d-flex justify-content-center align-items-center">
-                        <p class="heading-sneaker text-center">Sneaker</p>
-                    </div>
-                </div>
-              </div>
-              <div class="list-sneaker">
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-lg-3">
+                    <div class="col-lg-12 mt-4">
+                      <div class="filter">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div
+                              class="
+                                heading-list
+                                d-flex
+                                justify-content-center
+                                align-items-center
+                              "
+                            >
+                              <div
+                                class="
+                                  list-style
+                                  d-flex
+                                  justify-content-center
+                                  align-items-center
+                                "
+                              >
+                                <p class="text-list m-0 text-center">
+                                  LỌC
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="container">
                               <div class="row">
-                                  <div class="col-lg-12">
-                                      <div class="list-product">
-                                          <div class="row">
-                                                <div class="col-lg-12">
-                                                    <div class="heading-list d-flex justify-content-center align-items-center">
-                                                        <div class="list-style d-flex justify-content-center align-items-center">
-                                                            <p class="text-list m-0 text-center">DANH MỤC SẢN PHẨM </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <div class="container h-100">
-                                                        <div class="row">
-                                                            
-                                                            <div class="col-lg-12 h-100 p-0">
-                                                                <div class="btn-group h-100 dropend w-100 position-relative">
-                                                                    <p class="m-0 w-100 dropdown-toggle d-flex justify-content-between align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                    <span>Nike</span> <i class="bi bi-chevron-right"></i>
-                                                                    </p>
-                                                                    <ul class="dropdown-menu">
-                                                                        <li><button class="dropdown-item" type="button">Action</button></li>
-                                                                        <li><button class="dropdown-item" type="button">Another action</button></li>
-                                                                        <li><button class="dropdown-item" type="button">Something else here</button></li>
-                                                                    </ul>
-                                                                </div>
-
-                                                            </div>
-                                                            <div class="col-lg-12 h-100 p-0">
-                                                                <div class="btn-group h-100 dropend w-100 position-relative">
-                                                                    <p class="m-0 w-100 dropdown-toggle d-flex justify-content-between align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                    <span>Nike</span> <i class="bi bi-chevron-right"></i>
-                                                                    </p>
-                                                                    <ul class="dropdown-menu">
-                                                                        <li><button class="dropdown-item" type="button">Action</button></li>
-                                                                        <li><button class="dropdown-item" type="button">Another action</button></li>
-                                                                        <li><button class="dropdown-item" type="button">Something else here</button></li>
-                                                                    </ul>
-                                                                </div>
-
-                                                            </div>
-                                                            <div class="col-lg-12 h-100 p-0">
-                                                                <div class="btn-group h-100 dropend w-100 position-relative">
-                                                                    <p class="m-0 w-100 dropdown-toggle d-flex justify-content-between align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                    <span>Nike</span> <i class="bi bi-chevron-right"></i>
-                                                                    </p>
-                                                                    <ul class="dropdown-menu">
-                                                                        <li><button class="dropdown-item" type="button">Action</button></li>
-                                                                        <li><button class="dropdown-item" type="button">Another action</button></li>
-                                                                        <li><button class="dropdown-item" type="button">Something else here</button></li>
-                                                                    </ul>
-                                                                </div>
-
-                                                            </div>
-                                                            
-                                                        </div>
-                                                            
-                                                    </div>
-                                                </div>
-                                          </div>
+                                <div class="col-lg-12">
+                                  <form class="range mt-5">
+                                    <div class="slider-range position-relative">
+                                      <div class="span-color"></div>
+                                    </div>
+                                    <div class="select-filter w-100 mt-4 d-flex justify-content-between align-items-center">
+                                      <select class="item-filter" name="" id="">
+                                        <option value="">Theo giá</option>
+                                        <option value="">Theo size</option>
+                                        <option value="">Theo tên</option>
+                                      </select>
+                                      <div class="price-filter d-flex justify-content-between align-items-center">
+                                        <p class="min m-0 me-1">0</p>
+                                        <span>-</span>
+                                        <p class="max m-0">1800000đ</p>
                                       </div>
-                                  </div>
-                                  <div class="col-lg-12">
-                                    123
-                                </div>
-                                <div class="col-lg-12">
-                                    123
-                                </div>
-                                <div class="col-lg-12">
-                                    123
+                                    </div>
+                                    <button class="btn-filter">Lọc</button>
+                                  </form>
                                 </div>
                               </div>
+                            </div>
                           </div>
-                          <div class="col-lg-9">456</div>
+                        </div>
                       </div>
+                    </div>
+                    <div class="col-lg-12">123</div>
+                    <div class="col-lg-12">123</div>
                   </div>
+                </div>
+                <div class="col-lg-9">456</div>
               </div>
             </div>
+          </div>
+        </div>
       </div>
     </div>
     <script
@@ -979,6 +1481,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+    <script src="sneaker.js" type="module"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
       integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
@@ -986,6 +1492,8 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
     <script src="index.js" type="module"></script>
+    
   </body>
 </html>

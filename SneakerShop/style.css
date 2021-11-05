@@ -852,6 +852,7 @@
   z-index: 10;
   display: none !important;
   background-color: rgba(2, 2, 2, 0.486);
+  z-index: 100000 !important;
 }
 
 .flex-visible{
@@ -1531,7 +1532,7 @@ body{
 }
 .remove-all{
   display: block;
-  text-decoration: overline !important;
+  text-decoration: underline !important;
   font-size: 15px;
   color: #bbbbbb !important;
   font-family: "Roboto", sans-serif;
