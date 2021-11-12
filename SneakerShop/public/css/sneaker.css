@@ -1,0 +1,335 @@
+.reponsive-menu .active-menu .detail-header:nth-child(2){
+    color: #f54f29 !important;
+}
+.reponsive-menu .active-menu .detail-header:nth-child(1){
+    color: #000000 !important;
+}
+.home .text-header-logo{
+    color: #000000 !important;
+}
+.shoose .text-header-logo1{
+    color: #f54f29 !important;
+}
+.banner-img{
+    background-image: url(../image/img-banner/pexels-photo-1.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+.heading-sneaker{
+    font-size: 42px;
+    line-height: 49px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: white;
+    border-bottom: 5px solid #f54f29;
+}
+.heading-sneaker:hover{
+    color: #f54f29;
+    border-bottom: 5px solid #ffffff;
+}
+.list-sneaker{
+    margin-top: 40px;
+}
+.list-product, .filter, .most-product,  .search-popular, .search-size{
+    height: auto;
+    border: 1px solid #d4d4d4;
+}
+.filter{
+    height: 270px;
+}
+.heading-list{
+    height: 50px;
+}
+.list-style{
+    width: 90%;
+    height: 100%;
+    border-bottom: 1px solid #aaaaaa;
+}
+.text-list{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+    color: #6d6d6d;
+}
+.dropdown-menu{
+    top: 0 !important;
+    left: 100% !important;
+    transform: none !important;
+}
+.dropdown-toggle{
+    border: none !important;
+    background: none;
+    height: 50px;
+    cursor: pointer;
+}
+.dropdown-toggle::after{
+    display: none !important;
+}
+.slider-range{
+    height: 3px !important;
+    background-color: rgb(255, 255, 255) !important;
+    border: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.ui-slider-horizontal .ui-slider-handle{
+    top: -0.4em !important;
+    margin-left: 0 !important;
+}
+.span-color{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #f54f29 50%, rgb(207, 207, 207) 60%);
+}
+.ui-slider-handle {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50% !important;
+    background-color: #f54f29 !important;
+    border: none !important;
+    outline: none !important;
+    z-index: 1 !important;
+}
+.item-filter{
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+}
+.item-filter option{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    color: #393939;
+    outline: none !important;
+}
+.item-filter{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    color: #393939;
+    outline: none;
+}
+.max, .min{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    color: #f54f29;
+}
+.btn-filter{
+    width: 100%;
+    height: 50px;
+    background-color: #f54f29;
+    outline: none;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 23px;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.price-filter span{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px;
+}
+.link-img{
+    max-width: 100%;
+}
+.most-name{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+}
+.price-most{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 23px;
+    color: rgb(202, 0, 0);
+}
+.active-list{
+    color: #f54f29;
+}
+.btn-group:hover .dropdown-toggle{
+    color: #f54f29;
+}
+.see-more{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 23px;
+    color: #adadad;
+}
+.see-more:hover{
+    color: #f54f29;
+}
+.link-popular{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(207, 207, 207);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-popular{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(71, 71, 71);
+}
+.sub-shop-header{
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.prev, .next, .link-page{
+    width: 25px;
+    height: 25px;
+    background-color: #C2C2C2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.prev .bi-chevron-left , .next .bi-chevron-right , .link-page{
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+.link-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+.link-page:hover{
+    color: #ffffff;
+}
+.active-page{
+    background-color: #f54f29;
+}
+.text-link{
+    border-bottom: 1px solid white;
+    font-family: Sofia Pro;
+    font-size: 22px;
+    line-height: 30px;
+    color: #818181;
+    font-weight: 700;
+}
+.text-link:hover{
+    border-bottom: 1px solid #1c1c1c;
+}
+.text-link1{
+    color: #1a1a1a;
+    font-family: Sofia Pro;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.sort select{
+    height: 40px;
+    width: 250px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+    outline: none;
+    border: 1px solid #9b9b9b;
+    padding-left: 10px;
+}
+.sort select option{
+    font-family: Sofia Pro;
+    font-size: 17px;
+    color: #1c1c1c;
+    line-height: 22px;
+    font-weight: 600;
+    
+}
+.text-sort{
+    font-family: Sofia Pro;
+    font-size: 17px;
+    color: #1c1c1c;
+    line-height: 22px;
+    font-weight: 600;
+}
+.item-size{
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgb(179, 179, 179);
+    background-color: rgb(219, 219, 219);
+    font-family: Sofia Pro;
+    color: black;
+    line-height: 22px;
+    font-size: 14px;
+}
+.item-size:hover{
+    color: white;
+    background-color: #f54f29;
+}
+.link-select{
+    display: flex;
+    justify-self: start;
+    align-items: center;
+}
+.bi-filter-square-fill{
+    font-size: 40px;
+    color: rgb(116, 116, 116);
+    display: none;
+}
+.bi-filter-square-fill:hover{
+    color: #f54f29;
+}
+.accordion-button:not(.collapsed){
+    background: none;
+}
+button:focus:not(:focus-visible){
+    outline: none;
+}
+.accordion-button:focus{
+    z-index: 1;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed){
+    color: #1c1c1c;
+}
+.accordion-button{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #666666;
+}
+
+li a{
+    font-family: Sofia Pro;
+    color: #747474;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+}
+li a:hover{
+    color: #f54f29;
+}
