@@ -121,6 +121,9 @@
     .header-most{
       padding: 0 24px;
     }
+    .text-hide{
+      display: none;
+    }
   }
   @media (max-width:768px){
     .end-page .text-logo img{
