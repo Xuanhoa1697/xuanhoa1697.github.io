@@ -82,9 +82,6 @@
     .header{
       box-shadow: none;
     }
-    .sub-title{
-      width: 100%;
-    }
     .day{
       margin: 10px;
     }
@@ -124,8 +121,44 @@
     .text-hide{
       display: none;
     }
+    .text-content{
+      font-size: 17px;
+    }
+    .text-list-product{
+      font-size: 17px;
+    }
+    .d-center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .img-cart1{
+      padding: 0 !important;
+    }
+    .mr-4{
+      margin-top: 24px;
+    }
+    .hight{
+      box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+    }
   }
   @media (max-width:768px){
+    .text-header-cart1{
+      display: block !important;
+    }
+    .text-list-product{
+      text-align: start !important;
+    }
+    .display-option{
+      justify-content: space-between !important;
+      margin-top: 8px !important;
+    }
+    .text-info-slide{
+      width: 100%;
+    }
+    .text-content{
+      font-size: 20px;
+    }
     .end-page .text-logo img{
       max-width: 50%;
     }
@@ -135,9 +168,51 @@
     .mr-3{
       margin-bottom: 30px;
     }
-    
+    .mr-5{
+      margin: 0 !important;
+    }
+    .pd{
+      padding-bottom: 24px;
+    }
+    .select-direct{
+      height: 500px !important;
+    }
+    .direct-select1, .direct-select2, .direct-select3{
+      background-position: top;
+    }
+    .info-form{
+      text-align: center;
+    }
+    .j-center{
+      justify-content: center;
+      align-items: center;
+    }
+    .header-cart{
+      display: none;
+    }  
+    /* .list-cart{
+      display: none;
+    }     */
+    /* .sub-cart{
+      display: block !important;
+    }  */
+    .list-cart{
+      height: 150px;
+    }
+    .btn-sale{
+      width: 100px;
+    }
   }
   @media (max-width:576px){
+    .nav-link{
+      font-size: 17px;
+    }
+    .tamtinh input{
+      width: 250px !important;
+    }
+    .btn-sale{
+      width: 100px !important;
+    }
     .sort select{
       width: 200px;
     }
@@ -178,12 +253,6 @@
     .sub-hightlight{
       margin-bottom: 20px;
     }
-    .select-item{
-      display: block;
-    }
-    .item-link{
-      display: none !important;
-    }
     .sale-email{
       width: 100% ;
     }
@@ -207,6 +276,9 @@
       width: 100%;
       margin-bottom: 20px;
     }
+    .text-info-slide{
+      width: 100%;
+    }
     .link-slide{
       width: 150px;
     }
@@ -221,7 +293,7 @@
       padding-bottom: 24px;
     }
     .select-direct{
-      height: 450px !important;
+      height: 500px !important;
     }
     .mr-2{
       margin-top: 30px;
